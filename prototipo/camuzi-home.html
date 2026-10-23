@@ -920,17 +920,16 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
   .swipe-hint{display:none!important}
 }
 
-/* rodapé compacto no celular: logo, frase, contatos e direitos (serviços e navegação já estão no menu) */
+/* rodapé do celular: alinhado à esquerda, só Navegação e Contato, itens próximos */
 @media (max-width:719px){
-  .ftr{padding-block:40px calc(env(safe-area-inset-bottom,0px) + 92px); text-align:center}
-  .ftr__grid{gap:20px; justify-items:center}
-  .ftr__grid > div:nth-child(2), .ftr__grid > div:nth-child(3){display:none}
-  .ftr__logo{width:72px}
-  .ftr p{margin:12px auto 0; max-width:30ch; font-size:.9rem}
-  .ftr__grid > div:nth-child(4) h4{display:none}
-  .ftr__grid > div:nth-child(4) ul{gap:12px; justify-items:center}
-  .ftr .ct{justify-content:center}
-  .ftr__bot{margin-top:24px; padding-top:18px; font-size:.78rem}
+  .ftr{padding-block:36px calc(env(safe-area-inset-bottom,0px) + 92px)}
+  .ftr__grid{gap:28px}
+  .ftr__grid > div:nth-child(2){display:none}
+  .ftr__logo{width:64px}
+  .ftr p{margin-top:12px; max-width:34ch; font-size:.9rem}
+  .ftr h4{font:700 .95rem/1 var(--f-display); letter-spacing:.06em; color:#fff; margin-bottom:14px}
+  .ftr ul{gap:10px; font-size:.95rem}
+  .ftr__bot{margin-top:28px; padding-top:18px; font-size:.78rem}
 }
 
 @media (prefers-reduced-motion: reduce){
