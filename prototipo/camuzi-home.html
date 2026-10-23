@@ -973,6 +973,15 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
 @media (min-width:980px){ .faq__end{grid-column:2} }
 @media (max-width:719px){ .faq__end{flex-direction:column; text-align:center; justify-content:center} .faq__end p{flex:none} }
 
+/* higienização no celular: comparador logo abaixo do título e da frase */
+@media (max-width:979px){
+  .health > div:first-child{display:contents}
+  .health .head{order:1; margin-bottom:0}
+  .health > div:last-child{order:2}
+  .health .benefits{order:3; margin:0}
+  .health > div:first-child > .btn{order:4; justify-self:center}
+}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
   html{scroll-behavior:auto}
