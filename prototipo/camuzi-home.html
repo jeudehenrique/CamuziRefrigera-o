@@ -814,6 +814,53 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
 .symptoms .diag__panel.is-inline{grid-column:1/-1; margin:2px 0 10px; padding:22px 18px; animation:fadeUp .4s var(--ease) both; box-shadow:0 18px 40px -20px rgba(11,26,46,.35), 0 0 0 2px rgba(15,107,255,.18)}
 .symptoms .diag__panel.is-inline h3{font-size:1.3rem}
 
+/* =====================================================================
+   AJUSTES DE CELULAR — só telas pequenas; o computador não muda
+   ===================================================================== */
+@media (max-width:719px){
+  /* menos espaço entre as seções */
+  :root{--sect:56px}
+  .head{margin-bottom:24px}
+
+  /* "Como funciona": passos compactos, ícone · texto · número na mesma linha */
+  .steps{gap:10px}
+  .step{display:grid; grid-template-columns:44px 1fr auto; column-gap:14px; row-gap:2px; align-items:center; padding:14px 16px}
+  .step__top{display:contents}
+  .step__ic{grid-column:1; grid-row:1 / span 2; width:44px; height:44px; margin:0; border-radius:12px}
+  .step h3{grid-column:2; grid-row:1; margin:0; font-size:1.02rem}
+  .step p{grid-column:2; grid-row:2; font-size:.9rem}
+  .step__n{grid-column:3; grid-row:1 / span 2; font-size:1.7rem}
+
+  /* filtros dos trabalhos em uma linha só, deslizável */
+  .filters{flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; margin-inline:-16px; padding:2px 16px; width:calc(100% + 32px)}
+  .filters::-webkit-scrollbar{display:none}
+  .fbtn{flex:none}
+
+  /* botão do WhatsApp: menor e com o balão mais discreto */
+  .fab{right:calc(max(18px, env(safe-area-inset-right,0px))); bottom:calc(env(safe-area-inset-bottom,0px) + 22px)}
+  .fab__btn{width:54px; height:54px}
+  .fab__btn svg{width:27px; height:27px}
+  .fab__label{padding:8px 12px; font-size:.8rem; animation-duration:20s}
+}
+
+@media (max-width:639px){
+  /* serviços e compromissos: deslizar para o lado (aparece um pedaço do próximo card) */
+  .cards, .pillars{display:grid; grid-template-columns:none; grid-auto-flow:column; gap:14px;
+    overflow-x:auto; overscroll-behavior-x:contain; scroll-snap-type:x mandatory; scrollbar-width:none;
+    margin-inline:-16px; padding:4px 16px 14px; scroll-padding-inline:16px}
+  .cards{grid-auto-columns:80%}
+  .pillars{grid-auto-columns:84%}
+  .cards::-webkit-scrollbar, .pillars::-webkit-scrollbar{display:none}
+  .cards > *, .pillars > *{scroll-snap-align:start}
+  /* cards que entram pela lateral ficam sempre visíveis (a animação de entrada é só vertical) */
+  .rv-on .cards > .rv, .rv-on .pillars > .rv{opacity:1; transform:none}
+  .pillar{padding:26px 22px}
+  .swipe-hint{display:flex}
+}
+@media (min-width:640px){ .swipe-hint{display:none!important} }
+.swipe-hint{display:flex; align-items:center; justify-content:center; gap:8px; margin-top:4px; font-size:.82rem; color:var(--muted)}
+.swipe-hint svg{width:18px; height:18px; animation:baHand 1.6s ease-in-out infinite}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
   html{scroll-behavior:auto}
@@ -1008,6 +1055,7 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
         </div>
       </a>
     </div>
+    <p class="swipe-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V10m0-1.5a1.5 1.5 0 0 1 3 0V11m0-1a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1-6 6h-1.2a6 6 0 0 1-4.9-2.6L4.3 14a1.6 1.6 0 0 1 2.5-2L9 14.3"/></svg>Deslize para ver mais</p>
     <div class="biz rv">
       <span class="biz__ic"><svg class="ico"><use href="#i-building"/></svg></span>
       <div><b>Tem uma empresa, loja ou clínica?</b><span>Manutenção programada para manter os aparelhos do seu negócio sempre funcionando.</span></div>
@@ -1056,6 +1104,7 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
         </ul>
       </article>
     </div>
+    <p class="swipe-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V10m0-1.5a1.5 1.5 0 0 1 3 0V11m0-1a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1-6 6h-1.2a6 6 0 0 1-4.9-2.6L4.3 14a1.6 1.6 0 0 1 2.5-2L9 14.3"/></svg>Deslize para ver mais</p>
     <div class="center-cta rv"><a class="btn btn--wa" data-wa="por_que" data-msg="Olá! Quero um orçamento com garantia para o meu ar-condicionado." href="#"><svg><use href="#i-wa"/></svg>Quero um serviço com garantia</a></div>
   </div>
 </section>
