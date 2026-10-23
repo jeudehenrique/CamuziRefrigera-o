@@ -945,6 +945,12 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
   .ticks li{color:#E3EEFA}
 }
 
+/* diagnóstico no celular: seta indica que o botão abre e fecha a resposta */
+@media (max-width:899px){
+  .sym .chev{display:block!important; flex:none; width:22px!important; height:22px!important; padding:4px; transform:rotate(90deg); transition:transform .3s var(--ease)}
+  .sym[aria-selected="true"] .chev{transform:rotate(-90deg)}
+}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
   html{scroll-behavior:auto}
@@ -1837,13 +1843,26 @@ function selectSym(i, focus, fromTap){
   }
 }
 mobileDiag.addEventListener("change", () => placePanel(curSym));
-symList.addEventListener("click", e => { const b = e.target.closest(".sym"); if (b) selectSym(+b.dataset.i, false, true); });
+function closeSym(){
+  symPanel.hidden = true; curSym = -1;
+  symList.querySelectorAll(".sym").forEach((b, j) => { b.setAttribute("aria-selected", false); b.setAttribute("aria-expanded", false); b.tabIndex = j === 0 ? 0 : -1; });
+}
+symList.addEventListener("click", e => {
+  const b = e.target.closest(".sym"); if (!b) return;
+  const i = +b.dataset.i;
+  if (mobileDiag.matches && i === curSym && !symPanel.hidden) { closeSym(); return; }   // tocar de novo fecha
+  symPanel.hidden = false;
+  selectSym(i, false, true);
+  if (mobileDiag.matches) symList.querySelectorAll(".sym").forEach((x, j) => x.setAttribute("aria-expanded", j === i));
+});
 symList.addEventListener("keydown", e => {
   const cur = curSym, n = SYMPTOMS.length;
   if (["ArrowDown","ArrowRight"].includes(e.key)) { e.preventDefault(); selectSym((cur+1)%n, true); }
   if (["ArrowUp","ArrowLeft"].includes(e.key)) { e.preventDefault(); selectSym((cur-1+n)%n, true); }
 });
 renderSym(0); placePanel(0);
+if (mobileDiag.matches) closeSym();
+mobileDiag.addEventListener("change", () => { if (!mobileDiag.matches && symPanel.hidden) { symPanel.hidden = false; selectSym(0); } });
 
 /* Antes / depois: a divisória balança sozinha até a pessoa tocar, mostrando que dá para arrastar */
 (() => {
