@@ -951,6 +951,17 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
   .sym[aria-selected="true"] .chev{transform:rotate(-90deg)}
 }
 
+/* selos da foto do topo (computador): flutuando nas bordas, sem cobrir o técnico */
+.chip--temp .t{display:flex; align-items:flex-start; gap:2px; white-space:nowrap}
+.chip--temp .temp-mode{min-width:96px}
+.chip--temp .t #tempNum{font:inherit; letter-spacing:inherit; color:#0A1B2E; text-transform:none}
+@media (min-width:980px){
+  .scene--photo{overflow:visible}
+  .scene--photo .scene__img, .scene--photo::after{border-radius:inherit}
+  .scene--photo .chip--check{top:9%; bottom:auto; left:-36px; right:auto}
+  .scene--photo .chip--temp{bottom:9%; top:auto; right:-30px; left:auto}
+}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
   html{scroll-behavior:auto}
