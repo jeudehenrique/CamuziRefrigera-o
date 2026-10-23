@@ -962,6 +962,10 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
   .scene--photo .chip--temp{left:6%; bottom:7%; top:auto; right:auto}        /* posição original, embaixo à esquerda */
 }
 
+/* botão transparente do topo ("Ver serviços") */
+.btn--line{background:rgba(255,255,255,.04); color:#F3F8FF; border:1.5px solid rgba(255,255,255,.22)}
+.btn--line:hover{background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.45)}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
   html{scroll-behavior:auto}
@@ -1065,6 +1069,7 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
       <p class="hero__lead fade-up" style="--d:.55s">Instalação, higienização, manutenção e conserto na Grande Vitória e região, com atendimento rápido, técnicos qualificados e garantia em todo serviço.</p>
       <div class="ctas fade-up" style="--d:.7s">
         <a class="btn btn--wa" data-wa="hero" data-msg="Olá! Meu ar-condicionado precisa de atendimento. Podem me ajudar?" href="#"><svg><use href="#i-wa"/></svg>Falar com um técnico agora</a>
+        <a class="btn btn--line" href="#servicos">Ver serviços</a>
       </div>
       <ul class="ticks fade-up" style="--d:.85s">
         <li><svg class="ico"><use href="#i-doc"/></svg>Orçamento grátis</li>
