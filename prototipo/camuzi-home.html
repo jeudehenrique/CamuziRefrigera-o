@@ -966,6 +966,13 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
 .btn--line{background:rgba(255,255,255,.04); color:#F3F8FF; border:1.5px solid rgba(255,255,255,.22)}
 .btn--line:hover{background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.45)}
 
+/* dúvidas: frase e botão de contato no final da lista */
+.faq__end{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px 20px; padding:18px 22px; border-radius:16px; background:rgba(255,255,255,.04); border:1px solid var(--line)}
+.faq__end p{margin:0; color:var(--muted); font-size:1rem; flex:1 1 240px; max-width:none}
+.faq__end .btn{flex:none}
+@media (min-width:980px){ .faq__end{grid-column:2} }
+@media (max-width:719px){ .faq__end{flex-direction:column; text-align:center; justify-content:center} }
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
   html{scroll-behavior:auto}
@@ -1564,10 +1571,12 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
     <div class="faq__aside rv">
       <span class="eyebrow">Dúvidas frequentes</span>
       <h2 id="t-faq">Perguntas <span class="grad">rápidas</span></h2>
-      <p>Não achou a sua? Um técnico responde pelo WhatsApp.</p>
-      <div><a class="btn btn--wa" data-wa="faq" data-msg="Olá! Tenho uma dúvida sobre ar-condicionado: " href="#"><svg><use href="#i-wa"/></svg>Tirar minha dúvida agora</a></div>
     </div>
     <div id="faqList" class="rv" style="--d:.1s"></div>
+    <div class="faq__end rv">
+      <p>Não achou a sua? Um técnico responde pelo WhatsApp.</p>
+      <a class="btn btn--wa" data-wa="faq" data-msg="Olá! Tenho uma dúvida sobre ar-condicionado: " href="#"><svg><use href="#i-wa"/></svg>Tirar minha dúvida agora</a>
+    </div>
   </div>
 </section>
 
