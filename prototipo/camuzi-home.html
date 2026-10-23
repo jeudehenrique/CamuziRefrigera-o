@@ -1,0 +1,1984 @@
+<title>Camuzi Refrigeração</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Ar-condicionado com problema na Grande Vitória? Instalação, higienização, manutenção e conserto com garantia. Orçamento sem compromisso pelo WhatsApp.">
+<meta property="og:title" content="Camuzi Refrigeração | Ar-condicionado na Grande Vitória">
+<meta property="og:description" content="Instalação, higienização, manutenção e conserto de ar-condicionado na Grande Vitória – ES, com garantia.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="assets/logo-camuzi-escuro.webp">
+<link rel="icon" type="image/webp" href="assets/logo-camuzi-128.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+
+<style>
+/* Layout: faixas alternadas AZUL / BRANCO até o rodapé.
+   Narrativa: problema → solução (serviços) → por que confiar → como funciona → prova → dúvidas → ação.
+   Cada faixa .blue redefine os tokens localmente. Grade máx. 1200px. */
+:root{
+  color-scheme:light;
+  /* faixas brancas: branco suave, levemente azulado (visual único) */
+  --bg:#F3F6FA;
+  --surface:#FFFFFF;
+  --surface-2:#EAF0F7;
+  --ink:#0A1B2E;
+  --muted:#526379;
+  --line:#DFE7F0;
+  --accent:#1466F0;
+  --accent-2:#0FB5EA;
+  --accent-soft:#E5EFFF;
+  --navy:#0A2A5C;
+  --on-navy:#EEF5FD;
+  --wa:#17A653; --wa-hover:#128A45;
+  --shadow:0 1px 2px rgba(10,42,92,.05), 0 10px 28px -12px rgba(10,42,92,.16);
+  --shadow-lg:0 2px 4px rgba(10,42,92,.06), 0 28px 56px -20px rgba(10,42,92,.28);
+
+  /* faixas azuis */
+  --b-bg:#0B3478;
+  --b-bg-2:#0E4BA6;
+  --b-surface:#12428E;
+  --b-surface-2:#174E9F;
+  --b-ink:#F4F9FF;
+  --b-muted:#BBD0EA;
+  --b-line:rgba(255,255,255,.15);
+  --b-accent:#6AD6FF;
+  --b-accent-2:#B5ECFF;
+  --b-accent-soft:rgba(106,214,255,.16);
+  --b-navy:#061E45;
+  --b-glow:rgba(80,190,255,.35);
+
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Figtree", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "Cascadia Mono", monospace;
+
+  --fs-hero:clamp(2.35rem, 5vw, 4.4rem);
+  --fs-h2:clamp(1.9rem, 3.4vw, 2.85rem);
+  --fs-body:1.0625rem;
+
+  --r-md:20px; --r-lg:30px;
+  --sect:clamp(72px, 8.5vw, 124px);
+  --wrap:1200px;
+  --ease:cubic-bezier(.2,.75,.2,1);
+}
+.blue{
+  --bg:var(--b-bg); --surface:var(--b-surface); --surface-2:var(--b-surface-2);
+  --ink:var(--b-ink); --muted:var(--b-muted); --line:var(--b-line);
+  --accent:var(--b-accent); --accent-2:var(--b-accent-2); --accent-soft:var(--b-accent-soft);
+  --navy:var(--b-navy);
+  --shadow:0 1px 2px rgba(0,0,0,.15), 0 14px 32px -14px rgba(0,0,0,.45);
+  --shadow-lg:0 2px 4px rgba(0,0,0,.15), 0 30px 60px -20px rgba(0,0,0,.55);
+  color:var(--ink);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth; scroll-padding-top:80px}
+body{background:var(--bg); color:var(--ink); font-family:var(--f-body); font-size:var(--fs-body); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--f-display); line-height:1.08; letter-spacing:-.02em; margin:0; text-wrap:balance; font-weight:650}
+p{margin:0}
+a{color:inherit}
+img,svg{max-width:100%}
+:focus-visible{outline:3px solid var(--accent); outline-offset:3px; border-radius:6px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.wrap{position:relative; max-width:calc(var(--wrap) + 2*max(16px, env(safe-area-inset-left, 0px))); margin-inline:auto;
+  padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px))}
+@media (min-width:720px){ .wrap{padding-left:max(32px, env(safe-area-inset-left, 0px)); padding-right:max(32px, env(safe-area-inset-right, 0px))} }
+
+/* ---------- Faixas ---------- */
+.band{position:relative; padding-block:var(--sect); background:var(--bg)}
+.band.blue{overflow:clip; isolation:isolate; background:
+  radial-gradient(60% 70% at 85% 0%, var(--b-glow), transparent 70%),
+  linear-gradient(165deg, var(--b-bg) 0%, var(--b-bg-2) 100%)}
+.band.blue.alt{background:
+  radial-gradient(60% 70% at 10% 100%, var(--b-glow), transparent 70%),
+  linear-gradient(195deg, var(--b-bg) 0%, var(--b-bg-2) 100%)}
+.band.blue::before{content:""; position:absolute; z-index:-1; width:640px; height:640px; left:-160px; top:20%; border-radius:50%;
+  background:radial-gradient(circle, rgba(106,214,255,.22), transparent 65%); filter:blur(10px); animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{0%{transform:translate(0,0) scale(1)}50%{transform:translate(55vw,-120px) scale(1.25)}100%{transform:translate(20vw,140px) scale(.9)}}
+
+.eyebrow{font-family:var(--f-mono); font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); display:inline-flex; align-items:center; gap:10px}
+.eyebrow::before{content:""; width:22px; height:1.5px; background:currentColor; transform-origin:left; transition:transform .9s var(--ease) .2s}
+.rv-on .rv:not(.in) .eyebrow::before{transform:scaleX(0)}
+.head{display:grid; gap:14px; max-width:680px; margin-bottom:clamp(36px,4.5vw,56px)}
+.head--center .eyebrow{justify-self:center}
+.head--center{margin-inline:auto; text-align:center; justify-items:center}
+.head h2{font-size:var(--fs-h2)}
+.head p{color:var(--muted); font-size:1.12rem; max-width:52ch}
+.grad{background:linear-gradient(100deg, var(--accent) 0%, var(--accent-2) 50%, var(--accent) 100%); background-size:200% 100%; -webkit-background-clip:text; background-clip:text; color:transparent; animation:shimmer 6s linear infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
+
+/* ---------- Botões ---------- */
+.btn{--h:52px; position:relative; overflow:hidden; display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:var(--h); padding:0 24px; border-radius:999px; font:600 1rem/1 var(--f-body); text-decoration:none; border:1.5px solid transparent; cursor:pointer; white-space:nowrap; isolation:isolate;
+  transition:translate .25s var(--ease), background-color .2s, box-shadow .25s, border-color .2s, color .2s}
+.btn svg{width:20px; height:20px; flex:none}
+.btn:hover{translate:0 -2px}
+.btn--wa{background:var(--wa); color:#fff; box-shadow:0 12px 26px -10px rgba(23,166,83,.7)}
+.btn--wa:hover{background:var(--wa-hover); box-shadow:0 18px 34px -12px rgba(23,166,83,.8)}
+.btn--wa::after{content:""; position:absolute; z-index:-1; top:0; bottom:0; left:-60%; width:45%; background:linear-gradient(100deg, transparent, rgba(255,255,255,.4), transparent); transform:skewX(-20deg); animation:shine 4.5s ease-in-out infinite}
+@keyframes shine{0%,62%{left:-60%}100%{left:130%}}
+.btn--ghost{border-color:var(--line); color:var(--ink); background:transparent}
+.btn--ghost:hover{border-color:var(--ink)}
+.btn--sm{--h:44px; padding:0 18px; font-size:.92rem}
+.link-arrow{display:inline-flex; align-items:center; gap:6px; font-weight:600; color:var(--accent); text-decoration:none}
+.link-arrow svg{width:18px;height:18px; transition:transform .25s var(--ease)}
+.link-arrow:hover svg, .card:hover .link-arrow svg{transform:translateX(5px)}
+.ico{width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round}
+.ctas{display:flex; flex-wrap:wrap; gap:12px}
+
+/* ---------- Revelar ao rolar ---------- */
+.rv-on .rv{opacity:0; transform:translateY(30px);
+  transition:opacity .9s var(--ease) var(--d,0s), transform .9s var(--ease) var(--d,0s), translate .3s var(--ease), box-shadow .3s, border-color .3s, background-color .3s}
+.rv-on .rv.in{opacity:1; transform:none}
+.rv-on .rv--zoom{transform:scale(.94) translateY(20px)}
+.spot{isolation:isolate}
+.spot::before{content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit; pointer-events:none; opacity:0; transition:opacity .35s;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%), color-mix(in srgb, var(--accent) 16%, transparent), transparent 45%)}
+.spot:hover::before{opacity:1}
+
+/* ---------- Header ---------- */
+.hdr{position:sticky; top:env(safe-area-inset-top, 0px); z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.5) blur(16px); -webkit-backdrop-filter:saturate(1.5) blur(16px); border-bottom:1px solid var(--line); transition:background-color .35s, border-color .35s, box-shadow .35s}
+.hdr.blue{background:var(--b-bg); border-bottom-color:transparent}
+.hdr:not(.blue){box-shadow:0 8px 28px -20px rgba(10,42,92,.45)}
+.hdr__in{display:flex; align-items:center; gap:24px; height:76px; transition:height .3s var(--ease)}
+.hdr:not(.blue) .hdr__in{height:64px}
+.progress{position:absolute; left:0; bottom:-1px; height:2px; width:100%; transform-origin:left; transform:scaleX(var(--p,0)); background:linear-gradient(90deg, var(--accent), var(--accent-2))}
+.logo{display:flex; align-items:center; gap:11px; text-decoration:none; color:var(--ink); flex:none}
+/* ícone: recorte do símbolo (floco + chave) do logo oficial */
+.logo__mark{width:52px; height:52px; flex:none; display:block; border-radius:50%}
+.logo__mark img{width:100%; height:100%; display:block}
+.ftr__logo{display:inline-block; width:100px}
+.ftr__logo img{width:100%; height:auto; display:block}
+.logo__txt{display:grid; line-height:1}
+.logo__name{font:700 1.35rem/1 var(--f-display); letter-spacing:.02em; background:linear-gradient(180deg,#5FD8FF,#1E8CF0); -webkit-background-clip:text; background-clip:text; color:transparent}
+.hdr:not(.blue) .logo__name{background:linear-gradient(180deg,#1BA9F0,#1466F0); -webkit-background-clip:text; background-clip:text}
+.logo__sub{font:600 .62rem/1 var(--f-mono); letter-spacing:.26em; color:var(--accent); margin-top:5px}
+.nav{display:none; margin-left:auto; gap:2px}
+.nav a{position:relative; padding:8px 12px; border-radius:999px; text-decoration:none; font-weight:500; font-size:.95rem; color:var(--muted); transition:color .2s}
+.nav a::after{content:""; position:absolute; left:12px; right:12px; bottom:3px; height:2px; border-radius:2px; background:var(--accent); transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease)}
+.nav a:hover, .nav a.is-active{color:var(--ink)}
+.nav a:hover::after, .nav a.is-active::after{transform:scaleX(1)}
+.hdr__cta{display:none}
+.menu-btn{margin-left:auto; width:46px; height:46px; border-radius:14px; border:1px solid var(--line); background:var(--surface); color:var(--ink); display:grid; place-items:center; cursor:pointer}
+.menu-btn svg{width:22px;height:22px}
+@media (min-width:1080px){ .nav{display:flex} .hdr__cta{display:inline-flex} .menu-btn{display:none} }
+
+.mnav{position:fixed; inset:0; z-index:60; padding:calc(env(safe-area-inset-top,0px) + 16px) max(16px, env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 24px) max(16px, env(safe-area-inset-left,0px)); display:flex; flex-direction:column; clip-path:circle(0% at calc(100% - 40px) 40px); visibility:hidden; transition:clip-path .55s var(--ease), visibility 0s .55s;
+  background:radial-gradient(70% 50% at 100% 0%, var(--b-glow), transparent 70%), linear-gradient(170deg, var(--b-bg), var(--b-bg-2))}
+.mnav.is-open{clip-path:circle(150% at calc(100% - 40px) 40px); visibility:visible; transition:clip-path .6s var(--ease)}
+.mnav__top{display:flex; align-items:center; justify-content:space-between; height:60px}
+.mnav ul{list-style:none; margin:24px 0 0; padding:0; display:grid}
+.mnav li{opacity:0; transform:translateY(16px); transition:opacity .4s, transform .5s var(--ease)}
+.mnav.is-open li{opacity:1; transform:none; transition-delay:calc(.15s + var(--i)*.05s)}
+.mnav li a{display:flex; justify-content:space-between; align-items:center; padding:18px 4px; border-bottom:1px solid var(--line); text-decoration:none; font:600 1.5rem/1.1 var(--f-display); letter-spacing:-.02em}
+.mnav li a svg{width:20px;height:20px;color:var(--accent)}
+.mnav__foot{margin-top:auto; display:grid; gap:12px}
+.mnav__foot .btn{width:100%}
+.mnav__meta{font-size:.9rem; color:var(--muted); text-align:center}
+
+/* ---------- 1 · Hero ---------- */
+.hero{padding-block:clamp(36px,5vw,72px) clamp(64px,8vw,104px)}
+.particles{position:absolute; inset:0; width:100%; height:100%; z-index:-1; pointer-events:none}
+.hero__grid{display:grid; gap:clamp(40px,5vw,64px); align-items:center}
+@media (min-width:980px){ .hero__grid{grid-template-columns:1.05fr 1fr} }
+.pill{display:inline-flex; align-items:center; gap:10px; padding:7px 14px 7px 8px; border-radius:999px; background:color-mix(in srgb, var(--surface) 70%, transparent); border:1px solid var(--line); font-size:.86rem; font-weight:500; color:var(--muted)}
+.pill__dot{position:relative; width:22px; height:22px; border-radius:999px; background:var(--accent-soft); display:grid; place-items:center; color:var(--accent)}
+.pill__dot svg{width:14px;height:14px}
+.pill__dot::after{content:""; position:absolute; inset:-3px; border-radius:inherit; border:1.5px solid var(--accent); animation:ping 2.4s ease-out infinite}
+.hero h1{font-size:var(--fs-hero); letter-spacing:-.035em; margin-top:22px}
+.hero h1 .w{display:inline-block; animation:wordUp .9s var(--ease) both; animation-delay:calc(.08s + var(--i) * 55ms)}
+@keyframes wordUp{from{opacity:0; transform:translateY(.55em) rotate(3deg); filter:blur(8px)}}
+.hero h1 .hl{white-space:nowrap}
+.hero__lead{margin-top:20px; font-size:clamp(1.08rem,1.4vw,1.22rem); color:var(--muted); max-width:46ch}
+.hero .ctas{margin-top:30px}
+.ticks{list-style:none; padding:0; margin:30px 0 0; display:flex; flex-wrap:wrap; gap:10px 22px}
+.ticks li{display:flex; align-items:center; gap:8px; font-weight:600; font-size:.95rem}
+.ticks li svg{width:20px; height:20px; padding:3px; border-radius:999px; background:var(--accent-soft); color:var(--accent); stroke-width:2.4}
+.fade-up{animation:fadeUp .9s var(--ease) both; animation-delay:var(--d,0s)}
+@keyframes fadeUp{from{opacity:0; transform:translateY(18px)}}
+
+.scene{position:relative; border-radius:var(--r-lg); aspect-ratio:1/0.92; max-width:100%; overflow:hidden; isolation:isolate;
+  background:radial-gradient(100% 70% at 75% 0%, rgba(106,214,255,.28), transparent 60%), linear-gradient(160deg, #0F4FAE, #071F4A 75%);
+  box-shadow:0 40px 80px -30px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.12);
+  animation:sceneIn 1.1s var(--ease) .15s both}
+@keyframes sceneIn{from{opacity:0; transform:translateY(30px) scale(.96)}}
+.scene::before{content:""; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px); background-size:44px 44px; mask-image:radial-gradient(90% 70% at 50% 30%, #000, transparent 85%); z-index:-1}
+.scene__art{position:absolute; inset:0; width:100%; height:100%}
+.airflow path{stroke-dasharray:10 16; animation:flow 2.4s linear infinite}
+.airflow path:nth-child(2){animation-duration:2.9s}
+.airflow path:nth-child(3){animation-duration:2.1s}
+.airflow path:nth-child(4){animation-duration:2.7s}
+.airflow path:nth-child(5){animation-duration:3.2s}
+@keyframes flow{to{stroke-dashoffset:-104}}
+.led{animation:blink 2.2s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+.flap{transform-origin:260px 193px; animation:flap 5s ease-in-out infinite}
+@keyframes flap{50%{transform:rotate(-1.4deg) translateY(2px)}}
+.chip{position:absolute; display:flex; align-items:center; gap:12px; padding:12px 16px; border-radius:16px; background:rgba(255,255,255,.96); color:#0A1B2E; box-shadow:0 20px 40px -16px rgba(0,0,0,.45); animation:bob 5s ease-in-out infinite}
+.chip__ic{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:#E5EFFF;color:#1466F0; flex:none}
+.chip__ic svg{width:20px;height:20px}
+.chip b{display:block; font-size:.92rem; line-height:1.2}
+.chip small{display:block; font-size:.78rem; color:#526379; line-height:1.3}
+.chip--temp{left:6%; bottom:7%; padding:14px 18px}
+.chip--temp .t{font:500 2rem/1 var(--f-mono); letter-spacing:-.04em; font-variant-numeric:tabular-nums}
+.chip--temp .t sup{font-size:.9rem; vertical-align:top; margin-left:2px; color:#1466F0}
+.chip--check{right:5%; top:46%; animation-duration:6s; animation-delay:-2s}
+.temp-mode{display:grid; gap:4px}
+.temp-mode span{font:500 .68rem/1 var(--f-mono); letter-spacing:.12em; color:#526379; text-transform:uppercase}
+.temp-bar{height:4px; width:100%; border-radius:4px; background:#E1E8F1; overflow:hidden; margin-top:4px}
+.temp-bar i{display:block; height:100%; width:var(--tp,30%); background:linear-gradient(90deg,#0FB5EA,#1466F0); transition:width .2s linear}
+@keyframes bob{50%{translate:0 -10px}}
+@media (max-width:520px){ .chip--check{top:auto; bottom:31%; right:4%} .chip{padding:10px 12px} .chip--temp .t{font-size:1.6rem} }
+
+
+/* ---------- 2 · Problema → solução ---------- */
+.diag{display:grid; gap:20px; grid-template-columns:1fr}
+@media (min-width:900px){ .diag{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:28px} }
+.symptoms{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; align-content:start}
+@media (min-width:900px){ .symptoms{grid-template-columns:1fr} }
+.sym{display:flex; align-items:center; gap:12px; padding:14px; border-radius:16px; border:1px solid var(--line); background:var(--surface); color:var(--ink); font:600 1rem/1.2 var(--f-body); text-align:left; cursor:pointer; box-shadow:var(--shadow); transition:background-color .25s, color .25s, border-color .25s, translate .25s var(--ease)}
+.sym .d{flex:none; width:36px; height:36px; border-radius:11px; display:grid; place-items:center; background:var(--accent-soft); color:var(--accent); transition:all .25s}
+.sym .d svg{width:19px;height:19px}
+.sym .chev{margin-left:auto; width:18px; height:18px; opacity:.35; transition:transform .25s var(--ease), opacity .25s}
+.sym:hover{border-color:var(--accent); translate:3px 0}
+.sym[aria-selected="true"]{background:var(--navy); color:#fff; border-color:var(--navy)}
+.sym[aria-selected="true"] .d{background:#6AD6FF; color:var(--navy)}
+.sym[aria-selected="true"] .chev{opacity:1; transform:translateX(3px)}
+@media (max-width:899px){ .sym .chev{display:none} .sym{font-size:.94rem; padding:12px} }
+.diag__panel{position:relative; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); padding:clamp(24px,3.5vw,40px); box-shadow:var(--shadow-lg); display:grid; gap:24px; align-content:start; min-width:0}
+.diag__panel h3{font-size:clamp(1.45rem,2.3vw,1.9rem)}
+.diag__panel .lead{color:var(--muted); margin-top:10px}
+.diag__cols{display:grid; gap:16px}
+@media (min-width:640px){ .diag__cols{grid-template-columns:1fr 1fr} }
+.box{border-radius:16px; padding:20px; background:var(--surface-2)}
+.box h4{font:500 .72rem/1 var(--f-mono); letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:12px}
+.box ul{list-style:none; padding:0; margin:0; display:grid; gap:8px; font-size:.97rem}
+.box li{display:flex; gap:10px; align-items:flex-start; animation:fadeUp .5s var(--ease) both; animation-delay:calc(var(--i) * 60ms)}
+.box li::before{content:""; flex:none; width:7px; height:7px; margin-top:9px; border-radius:2px; background:var(--muted); transform:rotate(45deg)}
+.box--fix{background:var(--accent-soft)}
+.box--fix h4{color:var(--accent)}
+.box--fix p{font-weight:600; line-height:1.45}
+.box--fix .link-arrow{margin-top:12px; font-size:.95rem}
+.diag__foot{display:flex; flex-wrap:wrap; align-items:center; gap:14px 20px}
+.diag__foot p{font-size:.92rem; color:var(--muted); flex:1 1 200px}
+.diag__head{animation:fadeUp .45s var(--ease) both}
+
+/* ---------- 3 · Serviços ---------- */
+.cards{display:grid; gap:18px; grid-template-columns:1fr}
+@media (min-width:640px){ .cards{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (min-width:1080px){ .cards{grid-template-columns:repeat(4,minmax(0,1fr))} }
+.card{position:relative; display:flex; flex-direction:column; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-md); overflow:hidden; min-width:0; text-decoration:none; transition:translate .3s var(--ease), box-shadow .3s, border-color .3s}
+.card:hover{translate:0 -6px; box-shadow:var(--shadow-lg); border-color:color-mix(in srgb, var(--accent) 45%, transparent)}
+.card .ph{aspect-ratio:16/10; min-height:0}
+.card__body{position:relative; padding:0 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1}
+.card__ic{width:52px; height:52px; margin-top:-26px; margin-bottom:6px; border-radius:15px; display:grid; place-items:center; background:var(--accent); color:var(--navy); box-shadow:0 10px 22px -8px rgba(0,0,0,.45); transition:transform .45s var(--ease)}
+.card:hover .card__ic{transform:rotate(-8deg) scale(1.08)}
+.card h3{font-size:1.22rem}
+.card p{color:var(--muted); font-size:.97rem}
+.card .link-arrow{margin-top:auto; padding-top:10px}
+.biz{margin-top:18px; display:flex; flex-wrap:wrap; align-items:center; gap:16px 24px; padding:20px 24px; border-radius:var(--r-md); border:1px dashed var(--line); background:color-mix(in srgb, var(--surface) 50%, transparent)}
+.biz__ic{width:44px; height:44px; border-radius:12px; display:grid; place-items:center; background:var(--accent-soft); color:var(--accent); flex:none}
+.biz div{flex:1 1 260px}
+.biz b{display:block; font:600 1.08rem/1.3 var(--f-display)}
+.biz span{color:var(--muted); font-size:.95rem}
+
+.ph{position:relative; display:grid; place-items:center; text-align:center; min-height:200px; padding:20px; overflow:hidden; color:var(--b-muted);
+  background:repeating-linear-gradient(135deg, transparent 0 14px, rgba(255,255,255,.04) 14px 15px), linear-gradient(150deg, #1352B5, var(--b-navy))}
+.ph::after{content:""; position:absolute; inset:0; background:linear-gradient(110deg, transparent 30%, rgba(255,255,255,.08) 50%, transparent 70%); background-size:250% 100%; animation:sweep 5s ease-in-out infinite}
+@keyframes sweep{from{background-position:150% 0}to{background-position:-100% 0}}
+.ph__in{position:relative; display:grid; gap:6px; justify-items:center; max-width:26ch}
+.ph svg{width:26px;height:26px;color:var(--b-accent)}
+.ph span{font:500 .66rem/1.4 var(--f-mono); letter-spacing:.06em; text-transform:uppercase}
+.card .ph, .work .ph{transition:transform .7s var(--ease)}
+.card:hover .ph, .work:hover .ph{transform:scale(1.06)}
+
+/* ---------- 4 · Por que a Camuzi ---------- */
+.pillars{display:grid; gap:18px; grid-template-columns:1fr}
+@media (min-width:900px){ .pillars{grid-template-columns:repeat(3,minmax(0,1fr))} }
+.pillar{position:relative; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); padding:32px 28px; box-shadow:var(--shadow); transition:translate .3s var(--ease), box-shadow .3s}
+.pillar:hover{translate:0 -6px; box-shadow:var(--shadow-lg)}
+.pillar__ic{width:60px; height:60px; border-radius:18px; display:grid; place-items:center; color:#fff; background:linear-gradient(140deg, var(--accent-2), var(--accent)); box-shadow:0 14px 28px -12px var(--accent)}
+.pillar__ic svg{width:28px; height:28px}
+.pillar__k{display:block; margin-top:24px; font:500 .72rem/1 var(--f-mono); letter-spacing:.14em; text-transform:uppercase; color:var(--accent)}
+.pillar h3{font-size:1.45rem; margin-top:10px}
+.pillar ul{list-style:none; padding:0; margin:20px 0 0; display:grid; gap:12px; border-top:1px solid var(--line); padding-top:20px}
+.pillar li{display:flex; gap:10px; align-items:flex-start; font-size:.98rem}
+.pillar li svg{width:20px; height:20px; flex:none; margin-top:2px; color:var(--wa); stroke-width:2.2}
+.seal{margin-top:28px; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px 18px; text-align:center}
+.seal b{font:600 1.1rem/1.3 var(--f-display)}
+.seal svg{width:28px; height:28px; color:var(--accent)}
+
+/* ---------- 5 · Como funciona ---------- */
+.steps{position:relative; list-style:none; margin:0; padding:0; display:grid; gap:16px}
+@media (min-width:720px){ .steps{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (min-width:1080px){
+  .steps{grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px}
+}
+.step{position:relative; padding:26px 24px 28px; background:color-mix(in srgb, var(--surface) 75%, transparent); border:1px solid var(--line); border-radius:var(--r-md); backdrop-filter:blur(6px); transition:translate .3s var(--ease), background-color .3s}
+.step:hover{translate:0 -6px; background:var(--surface)}
+.step__top{display:flex; align-items:center; justify-content:space-between}
+.step__ic{position:relative; z-index:1; width:56px; height:56px; border-radius:16px; display:grid; place-items:center; background:var(--navy); color:var(--accent); box-shadow:0 0 0 6px color-mix(in srgb, var(--accent) 12%, transparent)}
+.step__n{font:500 2rem/1 var(--f-mono); color:color-mix(in srgb, var(--ink) 22%, transparent)}
+.step h3{font-size:1.15rem; margin:20px 0 6px}
+.step p{font-size:.95rem; color:var(--muted)}
+.center-cta{margin-top:36px; display:flex; justify-content:center}
+
+/* ---------- 6 · Higienização ---------- */
+.health{display:grid; gap:clamp(36px,5vw,64px); align-items:center}
+@media (min-width:980px){ .health{grid-template-columns:1fr 1.05fr} }
+.benefits{list-style:none; padding:0; margin:28px 0 32px; display:grid; gap:12px}
+.benefits li{display:flex; align-items:center; gap:14px; padding:14px 16px; border-radius:16px; background:var(--surface); border:1px solid var(--line); box-shadow:var(--shadow); font-weight:600; transition:translate .3s var(--ease)}
+.benefits li:hover{translate:6px 0}
+.benefits .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft); color:var(--accent); flex:none}
+.benefits small{display:block; font-weight:400; color:var(--muted); font-size:.9rem}
+.ba{position:relative; border-radius:var(--r-lg); overflow:hidden; aspect-ratio:4/3.3; box-shadow:var(--shadow-lg); --pos:50%; user-select:none; touch-action:pan-y}
+.ba__layer{position:absolute; inset:0}
+.ba__layer svg{display:block; width:100%; height:100%}
+.ba-spark{transform-box:fill-box; transform-origin:center; animation:baSpark 2.4s ease-in-out infinite}
+@keyframes baSpark{0%,100%{opacity:.2; transform:scale(.5)}50%{opacity:1; transform:scale(1)}}
+.ba-air path{stroke-dasharray:14 16; animation:baAir 1.6s linear infinite}
+@keyframes baAir{to{stroke-dashoffset:-60}}
+.ba-shine{animation:baShine 4s ease-in-out infinite}
+@keyframes baShine{0%{transform:translateX(-80px); opacity:0}30%{opacity:.8}70%{opacity:.8}100%{transform:translateX(380px); opacity:0}}
+.ba__before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba__tag{position:absolute; z-index:2; pointer-events:none; top:16px; padding:9px 14px; border-radius:999px; font:600 .78rem/1 var(--f-mono); letter-spacing:.14em; text-transform:uppercase; color:#fff; box-shadow:0 8px 20px -8px rgba(0,0,0,.5); transition:opacity .2s, transform .2s}
+.ba__tag--l{left:16px; background:#D93A3F; opacity:calc(.3 + var(--k, .5) * .7); transform:scale(calc(.9 + var(--k, .5) * .15)); transform-origin:left center}
+.ba__tag--r{right:16px; background:#139A4C; opacity:calc(.3 + (1 - var(--k, .5)) * .7); transform:scale(calc(.9 + (1 - var(--k, .5)) * .15)); transform-origin:right center}
+.ba__hint{position:absolute; z-index:2; left:50%; bottom:18px; transform:translateX(-50%); display:flex; align-items:center; gap:8px; padding:10px 16px 10px 12px; border-radius:999px; background:rgba(255,255,255,.95); color:#0A2A5C; font:600 .9rem/1 var(--f-body); white-space:nowrap; box-shadow:0 12px 28px -10px rgba(0,0,0,.45); pointer-events:none; transition:opacity .4s, transform .4s}
+.ba__hint svg{width:22px; height:22px; color:#1466F0; animation:baHand 1.6s ease-in-out infinite}
+@keyframes baHand{0%,100%{transform:translateX(-5px) rotate(-8deg)}50%{transform:translateX(5px) rotate(8deg)}}
+.ba.is-touched .ba__hint{opacity:0; transform:translate(-50%, 10px)}
+.ba__line{position:absolute; top:0; bottom:0; left:var(--pos); width:2px; margin-left:-1px; background:#fff; pointer-events:none; box-shadow:0 0 18px rgba(255,255,255,.8)}
+.ba__knob{position:absolute; top:50%; left:50%; width:56px; height:56px; margin:-28px 0 0 -28px; border-radius:999px; background:#fff; color:#0A2A5C; display:grid; place-items:center; box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.ba__knob::after{content:""; position:absolute; inset:-6px; border-radius:inherit; border:2px solid rgba(255,255,255,.7); animation:ping 2.2s ease-out infinite}
+.ba__knob svg{width:22px;height:22px}
+.ba input{position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:ew-resize; margin:0}
+.ba input:focus-visible ~ .ba__line .ba__knob{outline:3px solid var(--accent); outline-offset:3px}
+.ba__cap{margin-top:12px; font-size:.82rem; color:var(--muted); text-align:center}
+
+/* ---------- 7 · Trabalhos ---------- */
+.row-head{display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px; margin-bottom:28px}
+.row-head .head{margin-bottom:0}
+.filters{display:flex; flex-wrap:wrap; gap:8px}
+.fbtn{padding:10px 18px; border-radius:999px; border:1px solid var(--line); background:transparent; color:var(--muted); font:600 .92rem/1 var(--f-body); cursor:pointer; transition:all .25s var(--ease)}
+.fbtn:hover{color:var(--ink); border-color:var(--ink)}
+.fbtn[aria-pressed="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+/* carrossel de fotos (quadradas) */
+/* esteira contínua (fotos e avaliações) */
+.carousel{position:relative; overflow:hidden; container-type:inline-size; touch-action:pan-y; cursor:grab; user-select:none; -webkit-user-select:none;
+  -webkit-mask-image:linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); mask-image:linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent)}
+.carousel.is-drag{cursor:grabbing}
+.carousel img{-webkit-user-drag:none}
+.car__track, .rev__track{display:flex; width:max-content; will-change:transform; padding:6px 0 14px}
+.car__track{gap:18px}
+.car__track > .work{flex:0 0 78cqw}
+@container (min-width:520px){ .car__track > .work{flex-basis:calc((100cqw - 18px) / 2)} }
+@container (min-width:860px){ .car__track > .work{flex-basis:calc((100cqw - 3 * 18px) / 4)} }
+.work{position:relative; margin:0; border-radius:var(--r-md); overflow:hidden; background:var(--b-navy); box-shadow:var(--shadow); scroll-snap-align:start}
+.work[hidden]{display:none}
+.work__btn{display:block; width:100%; padding:0; border:0; background:none; cursor:zoom-in; position:relative}
+.work__btn img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; transition:transform .7s var(--ease)}
+.work:hover .work__btn img{transform:scale(1.07)}
+.work__btn::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 50%, rgba(4,16,40,.85)); pointer-events:none}
+.work__zoom{position:absolute; z-index:1; top:12px; right:12px; width:38px; height:38px; border-radius:999px; display:grid; place-items:center; background:rgba(255,255,255,.92); color:#0A2A5C; opacity:0; transform:scale(.7); transition:opacity .3s, transform .3s var(--ease)}
+.work__zoom svg{width:18px; height:18px}
+.work:hover .work__zoom, .work__btn:focus-visible .work__zoom{opacity:1; transform:none}
+.work figcaption{position:absolute; left:14px; right:14px; bottom:14px; z-index:1; color:#fff; display:grid; gap:6px; pointer-events:none; transition:translate .4s var(--ease)}
+.work:hover figcaption{translate:0 -4px}
+.work figcaption b{font:600 1rem/1.25 var(--f-display)}
+.work figcaption em{justify-self:start; font:500 .62rem/1 var(--f-mono); font-style:normal; letter-spacing:.12em; text-transform:uppercase; color:#0A2A5C; background:#6AD6FF; padding:6px 8px; border-radius:999px}
+.car__nav{position:absolute; top:calc(50% - 30px); z-index:2; width:50px; height:50px; border-radius:999px; border:0; display:grid; place-items:center; cursor:pointer; background:#fff; color:#0A2A5C; box-shadow:0 12px 30px -10px rgba(0,0,0,.5); transition:transform .25s var(--ease), opacity .25s}
+.car__nav:hover{transform:scale(1.08)}
+.car__nav--p{left:-12px} .car__nav--n{right:-12px}
+@media (max-width:559px){ .car__nav{display:none} }
+.car__dots{display:flex; justify-content:center; gap:8px; margin-top:22px}
+.car__dots i{width:8px; height:8px; border-radius:999px; background:var(--line); transition:width .35s var(--ease), background-color .35s}
+.car__dots i.on{width:26px; background:var(--accent)}
+
+/* foto ampliada */
+.lb{position:fixed; inset:0; z-index:80; display:flex; align-items:center; justify-content:center; gap:12px; padding:calc(env(safe-area-inset-top,0px) + 56px) max(12px, env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 24px) max(12px, env(safe-area-inset-left,0px)); background:rgba(3,12,30,.92); backdrop-filter:blur(8px); animation:fadeUp .3s var(--ease)}
+.lb[hidden]{display:none}
+.lb__fig{margin:0; display:grid; gap:12px; justify-items:center; max-height:100%; min-width:0}
+.lb__fig img{max-width:min(92vw, 640px); max-height:calc(100vh - 140px); width:auto; height:auto; border-radius:18px; box-shadow:0 30px 80px rgba(0,0,0,.6); animation:lbIn .4s var(--ease)}
+@keyframes lbIn{from{opacity:0; transform:scale(.94)}}
+.lb__fig figcaption{color:#fff; font:600 1rem/1.3 var(--f-display); text-align:center}
+.lb__x{position:absolute; top:calc(env(safe-area-inset-top,0px) + 12px); right:max(12px, env(safe-area-inset-right,0px)); width:44px; height:44px; border-radius:999px; border:0; background:rgba(255,255,255,.12); color:#fff; display:grid; place-items:center; cursor:pointer}
+.lb__nav{flex:none; width:48px; height:48px; border-radius:999px; border:0; background:rgba(255,255,255,.12); color:#fff; display:grid; place-items:center; cursor:pointer; transition:background-color .2s}
+.lb__nav:hover, .lb__x:hover{background:rgba(255,255,255,.25)}
+@media (max-width:600px){ .lb__nav{position:absolute; bottom:calc(env(safe-area-inset-bottom,0px) + 20px)} .lb__nav--p{left:28%} .lb__nav--n{right:28%} .lb__fig img{max-height:calc(100vh - 200px)} }
+/* topo com foto */
+.scene--photo{aspect-ratio:4/4.4; background:var(--b-navy)}
+.scene--photo::before{display:none}
+.scene__img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 25%}
+.scene--photo::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(4,16,40,0) 50%, rgba(4,16,40,.55)); pointer-events:none}
+.scene--photo .chip{z-index:1}
+.scene--photo .chip--check{top:auto; bottom:30%; right:5%}
+/* cards com foto */
+.card__img{display:block; width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; background:#E4EFFF; transition:transform .7s var(--ease)}
+.card:hover .card__img{transform:scale(1.06)}
+
+/* ---------- 8 · Regiões ---------- */
+.area{display:grid; gap:clamp(32px,5vw,56px); align-items:center}
+@media (min-width:980px){ .area{grid-template-columns:1fr 1fr} }
+.cities{list-style:none; padding:0; margin:0 0 24px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px}
+@media (min-width:560px){ .cities{grid-template-columns:repeat(3,minmax(0,1fr))} }
+.cities li{display:flex; align-items:center; gap:10px; padding:14px; border-radius:14px; background:var(--surface); border:1px solid var(--line); font-weight:600; box-shadow:var(--shadow); transition:translate .25s var(--ease), border-color .25s}
+.cities li:hover{translate:0 -3px; border-color:var(--accent)}
+.cities li svg{width:18px;height:18px;color:var(--accent); flex:none}
+.mapcard{position:relative; border-radius:var(--r-lg); padding:clamp(26px,3.5vw,38px); overflow:hidden; isolation:isolate; background:linear-gradient(150deg, var(--b-bg-2), var(--b-navy))}
+.mapcard h3{font-size:1.5rem}
+.mapcard > p{color:var(--muted); margin-top:8px}
+.segs{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:24px 0}
+.segs div{display:flex; gap:12px; align-items:center; padding:14px; border-radius:14px; background:rgba(255,255,255,.06); border:1px solid var(--line)}
+.segs svg{color:var(--accent); flex:none}
+.segs b{display:block; font-size:.98rem; line-height:1.2}
+.segs small{color:var(--muted); font-size:.82rem}
+.greview{display:flex; align-items:center; gap:14px; padding-top:22px; border-top:1px solid var(--line); flex-wrap:wrap}
+.g-badge{width:44px;height:44px;border-radius:12px;background:#fff;display:grid;place-items:center; flex:none}
+.greview div{flex:1 1 180px}
+.greview b{display:block; font-size:.98rem}
+.greview small{color:var(--muted); font-size:.85rem}
+
+/* ---------- 8 · Avaliações ---------- */
+.rev__track{gap:20px; align-items:flex-start}
+.rev__track > .rev{flex:0 0 84cqw}
+@container (min-width:600px){ .rev__track > .rev{flex-basis:calc((100cqw - 20px) / 2)} }
+@container (min-width:960px){ .rev__track > .rev{flex-basis:calc((100cqw - 2 * 20px) / 3)} }
+.rev{scroll-snap-align:start; display:flex; flex-direction:column; gap:14px; min-height:220px; padding:24px; border-radius:var(--r-md); background:var(--surface); border:1px solid var(--line); box-shadow:var(--shadow); transition:translate .3s var(--ease), box-shadow .3s}
+.rev:hover{translate:0 -4px; box-shadow:var(--shadow-lg)}
+.rev__head{display:flex; align-items:center; gap:12px}
+.rev__av{flex:none; width:44px; height:44px; border-radius:999px; display:grid; place-items:center; color:#fff; font:600 1rem/1 var(--f-body)}
+.rev__who{min-width:0; flex:1}
+.rev__who b{display:flex; align-items:center; gap:6px; font:600 1rem/1.25 var(--f-display)}
+.rev__ok{width:17px; height:17px; flex:none}
+.rev__who small{display:block; color:var(--muted); font-size:.8rem; margin-top:2px}
+.rev__who small strong{color:var(--ink); font-weight:600}
+.rev__g{flex:none; width:22px; height:22px; opacity:.9}
+.rev__g svg{width:100%; height:100%}
+.rev__stars{display:flex; gap:3px}
+.rev__stars svg{width:19px; height:19px; fill:#D5DCE6}
+.rev__stars svg.on{fill:#FBBC04}
+.rev__txt{color:var(--ink); font-size:.98rem; line-height:1.6}
+.rev--long .rev__txt{display:-webkit-box; -webkit-line-clamp:5; -webkit-box-orient:vertical; overflow:hidden}
+.rev--long.is-open .rev__txt{-webkit-line-clamp:unset; display:block}
+.rev__more{align-self:flex-start; padding:0; border:0; background:none; color:var(--accent); font:600 .92rem/1 var(--f-body); cursor:pointer}
+.rev__more:hover{text-decoration:underline}
+#revCar .car__nav{top:calc(50% - 32px)}
+@media (min-width:1000px){ #revCar .car__nav--p{left:-26px} #revCar .car__nav--n{right:-26px} }
+.rev__foot{margin-top:28px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:18px 24px; padding:20px 24px; border-radius:var(--r-md); background:var(--surface); border:1px solid var(--line)}
+.rev__src{display:flex; align-items:center; gap:14px; flex:1 1 280px}
+.rev__src b{display:block; font:600 1.02rem/1.3 var(--f-display)}
+.rev__src small{color:var(--muted); font-size:.88rem}
+.g-badge{width:44px; height:44px; border-radius:12px; background:#fff; border:1px solid var(--line); display:grid; place-items:center; flex:none}
+.g-badge svg{width:24px; height:24px}
+
+/* ---------- 9 · FAQ ---------- */
+.faq{display:grid; gap:clamp(32px,5vw,64px)}
+@media (min-width:980px){ .faq{grid-template-columns:.8fr 1.2fr} .faq__aside{position:sticky; top:110px} }
+.faq__aside{display:grid; gap:16px; align-content:start}
+.faq__aside p{color:var(--muted)}
+.faq__aside h2{font-size:var(--fs-h2)}
+.qa{border-bottom:1px solid var(--line)}
+.qa:first-child{border-top:1px solid var(--line)}
+.qa summary{list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:20px; padding:22px 4px; font:600 1.08rem/1.35 var(--f-display); transition:color .2s, padding .3s var(--ease)}
+.qa summary:hover{color:var(--accent); padding-left:10px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary .pm{flex:none; width:36px;height:36px;border-radius:999px;border:1px solid var(--line);display:grid;place-items:center;transition:transform .4s var(--ease), background-color .25s, color .25s, border-color .25s}
+.qa summary .pm svg{width:16px;height:16px}
+.qa[open] summary .pm{transform:rotate(135deg); background:var(--accent); color:var(--navy); border-color:var(--accent)}
+.qa .ans{padding:0 4px 24px; color:var(--muted); max-width:62ch}
+.qa[open] .ans{animation:fadeUp .45s var(--ease)}
+
+/* ---------- 10 · CTA final ---------- */
+.final{position:relative; border-radius:var(--r-lg); overflow:hidden; padding:clamp(36px,6vw,72px); display:grid; gap:28px; align-items:center; isolation:isolate;
+  background:radial-gradient(70% 120% at 100% 0%, var(--b-glow), transparent 60%), linear-gradient(140deg, var(--b-bg-2), var(--b-bg)); box-shadow:var(--shadow-lg)}
+.final::before{content:""; position:absolute; inset:0; z-index:1; border-radius:inherit; padding:1.5px; pointer-events:none;
+  background:conic-gradient(from var(--ang,0deg), transparent 0 70%, var(--b-accent) 85%, transparent 100%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; animation:spin 6s linear infinite}
+@property --ang{syntax:"<angle>"; inherits:false; initial-value:0deg}
+@keyframes spin{to{--ang:360deg}}
+@media (min-width:900px){ .final{grid-template-columns:1.3fr auto} }
+.final h2{font-size:clamp(1.9rem,3.6vw,3rem)}
+.final p{color:var(--muted); margin-top:14px; max-width:46ch}
+.final__act{display:grid; gap:12px; justify-items:start}
+.final__num{font:500 .9rem/1 var(--f-mono); color:var(--muted); letter-spacing:.04em}
+
+/* ---------- Rodapé (azul) ---------- */
+.ftr{background:var(--b-navy); color:var(--muted); padding-block:64px 32px}
+.ftr__grid{display:grid; gap:36px; grid-template-columns:1fr}
+@media (min-width:720px){ .ftr__grid{grid-template-columns:1.4fr 1fr 1fr 1.2fr} }
+.ftr p{font-size:.94rem; margin-top:16px; max-width:34ch}
+.ftr h4{font:500 .72rem/1 var(--f-mono); letter-spacing:.14em; text-transform:uppercase; color:var(--ink); margin-bottom:16px}
+.ftr ul{list-style:none; margin:0; padding:0; display:grid; gap:10px; font-size:.94rem}
+.ftr a{text-decoration:none; transition:color .2s} .ftr a:hover{color:var(--accent)}
+.ftr li{display:flex; gap:10px; align-items:flex-start}
+.ftr li svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--accent)}
+.ftr__bot{margin-top:48px; padding-top:24px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; font-size:.84rem}
+
+/* ---------- WhatsApp flutuante ---------- */
+/* botão flutuante: etiqueta + círculo verde, afastado do canto e flutuando suavemente */
+.fab{position:fixed; z-index:40; right:calc(max(24px, env(safe-area-inset-right,0px)) + 4px); bottom:calc(env(safe-area-inset-bottom,0px) + 32px); display:flex; align-items:center; gap:10px; text-decoration:none; animation:fabIn .7s var(--ease) 1.2s both, fabFloat 3.4s ease-in-out 2s infinite}
+@media (min-width:900px){ .fab{right:calc(max(44px, env(safe-area-inset-right,0px))); bottom:calc(env(safe-area-inset-bottom,0px) + 48px)} }
+@keyframes fabIn{from{opacity:0; transform:translateY(30px) scale(.8)}}
+@keyframes fabFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.fab:hover{animation-play-state:running, paused}
+/* balão "Solicitar orçamento": aparece de tempos em tempos (e sempre ao passar o mouse) */
+.fab__label{position:relative; padding:11px 16px; border-radius:14px; background:#fff; color:#0A1B2E; font-weight:600; font-size:.9rem; white-space:nowrap; box-shadow:0 14px 34px -12px rgba(4,16,40,.5); pointer-events:none;
+  opacity:0; transform:translateX(14px) scale(.94); transform-origin:right center; animation:fabTip 12s var(--ease) 3s infinite}
+.fab__label::after{content:""; position:absolute; right:-6px; top:50%; width:12px; height:12px; margin-top:-6px; background:#fff; transform:rotate(45deg); border-radius:2px}
+@keyframes fabTip{0%,3%{opacity:0; transform:translateX(14px) scale(.94)}8%,40%{opacity:1; transform:none}46%,100%{opacity:0; transform:translateX(14px) scale(.94)}}
+.fab:hover .fab__label, .fab:focus-visible .fab__label{animation:none; opacity:1; transform:none}
+/* círculo verde que pisca: halo pulsando + anel se espalhando */
+.fab__btn{position:relative; width:62px; height:62px; border-radius:999px; background:linear-gradient(145deg, #2EE07A, #17A653); color:#fff; display:grid; place-items:center; box-shadow:0 14px 30px -10px rgba(23,166,83,.9); transition:transform .25s var(--ease)}
+.fab__btn svg{position:relative; z-index:1; width:31px; height:31px}
+.fab:hover .fab__btn{transform:scale(1.08) rotate(-8deg)}
+.fab__btn::after{content:""; position:absolute; inset:-12px; border-radius:999px; background:radial-gradient(circle, rgba(46,224,122,.28) 55%, rgba(46,224,122,0) 72%); border:1px solid rgba(46,224,122,.35); animation:fabHalo 1.8s ease-in-out infinite}
+@keyframes fabHalo{0%,100%{transform:scale(.92); opacity:.55}50%{transform:scale(1.08); opacity:1}}
+.fab__btn::before{content:""; position:absolute; inset:0; border-radius:999px; border:2px solid #2EE07A; animation:ping 2.2s ease-out infinite}
+@keyframes ping{0%{transform:scale(1);opacity:.75}70%,100%{transform:scale(1.75);opacity:0}}
+
+/* =====================================================================
+   REFINO VISUAL — camada de acabamento (não altera estrutura, textos ou efeitos)
+   Direção: corporativo, leve e "climatizado": azul profundo com luz gelada,
+   vidro fosco, tipografia fina, cantos e sombras discretos.
+   ===================================================================== */
+:root{
+  --f-display:"Geist", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Geist", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"Geist Mono", ui-monospace, "Cascadia Mono", monospace;
+
+  --bg:#F6F9FD;
+  --surface:#FFFFFF;
+  --surface-2:#EEF3F9;
+  --ink:#0B1A2E;
+  --muted:#5B6B80;
+  --line:rgba(11,26,46,.09);
+  --accent:#0F6BFF;
+  --accent-2:#18B4F0;
+  --accent-soft:rgba(15,107,255,.08);
+  --shadow:0 1px 2px rgba(11,26,46,.04), 0 10px 30px -16px rgba(11,26,46,.18);
+  --shadow-lg:0 1px 2px rgba(11,26,46,.05), 0 24px 60px -24px rgba(11,26,46,.28);
+
+  --b-bg:#071A3D;
+  --b-bg-2:#0B2C66;
+  --b-surface:rgba(255,255,255,.06);
+  --b-surface-2:rgba(255,255,255,.1);
+  --b-ink:#F3F8FF;
+  --b-muted:#A7BAD4;
+  --b-line:rgba(255,255,255,.11);
+  --b-accent:#7CD6FF;
+  --b-accent-2:#D9F3FF;
+  --b-accent-soft:rgba(124,214,255,.12);
+  --b-navy:#05132D;
+  --b-glow:rgba(56,168,255,.28);
+
+  --r-md:16px; --r-lg:22px;
+  --sect:clamp(88px, 10vw, 136px);
+  --grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+.blue{
+  --shadow:0 1px 0 rgba(255,255,255,.06) inset, 0 18px 40px -20px rgba(0,0,0,.55);
+  --shadow-lg:0 1px 0 rgba(255,255,255,.08) inset, 0 30px 70px -28px rgba(0,0,0,.65);
+}
+body{font-size:1.03rem; letter-spacing:-.005em; font-feature-settings:"ss01", "cv11"}
+::selection{background:rgba(15,107,255,.18)}
+
+/* ---------- Tipografia ---------- */
+h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
+.hero h1{font-weight:600; letter-spacing:-.05em; line-height:1.02}
+.head h2, .h2, .faq__aside h2{letter-spacing:-.04em; line-height:1.06}
+.head p, .hero__lead{letter-spacing:-.01em}
+.grad{background:linear-gradient(100deg, var(--accent) 0%, var(--accent-2) 55%, var(--accent) 100%); background-size:220% 100%; -webkit-background-clip:text; background-clip:text}
+.blue .grad{background-image:linear-gradient(100deg, #8FDcFF 0%, #E6F7FF 45%, #8FDCFF 100%)}
+
+/* selo da seção: pílula com ponto de luz (no lugar do traço) */
+.eyebrow{justify-self:start; width:max-content; max-width:100%; font:500 .7rem/1 var(--f-mono); letter-spacing:.16em; padding:7px 12px 7px 10px; border-radius:999px; background:var(--accent-soft); border:1px solid color-mix(in srgb, var(--accent) 18%, transparent); gap:8px}
+.eyebrow::before{width:6px; height:6px; border-radius:999px; background:var(--accent); box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent), 0 0 12px var(--accent); transform:none!important}
+
+/* ---------- Faixas ---------- */
+.band{background:radial-gradient(70% 60% at 100% 0%, rgba(24,180,240,.07), transparent 60%), radial-gradient(60% 50% at 0% 100%, rgba(15,107,255,.05), transparent 60%), var(--bg)}
+.band.blue{background:
+  radial-gradient(900px 520px at 88% -8%, rgba(70,180,255,.32), transparent 62%),
+  radial-gradient(760px 520px at -8% 108%, rgba(20,110,255,.26), transparent 60%),
+  linear-gradient(180deg, var(--b-bg) 0%, var(--b-bg-2) 100%)}
+.band.blue.alt{background:
+  radial-gradient(900px 520px at 10% -8%, rgba(70,180,255,.28), transparent 62%),
+  radial-gradient(760px 520px at 108% 108%, rgba(20,110,255,.26), transparent 60%),
+  linear-gradient(180deg, var(--b-bg) 0%, var(--b-bg-2) 100%)}
+/* textura granulada quase imperceptível + brilho frio que respira */
+.band.blue::after{content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; background-image:var(--grain); background-size:180px; opacity:.06; mix-blend-mode:overlay}
+.band.blue::before{background:radial-gradient(circle, rgba(120,210,255,.18), transparent 65%); filter:blur(30px)}
+.band.blue + .band:not(.blue), .band:not(.blue) + .band.blue{box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+
+/* ---------- Cabeçalho ---------- */
+.hdr.blue{background:var(--b-bg); border-bottom-color:rgba(255,255,255,.06)}
+.hdr:not(.blue){background:rgba(255,255,255,.78); box-shadow:0 1px 0 rgba(11,26,46,.06), 0 10px 30px -22px rgba(11,26,46,.35)}
+.nav a{font-weight:500; font-size:.93rem; letter-spacing:-.01em}
+.menu-btn{border-radius:12px; background:var(--surface)}
+
+/* ---------- Botões ---------- */
+.btn{--h:50px; font-weight:600; letter-spacing:-.01em; padding:0 22px}
+.btn--wa{background:linear-gradient(180deg, #1DBF60, #14A04F); box-shadow:inset 0 1px 0 rgba(255,255,255,.25), 0 10px 24px -10px rgba(20,160,79,.7)}
+.btn--wa:hover{background:linear-gradient(180deg, #1BB55B, #128F46)}
+.btn--ghost{background:color-mix(in srgb, var(--surface) 60%, transparent); backdrop-filter:blur(10px); border-color:var(--line)}
+.blue .btn--ghost{background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.16)}
+.btn--dark{background:linear-gradient(180deg, #0F2C5E, #0A2047); box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}
+.btn--sm{--h:42px}
+
+/* ---------- Topo ---------- */
+.pill{background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.12); backdrop-filter:blur(10px); font-size:.84rem}
+.ticks li{font-weight:500; font-size:.92rem; color:var(--muted)}
+.ticks li svg{background:rgba(124,214,255,.12); color:var(--accent); padding:4px; width:22px; height:22px; border-radius:7px; stroke-width:2}
+.scene{border-radius:24px; box-shadow:0 40px 90px -40px rgba(0,0,0,.75), 0 0 0 1px rgba(255,255,255,.14)}
+.scene--photo::after{background:linear-gradient(180deg, rgba(5,19,45,0) 45%, rgba(5,19,45,.6))}
+.chip{background:rgba(255,255,255,.88); backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,.7); border-radius:14px; box-shadow:0 18px 40px -18px rgba(0,0,0,.55)}
+.chip__ic{background:rgba(15,107,255,.1)}
+
+/* ---------- Cards e superfícies (claro) ---------- */
+.diag__panel, .pillar, .rev, .benefits li, .rev__foot, .sym, .card{border-radius:var(--r-md); border:1px solid var(--line); box-shadow:var(--shadow)}
+.diag__panel{border-radius:var(--r-lg); box-shadow:var(--shadow-lg)}
+.box{border-radius:12px; background:var(--surface-2)}
+.box--fix{background:linear-gradient(180deg, rgba(15,107,255,.08), rgba(24,180,240,.06)); border:1px solid rgba(15,107,255,.12)}
+.sym{box-shadow:none}
+.sym[aria-selected="true"]{background:linear-gradient(180deg, #0F2C5E, #0A2047); border-color:transparent; box-shadow:0 12px 26px -14px rgba(10,32,71,.7)}
+.sym .d, .benefits .ic, .biz__ic{border-radius:10px; background:var(--accent-soft); box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--accent) 14%, transparent)}
+.pillar{padding:34px 30px; background:linear-gradient(180deg, #FFFFFF, #FBFDFF)}
+.pillar__ic{width:54px; height:54px; border-radius:14px; background:linear-gradient(180deg, #FFFFFF, #EEF5FF); color:var(--accent); box-shadow:inset 0 0 0 1px rgba(15,107,255,.14), 0 10px 24px -14px rgba(15,107,255,.6)}
+.pillar__ic svg{width:26px; height:26px}
+.pillar ul{border-top-color:var(--line)}
+.pillar li svg{color:var(--accent)}
+.rev{background:linear-gradient(180deg, #FFFFFF, #FBFDFF)}
+.qa{border-color:var(--line)}
+
+/* ---------- Superfícies em vidro (faixas azuis) ---------- */
+.blue .card, .blue .step, .blue .biz, .blue .qa summary .pm, .blue .fbtn, .final{backdrop-filter:blur(16px) saturate(1.2); -webkit-backdrop-filter:blur(16px) saturate(1.2)}
+.blue .card{background:linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035)); border:1px solid rgba(255,255,255,.12); box-shadow:inset 0 1px 0 rgba(255,255,255,.1), 0 24px 50px -28px rgba(0,0,0,.7)}
+.blue .card:hover{border-color:rgba(124,214,255,.35)}
+.card__ic{border-radius:13px; background:linear-gradient(180deg, #A8E6FF, #5CC6F5); color:#062148; box-shadow:0 10px 24px -10px rgba(92,198,245,.8), inset 0 1px 0 rgba(255,255,255,.6)}
+.blue .step{background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03)); border:1px solid rgba(255,255,255,.11); box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.step__ic{border-radius:14px; background:linear-gradient(180deg, rgba(124,214,255,.2), rgba(124,214,255,.06)); color:#BFEBFF; box-shadow:inset 0 0 0 1px rgba(124,214,255,.25)}
+.step__n{color:rgba(255,255,255,.18); font-weight:500}
+.blue .biz{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12)}
+.blue .fbtn{background:rgba(255,255,255,.04); border-color:rgba(255,255,255,.14); color:var(--b-muted)}
+.blue .fbtn[aria-pressed="true"]{background:#fff; color:#0A2047; border-color:#fff}
+.work{border-radius:var(--r-md); box-shadow:0 24px 50px -28px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.08)}
+.work figcaption em{background:rgba(124,214,255,.92); color:#062148}
+.blue .qa{border-color:rgba(255,255,255,.1)}
+.blue .qa summary .pm{background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.14)}
+
+/* ---------- Chamada final ---------- */
+.final{border-radius:24px; background:
+  radial-gradient(600px 300px at 100% 0%, rgba(80,190,255,.35), transparent 60%),
+  radial-gradient(500px 300px at 0% 100%, rgba(20,110,255,.3), transparent 60%),
+  linear-gradient(160deg, #0B2C66, #071A3D); box-shadow:0 40px 90px -40px rgba(7,26,61,.7), inset 0 1px 0 rgba(255,255,255,.08)}
+.final::after{content:""; position:absolute; inset:0; z-index:0; pointer-events:none; background-image:var(--grain); background-size:180px; opacity:.07; mix-blend-mode:overlay; border-radius:inherit}
+.final h2{font-weight:600; letter-spacing:-.045em}
+
+/* ---------- Antes e depois ---------- */
+.ba{border-radius:var(--r-lg); box-shadow:var(--shadow-lg), 0 0 0 1px var(--line)}
+
+/* ---------- Rodapé ---------- */
+.ftr{background:radial-gradient(800px 400px at 90% 0%, rgba(56,168,255,.14), transparent 60%), #050F24; position:relative}
+.ftr::after{content:""; position:absolute; inset:0; pointer-events:none; background-image:var(--grain); background-size:180px; opacity:.05; mix-blend-mode:overlay}
+.ftr h4{font-weight:500; color:#DCE9FA}
+.ftr__bot{border-top-color:rgba(255,255,255,.08); justify-content:center; text-align:center}
+
+/* =====================================================================
+   REFINO DE ESTILO — toque premium (serifada itálica nos destaques,
+   seções mais compactas, títulos centralizados). Não altera conteúdo.
+   ===================================================================== */
+:root{
+  --f-serif:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --sect:clamp(64px, 7.5vw, 108px);
+}
+
+/* destaques com força: mesma fonte dos títulos, em negrito e azul saturado */
+.grad{font-family:var(--f-display); font-style:normal; font-weight:700; letter-spacing:-.045em; background-image:linear-gradient(100deg, #0A58F5 0%, #0B8BF0 50%, #0A58F5 100%)}
+.blue .grad{background-image:linear-gradient(100deg, #2FC4FF 0%, #5BB2FF 50%, #2FC4FF 100%); filter:drop-shadow(0 6px 22px rgba(47,196,255,.25))}
+
+/* menos espaço morto */
+.head{margin-bottom:clamp(28px, 3.6vw, 48px); gap:12px}
+.hero{padding-block:clamp(28px, 4vw, 56px) clamp(56px, 6.5vw, 88px)}
+.health .benefits{margin:22px 0 26px}
+.center-cta{margin-top:28px}
+.rev__foot{margin-top:20px}
+
+/* títulos centralizados nas seções que sobravam espaço à direita */
+#problemas .head, #servicos .head{margin-inline:auto; text-align:center; justify-items:center}
+#problemas .head .eyebrow, #servicos .head .eyebrow{justify-self:center}
+
+/* números das etapas: negrito, com degradê gelado */
+.step__n{font:700 2.3rem/1 var(--f-display); font-style:normal; letter-spacing:-.05em; background:linear-gradient(180deg, rgba(124,214,255,.75), rgba(124,214,255,.15)); -webkit-background-clip:text; background-clip:text; color:transparent}
+
+/* detalhes finos */
+.pillar h3, .card h3, .rev__who b, .step h3{letter-spacing:-.025em}
+.hero__lead{max-width:44ch}
+
+/* faixa de diferenciais (passa sem parar) */
+.ticker{position:relative; z-index:1; overflow:hidden; isolation:isolate; color:#E8F3FF; padding-block:11px;
+  background:#0A3A9C;
+  box-shadow:0 10px 26px -16px rgba(6,26,68,.8), inset 0 1px 0 rgba(255,255,255,.1)}
+/* feixe de luz gelada que atravessa a faixa */
+.ticker::before{content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+  background:linear-gradient(100deg, transparent 0%, rgba(124,214,255,0) 35%, rgba(124,214,255,.28) 50%, rgba(124,214,255,0) 65%, transparent 100%);
+  background-size:60% 100%; background-repeat:no-repeat; animation:tickerLight 6s ease-in-out infinite}
+@keyframes tickerLight{0%{background-position:-120% 0}100%{background-position:220% 0}}
+.ticker__track{display:flex; width:max-content; animation:ticker 45s linear infinite}
+.ticker:hover .ticker__track{animation-play-state:paused}
+.ticker ul{display:flex; align-items:center; list-style:none; margin:0; padding:0}
+.ticker li{display:flex; align-items:center; gap:12px; padding-right:30px; font:500 .9rem/1 var(--f-display); letter-spacing:.005em; white-space:nowrap}
+.ticker li svg{width:14px; height:14px; flex:none; color:#7CD6FF; stroke-width:1.8; filter:drop-shadow(0 0 6px rgba(124,214,255,.8))}
+@keyframes ticker{to{transform:translateX(-50%)}}
+
+.fix__tag{display:inline-flex; align-items:center; gap:6px; margin-top:14px; padding:7px 12px; border-radius:999px; background:#fff; border:1px solid rgba(15,107,255,.16); font-size:.84rem; color:var(--muted)}
+.fix__tag svg{width:15px; height:15px; color:var(--accent); stroke-width:2.2}
+.fix__tag b{color:var(--accent); font-weight:600}
+
+/* ---------- Seções claras com mais contraste (fundo menos luminoso, cards destacados) ---------- */
+:root{
+  --bg:#E8EEF6;
+  --surface-2:#EDF2F8;
+  --line:rgba(11,26,46,.12);
+  --shadow:0 1px 2px rgba(11,26,46,.06), 0 12px 28px -14px rgba(11,26,46,.28);
+  --shadow-lg:0 2px 4px rgba(11,26,46,.06), 0 28px 60px -24px rgba(11,26,46,.34);
+}
+.band:not(.blue){background:radial-gradient(70% 60% at 100% 0%, rgba(24,180,240,.08), transparent 60%), radial-gradient(60% 50% at 0% 100%, rgba(15,107,255,.06), transparent 60%), var(--bg)}
+.hdr:not(.blue){background:rgba(248,250,253,.9)}
+/* opções clicáveis do diagnóstico */
+.sym{background:#fff; border:1px solid var(--line); box-shadow:0 1px 2px rgba(11,26,46,.06), 0 6px 16px -10px rgba(11,26,46,.3)}
+.sym:hover{border-color:rgba(15,107,255,.45); box-shadow:0 1px 2px rgba(11,26,46,.06), 0 12px 24px -12px rgba(15,107,255,.45)}
+.sym .chev{opacity:1!important; color:var(--accent); width:26px!important; height:26px!important; padding:5px; border-radius:999px; background:var(--accent-soft)}
+.sym[aria-selected="true"] .chev{color:#062148; background:#7CD6FF}
+/* painel de resposta */
+.diag__panel{background:#fff}
+.box{background:#F2F6FB; border:1px solid var(--line)}
+.box--fix{background:linear-gradient(180deg, #EEF5FF, #E9F6FE); border-color:rgba(15,107,255,.2)}
+.fix__tag{display:block; white-space:normal; border-radius:12px; line-height:1.45; padding:8px 12px}
+.fix__tag svg{display:inline-block; vertical-align:-3px; margin-right:6px}
+/* demais cards das seções claras */
+.pillar, .rev, .benefits li, .rev__foot, .diag__panel{border-color:var(--line)}
+.pillar, .rev{background:#fff}
+.benefits li{background:#fff}
+
+/* faixa com a nota do Google (azul) */
+.gscore{position:relative; isolation:isolate; overflow:hidden; margin-top:24px; display:flex; flex-wrap:wrap; align-items:center; gap:18px 30px; padding:22px 28px; border-radius:var(--r-lg); color:#F3F8FF;
+  background:radial-gradient(420px 200px at 85% 0%, rgba(80,190,255,.32), transparent 65%), radial-gradient(360px 200px at 0% 100%, rgba(20,110,255,.3), transparent 65%), linear-gradient(135deg, #0B2C66, #071A3D);
+  box-shadow:0 30px 60px -30px rgba(7,26,61,.75), inset 0 1px 0 rgba(255,255,255,.1)}
+.gscore::after{content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; background-image:var(--grain); background-size:180px; opacity:.07; mix-blend-mode:overlay}
+.gscore__src{display:flex; align-items:center; gap:12px; padding-right:28px; border-right:1px solid rgba(255,255,255,.14); font:600 .92rem/1.2 var(--f-display)}
+.gscore__g{width:46px; height:46px; border-radius:999px; background:#fff; display:grid; place-items:center; flex:none; box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
+.gscore__g svg{width:24px; height:24px}
+.gscore__num{font:700 clamp(2.6rem, 4.5vw, 3.4rem)/1 var(--f-display); letter-spacing:-.04em; background:linear-gradient(180deg, #FFFFFF, #BFE9FF); -webkit-background-clip:text; background-clip:text; color:transparent}
+.gscore__meta{display:grid; gap:6px}
+.gscore__meta p{margin:0; font-size:.9rem; color:#A7BAD4}
+.gscore__meta b{color:#7CD6FF; font-weight:600}
+.gscore__stars{position:relative; display:inline-block; line-height:0}
+.gscore__stars span{display:flex; gap:3px}
+.gscore__stars svg{width:20px; height:20px; flex:none}
+.gscore__base svg{fill:rgba(255,255,255,.22)}
+.gscore__on{position:absolute; inset:0; width:var(--fill); overflow:hidden}
+.gscore__on svg{fill:#FBBC04; filter:drop-shadow(0 0 6px rgba(251,188,4,.45))}
+.gscore__act{margin-left:auto; display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+.gscore .btn--ghost{background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:#F3F8FF}
+@media (max-width:760px){ .gscore__src{border-right:0; padding-right:0} .gscore__act{margin-left:0; width:100%} .gscore__act .btn{flex:1} }
+
+/* dúvidas: cada pergunta em um card de vidro */
+#faqList{display:grid; gap:12px}
+.qa, .qa:first-child{border:1px solid rgba(255,255,255,.1); border-radius:16px; background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03)); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); box-shadow:inset 0 1px 0 rgba(255,255,255,.06); transition:background-color .3s, border-color .3s, box-shadow .3s}
+.qa:hover{border-color:rgba(124,214,255,.3)}
+.qa[open]{background:linear-gradient(180deg, rgba(124,214,255,.12), rgba(255,255,255,.04)); border-color:rgba(124,214,255,.4); box-shadow:inset 0 1px 0 rgba(255,255,255,.1), 0 18px 40px -24px rgba(0,0,0,.6)}
+.qa summary{padding:20px 22px 20px 24px; font-size:1.02rem}
+.qa summary:hover{padding-left:24px; color:inherit}
+.qa summary .pm, .blue .qa summary .pm{width:28px; height:28px; border:0; background:transparent; color:#7CD6FF}
+.qa summary .pm svg{width:18px; height:18px; stroke-width:2.2}
+.qa[open] summary .pm, .blue .qa[open] summary .pm{background:transparent; color:#7CD6FF; transform:rotate(45deg)}
+.qa .ans{padding:0 24px 22px; color:var(--muted)}
+
+/* contato do rodapé: ícones coloridos de cada canal */
+.ftr .ct{align-items:center; gap:12px}
+.ftr .ct svg{width:20px; height:20px; margin-top:0; flex:none}
+.ftr .ct--wa svg{color:#25D366}
+.ftr .ct--pin svg{color:#FF5A5F}
+.ftr .ct--mail svg{color:#5AB0FF}
+.ftr .ct a{color:inherit; text-decoration:none; word-break:break-word}
+.ftr .ct a:hover{color:#fff}
+
+/* padronização final */
+.faq__aside p, .final p{font-size:1.12rem}
+.scene, .final, .ba, .gscore, .diag__panel{border-radius:22px}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important; transition:none!important}
+  html{scroll-behavior:auto}
+  /* o botão de WhatsApp continua chamando atenção (pedido do cliente) */
+  .ticker__track{animation:ticker 45s linear infinite!important}
+  .ticker::before{animation:tickerLight 6s ease-in-out infinite!important}
+  .fab{animation:fabIn .7s ease 1.2s both, fabFloat 3.4s ease-in-out 2s infinite!important}
+  .fab__label{animation:fabTip 12s ease 3s infinite!important}
+  .fab__btn::after{animation:fabHalo 1.8s ease-in-out infinite!important}
+  .fab__btn::before{animation:ping 2.2s ease-out infinite!important}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.47 15.02L2.5 21.5l4.6-1.05A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.73.62.65-2.64-.2-.31a8.2 8.2 0 1 1 6.76 3.66Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.13-.17.24-.64.8-.78.96-.14.17-.29.19-.53.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.86 2.04c0 1.2.88 2.37 1 2.53.12.17 1.73 2.64 4.2 3.7 1.56.67 2.17.73 2.95.61.47-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.1-.22-.17-.47-.29Z"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8.5h11.5a2.5 2.5 0 1 0-2.5-2.5"/><path d="M3 12.5h16a2.5 2.5 0 1 1-2.5 2.5"/><path d="M5 16.5h6a2 2 0 1 1-2 2"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-install" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><path d="M6 8.5h8M7 14v1.5M12 14v3M17 14v1.5"/></symbol>
+    <symbol id="i-spray" viewBox="0 0 24 24"><path d="M9 9h6v11a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V9ZM10 9V6h4v3M14 6h3M19 4l1-1M19 8l1 1M20 6h1"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M9 14.5l2 2 4-4"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8M14.7 6.3 13 4.6a4 4 0 0 0-5 5L3 14.6 6.4 18l5-5"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16M15 9h4a1 1 0 0 1 1 1v11M3 21h18M8 8h3M8 12h3M8 16h3"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 2v20M4.2 6.5l15.6 9M4.2 17.5l15.6-9M9.5 3.5 12 6l2.5-2.5M9.5 20.5 12 18l2.5 2.5"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8h10a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4ZM16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></symbol>
+    <symbol id="i-power" viewBox="0 0 24 24"><path d="M12 3v8M7 6.3a7 7 0 1 0 10 0"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3 5 14h6l-1 7 8-11h-6l1-7Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14 -1.5 7 5-2.5 5 2.5-1.5-7M9.5 9l1.7 1.7L14.5 7.5"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1.4 1.4 0 0 0 2-2M13 15l2.5 2.5a1.4 1.4 0 0 0 2-2L14 12l-1.5 1.5a2 2 0 0 1-2.8-2.8L12.5 8 17 7l4 4-3.5 4.5M3 11l4-4 5 1M3 11l5 6 1.5 1.5a1.4 1.4 0 0 0 2-2"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-lungs" viewBox="0 0 24 24"><path d="M12 4v7M12 11c-1.5 0-2-1-3-1-2.5 0-5 5-5 8.5 0 1 .7 1.5 1.6 1.5C8 20 9 18 9 15.5M12 11c1.5 0 2 1 3 1M12 11c1.5 0 2-1 3-1 2.5 0 5 5 5 8.5 0 1-.7 1.5-1.6 1.5C16 20 15 18 15 15.5"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4.5 17a8.5 8.5 0 1 1 15 0"/><path d="m12 13 4-4"/><circle cx="12" cy="13" r="1.3"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m21 16-5-5-9 8.5"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9H4v-9Z"/><path d="M10 20v-5h4v5"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h.01"/></symbol>
+  </defs>
+</svg>
+
+<a class="sr-only" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="hdr blue" id="topo">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#topo" aria-label="Camuzi Refrigeração – início">
+      <span class="logo__mark"><img src="assets/logo-camuzi-128.webp" srcset="assets/logo-camuzi-128.webp 128w, assets/logo-camuzi-192.webp 192w, assets/logo-camuzi-256.webp 256w" sizes="52px" width="128" height="128" alt=""></span>
+      <span class="logo__txt"><span class="logo__name">CAMUZI</span><span class="logo__sub">REFRIGERAÇÃO</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#problemas">Problemas</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#por-que">Por que a Camuzi</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn--wa btn--sm hdr__cta" data-wa="header" href="#"><svg><use href="#i-wa"/></svg>Pedir orçamento</a>
+    <button class="menu-btn" type="button" id="menuOpen" aria-controls="mnav" aria-expanded="false" aria-label="Abrir menu"><svg class="ico"><use href="#i-menu"/></svg></button>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<div class="mnav blue" id="mnav" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mnav__top">
+    <a class="logo" href="#topo"><span class="logo__mark"><img src="assets/logo-camuzi-128.webp" srcset="assets/logo-camuzi-128.webp 128w, assets/logo-camuzi-192.webp 192w, assets/logo-camuzi-256.webp 256w" sizes="52px" width="128" height="128" alt=""></span><span class="logo__txt"><span class="logo__name">CAMUZI</span><span class="logo__sub">REFRIGERAÇÃO</span></span></a>
+    <button class="menu-btn" type="button" id="menuClose" aria-label="Fechar menu"><svg class="ico"><use href="#i-x"/></svg></button>
+  </div>
+  <ul>
+    <li style="--i:0"><a href="#problemas">Problemas comuns <svg class="ico"><use href="#i-arrow"/></svg></a></li>
+    <li style="--i:1"><a href="#servicos">Serviços <svg class="ico"><use href="#i-arrow"/></svg></a></li>
+    <li style="--i:2"><a href="#por-que">Por que a Camuzi <svg class="ico"><use href="#i-arrow"/></svg></a></li>
+    <li style="--i:3"><a href="#trabalhos">Trabalhos <svg class="ico"><use href="#i-arrow"/></svg></a></li>
+    <li style="--i:4"><a href="#avaliacoes">Avaliações <svg class="ico"><use href="#i-arrow"/></svg></a></li>
+    <li style="--i:5"><a href="#duvidas">Dúvidas <svg class="ico"><use href="#i-arrow"/></svg></a></li>
+  </ul>
+  <div class="mnav__foot">
+    <a class="btn btn--wa" data-wa="menu_mobile" href="#"><svg><use href="#i-wa"/></svg>Pedir orçamento</a>
+    <p class="mnav__meta">Atendimento em Grande Vitória e região – ES</p>
+  </div>
+</div>
+
+<main id="conteudo">
+
+<!-- 1 · AZUL — HERO: promessa + ação -->
+<section class="band blue hero">
+  <canvas class="particles" data-particles="60" aria-hidden="true"></canvas>
+  <div class="wrap hero__grid">
+    <div>
+      <span class="pill fade-up"><span class="pill__dot"><svg class="ico"><use href="#i-pin"/></svg></span>Grande Vitória e região – ES</span>
+      <h1 id="heroTitle">Ar-condicionado com problema? <span class="hl grad">A Camuzi resolve.</span></h1>
+      <p class="hero__lead fade-up" style="--d:.55s">Instalação, higienização, manutenção e conserto na Grande Vitória e região, com atendimento rápido, técnicos qualificados e garantia em todo serviço.</p>
+      <div class="ctas fade-up" style="--d:.7s">
+        <a class="btn btn--wa" data-wa="hero" data-msg="Olá! Meu ar-condicionado precisa de atendimento. Podem me ajudar?" href="#"><svg><use href="#i-wa"/></svg>Falar com um técnico agora</a>
+      </div>
+      <ul class="ticks fade-up" style="--d:.85s">
+        <li><svg class="ico"><use href="#i-doc"/></svg>Orçamento grátis</li>
+        <li><svg class="ico"><use href="#i-bolt"/></svg>Atendimento rápido</li>
+        <li><svg class="ico"><use href="#i-shield"/></svg>Garantia no serviço</li>
+      </ul>
+    </div>
+
+    <div class="scene scene--photo" id="scene">
+      <img class="scene__img" src="assets/fotos/tecnico-higienizacao-480.webp" srcset="assets/fotos/tecnico-higienizacao-480.webp 480w, assets/fotos/tecnico-higienizacao-960.webp 960w" sizes="(min-width:980px) 560px, 92vw" width="960" height="1200" alt="Técnico da Camuzi Refrigeração higienizando um ar-condicionado split" fetchpriority="high">
+      <div class="chip chip--temp">
+        <div class="temp-mode"><span>Resfriando</span><div class="t"><span id="tempNum">23</span><sup>°C</sup></div><div class="temp-bar"><i id="tempBar"></i></div></div>
+        <div class="chip__ic" aria-hidden="true"><svg class="ico"><use href="#i-snow"/></svg></div>
+      </div>
+      <div class="chip chip--check">
+        <div class="chip__ic" aria-hidden="true"><svg class="ico"><use href="#i-shield"/></svg></div>
+        <div><b>Serviço garantido</b><small>Por escrito, com nota fiscal</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Faixa de diferenciais -->
+<div class="ticker" aria-label="Diferenciais da Camuzi">
+  <div class="ticker__track">
+    <ul><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Instalação de ar-condicionado</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Atendimento rápido</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Higienização completa</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Garantia no serviço</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Manutenção preventiva e corretiva</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Orçamento sem compromisso</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Atendimento personalizado</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Conserto e recarga de gás</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Técnicos qualificados</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Preços acessíveis</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Todas as marcas</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Residencial e comercial</li></ul>
+    <ul aria-hidden="true"><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Instalação de ar-condicionado</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Atendimento rápido</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Higienização completa</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Garantia no serviço</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Manutenção preventiva e corretiva</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Orçamento sem compromisso</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Atendimento personalizado</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Conserto e recarga de gás</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Técnicos qualificados</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Preços acessíveis</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Todas as marcas</li><li><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg>Residencial e comercial</li></ul>
+  </div>
+</div>
+
+<!-- 2 · BRANCO — PROBLEMA → SOLUÇÃO -->
+<section class="band" id="problemas" aria-labelledby="t-prob">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Diagnóstico rápido</span>
+      <h2 id="t-prob">O que está acontecendo com o <span class="grad">seu ar?</span></h2>
+      <p>Escolha o problema e veja como resolvemos.</p>
+    </div>
+    <div class="diag">
+      <div class="symptoms rv" role="tablist" aria-label="Problemas" id="symList"></div>
+      <div class="diag__panel rv" style="--d:.1s" role="tabpanel" id="symPanel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · AZUL — SERVIÇOS -->
+<section class="band blue" id="servicos" aria-labelledby="t-serv">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Serviços</span>
+      <h2 id="t-serv">A solução certa para <span class="grad">cada situação</span></h2>
+      <p>Do aparelho novo ao que parou de funcionar.</p>
+    </div>
+    <div class="cards" data-stagger>
+      <a class="card spot rv" data-wa="servico_instalacao" data-msg="Olá! Quero um orçamento de instalação de ar-condicionado." href="#">
+        <img class="card__img" src="assets/fotos/split-gree-quarto-h480.webp" srcset="assets/fotos/split-gree-quarto-h480.webp 480w, assets/fotos/split-gree-quarto-h800.webp 800w" sizes="(min-width:1080px) 280px, (min-width:640px) 45vw, 92vw" width="480" height="300" alt="Ar-condicionado split instalado pela Camuzi em um quarto" loading="lazy">
+        <div class="card__body">
+          <span class="card__ic"><svg class="ico"><use href="#i-install"/></svg></span>
+          <h3>Instalação</h3>
+          <p>Seu aparelho novo funcionando do jeito certo, com acabamento limpo.</p>
+          <span class="link-arrow">Pedir orçamento <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card spot rv" data-wa="servico_higienizacao" data-msg="Olá! Quero agendar uma higienização do meu ar-condicionado." href="#">
+        <img class="card__img" src="assets/fotos/tecnico-higienizacao-h480.webp" srcset="assets/fotos/tecnico-higienizacao-h480.webp 480w, assets/fotos/tecnico-higienizacao-h800.webp 800w" sizes="(min-width:1080px) 280px, (min-width:640px) 45vw, 92vw" width="480" height="300" alt="Técnico da Camuzi higienizando um ar-condicionado split" loading="lazy">
+        <div class="card__body">
+          <span class="card__ic"><svg class="ico"><use href="#i-spray"/></svg></span>
+          <h3>Higienização</h3>
+          <p>Ar limpo, sem mau cheiro e o aparelho gelando melhor.</p>
+          <span class="link-arrow">Pedir orçamento <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card spot rv" data-wa="servico_manutencao" data-msg="Olá! Quero um orçamento de manutenção do meu ar-condicionado." href="#">
+        <img class="card__img" src="assets/fotos/tecnico-instalacao-h480.webp" srcset="assets/fotos/tecnico-instalacao-h480.webp 480w, assets/fotos/tecnico-instalacao-h800.webp 800w" sizes="(min-width:1080px) 280px, (min-width:640px) 45vw, 92vw" width="480" height="300" alt="Técnico da Camuzi fazendo manutenção em um ar-condicionado" loading="lazy">
+        <div class="card__body">
+          <span class="card__ic"><svg class="ico"><use href="#i-cal"/></svg></span>
+          <h3>Manutenção</h3>
+          <p>Evite quebras inesperadas e economize energia.</p>
+          <span class="link-arrow">Pedir orçamento <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card spot rv" data-wa="servico_conserto" data-msg="Olá! Meu ar-condicionado está com defeito e preciso de conserto." href="#">
+        <img class="card__img" src="assets/fotos/condensadora-airstage-ligacoes-h480.webp" srcset="assets/fotos/condensadora-airstage-ligacoes-h480.webp 480w, assets/fotos/condensadora-airstage-ligacoes-h800.webp 800w" sizes="(min-width:1080px) 280px, (min-width:640px) 45vw, 92vw" width="480" height="300" alt="Válvulas de serviço e ligações de gás de uma condensadora" loading="lazy">
+        <div class="card__body">
+          <span class="card__ic"><svg class="ico"><use href="#i-wrench"/></svg></span>
+          <h3>Conserto e gás</h3>
+          <p>Encontramos o defeito e resolvemos, com preço combinado antes.</p>
+          <span class="link-arrow">Pedir orçamento <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+    </div>
+    <div class="biz rv">
+      <span class="biz__ic"><svg class="ico"><use href="#i-building"/></svg></span>
+      <div><b>Tem uma empresa, loja ou clínica?</b><span>Manutenção programada para manter os aparelhos do seu negócio sempre funcionando.</span></div>
+      <a class="btn btn--wa btn--sm" data-wa="empresas" data-msg="Olá! Tenho uma empresa e gostaria de um orçamento de manutenção dos aparelhos." href="#"><svg><use href="#i-wa"/></svg>Falar sobre minha empresa</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · BRANCO — POR QUE A CAMUZI -->
+<section class="band" id="por-que" aria-labelledby="t-why">
+  <div class="wrap">
+    <div class="head head--center rv">
+      <span class="eyebrow">Por que a Camuzi</span>
+      <h2 id="t-why">Três compromissos em <span class="grad">todo atendimento</span></h2>
+      <p>É por isso que nossos clientes chamam de novo e indicam.</p>
+    </div>
+    <div class="pillars" data-stagger>
+      <article class="pillar rv">
+        <span class="pillar__ic"><svg class="ico"><use href="#i-award"/></svg></span>
+        <span class="pillar__k">Qualidade</span>
+        <h3>Feito certo na primeira vez</h3>
+        <ul>
+          <li><svg class="ico"><use href="#i-check"/></svg>Técnicos treinados e experientes</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Teste completo antes de entregar</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Materiais de primeira linha</li>
+        </ul>
+      </article>
+      <article class="pillar rv">
+        <span class="pillar__ic"><svg class="ico"><use href="#i-handshake"/></svg></span>
+        <span class="pillar__k">Confiabilidade</span>
+        <h3>Sem surpresas no preço</h3>
+        <ul>
+          <li><svg class="ico"><use href="#i-check"/></svg>Orçamento claro antes de começar</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Pontualidade no horário marcado</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Garantia por escrito e nota fiscal</li>
+        </ul>
+      </article>
+      <article class="pillar rv">
+        <span class="pillar__ic"><svg class="ico"><use href="#i-shield"/></svg></span>
+        <span class="pillar__k">Segurança</span>
+        <h3>Sua casa bem cuidada</h3>
+        <ul>
+          <li><svg class="ico"><use href="#i-check"/></svg>Equipe identificada e uniformizada</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Parte elétrica dentro das normas</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Móveis protegidos e local limpo</li>
+        </ul>
+      </article>
+    </div>
+    <div class="center-cta rv"><a class="btn btn--wa" data-wa="por_que" data-msg="Olá! Quero um orçamento com garantia para o meu ar-condicionado." href="#"><svg><use href="#i-wa"/></svg>Quero um serviço com garantia</a></div>
+  </div>
+</section>
+
+<!-- 5 · AZUL — COMO FUNCIONA -->
+<section class="band blue alt" id="como-funciona" aria-labelledby="t-como">
+  <div class="wrap">
+    <div class="head head--center rv">
+      <span class="eyebrow">Como funciona</span>
+      <h2 id="t-como">Resolver é <span class="grad">simples</span></h2>
+    </div>
+    <ol class="steps" id="steps" data-stagger>
+      <li class="step rv"><div class="step__top"><div class="step__ic"><svg class="ico"><use href="#i-chat"/></svg></div><span class="step__n">01</span></div><h3>Chame no WhatsApp</h3><p>Conte o problema e mande uma foto.</p></li>
+      <li class="step rv"><div class="step__top"><div class="step__ic"><svg class="ico"><use href="#i-doc"/></svg></div><span class="step__n">02</span></div><h3>Receba o orçamento</h3><p>Valor claro, sem compromisso.</p></li>
+      <li class="step rv"><div class="step__top"><div class="step__ic"><svg class="ico"><use href="#i-clock"/></svg></div><span class="step__n">03</span></div><h3>Agende o horário</h3><p>No dia e hora que for melhor para você.</p></li>
+      <li class="step rv"><div class="step__top"><div class="step__ic"><svg class="ico"><use href="#i-gauge"/></svg></div><span class="step__n">04</span></div><h3>Problema resolvido</h3><p>Testado na sua frente, com garantia.</p></li>
+    </ol>
+    <div class="center-cta rv">
+      <a class="btn btn--wa" data-wa="como_funciona" data-msg="Olá! Quero iniciar um atendimento. Meu problema é: " href="#"><svg><use href="#i-wa"/></svg>Iniciar atendimento no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · BRANCO — HIGIENIZAÇÃO -->
+<section class="band" aria-labelledby="t-saude">
+  <div class="wrap health">
+    <div>
+      <div class="head rv" style="margin-bottom:0">
+        <span class="eyebrow">Higienização</span>
+        <h2 id="t-saude">Por fora parece limpo. <span class="grad">Por dentro, não.</span></h2>
+        <p>Fungos e poeira se acumulam no aparelho e vão para o ar que sua família respira.</p>
+      </div>
+      <ul class="benefits" data-stagger>
+        <li class="rv"><span class="ic"><svg class="ico"><use href="#i-lungs"/></svg></span><span>Menos alergias e rinite<small>Ar mais saudável em casa</small></span></li>
+        <li class="rv"><span class="ic"><svg class="ico"><use href="#i-bolt"/></svg></span><span>Conta de luz menor<small>O aparelho gela com menos esforço</small></span></li>
+        <li class="rv"><span class="ic"><svg class="ico"><use href="#i-wind"/></svg></span><span>Fim do cheiro de mofo<small>Eliminamos a causa, não só o odor</small></span></li>
+      </ul>
+      <a class="btn btn--wa rv" data-wa="higienizacao" data-msg="Olá! Quero agendar uma higienização do meu ar-condicionado." href="#"><svg><use href="#i-wa"/></svg>Agendar higienização agora</a>
+    </div>
+    <div class="rv rv--zoom">
+      <div class="ba" id="ba">
+        <div class="ba__layer"><svg viewBox="30 44 540 446" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="ba-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FB"/><stop offset="1" stop-color="#D9E4F0"/></linearGradient>
+    <linearGradient id="ba-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E6EDF5"/></linearGradient>
+    <linearGradient id="ba-slot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22344A"/><stop offset="1" stop-color="#0B1522"/></linearGradient>
+    <linearGradient id="ba-shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ba-air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22B8F0" stop-opacity=".9"/><stop offset="1" stop-color="#22B8F0" stop-opacity="0"/></linearGradient>
+    <pattern id="ba-fins" width="6" height="20" patternUnits="userSpaceOnUse"><rect width="6" height="20" fill="#D5DFEA"/><rect width="2" height="20" fill="#93A8BF"/><rect x="2" width="1" height="20" fill="#F6F9FC"/></pattern>
+    <pattern id="ba-mesh" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 .5H7M.5 0V7" stroke="#7F94AC" stroke-width=".9" fill="none"/></pattern>
+    <filter id="ba-grime" x="66" y="132" width="468" height="236" filterUnits="userSpaceOnUse">
+      <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="4" seed="11"/>
+      <feColorMatrix values="0 0 0 0 .34  0 0 0 0 .27  0 0 0 0 .18  0 0 0 -2.1 1.55"/>
+    </filter>
+    <filter id="ba-dust" x="74" y="140" width="452" height="90" filterUnits="userSpaceOnUse">
+      <feTurbulence type="fractalNoise" baseFrequency=".09" numOctaves="3" seed="3"/>
+      <feColorMatrix values="0 0 0 0 .55  0 0 0 0 .5  0 0 0 0 .42  0 0 0 -1.4 1.25"/>
+    </filter>
+  </defs>
+  <rect width="600" height="495" fill="url(#ba-wall)"/>
+  <ellipse cx="300" cy="402" rx="250" ry="14" fill="#0A2A5C" opacity=".08"/>
+  <!-- tampa frontal aberta -->
+  <rect x="58" y="58" width="484" height="22" rx="11" fill="url(#ba-body)" stroke="#CBD7E4" transform="rotate(-6 58 110)"/>
+  <!-- corpo da evaporadora -->
+  <rect x="40" y="110" width="520" height="272" rx="34" fill="url(#ba-body)" stroke="#CBD7E4" stroke-width="1.5"/>
+  <rect x="66" y="132" width="468" height="176" rx="10" fill="#C3D0DE"/>
+  <!-- serpentina (aletas) -->
+  <rect x="74" y="140" width="452" height="160" rx="6" fill="url(#ba-fins)"/>
+  <!-- dois filtros de tela -->
+  <g stroke="#7389A3" stroke-width="3">
+    <rect x="76" y="142" width="218" height="88" rx="4" fill="#E9EFF6"/>
+    <rect x="306" y="142" width="218" height="88" rx="4" fill="#E9EFF6"/>
+  </g>
+  <rect x="78" y="144" width="214" height="84" fill="url(#ba-mesh)"/>
+  <rect x="308" y="144" width="214" height="84" fill="url(#ba-mesh)"/>
+  <rect x="180" y="226" width="22" height="7" rx="3" fill="#7389A3"/><rect x="410" y="226" width="22" height="7" rx="3" fill="#7389A3"/>
+  <!-- saída de ar com turbina -->
+  <rect x="70" y="318" width="460" height="40" rx="14" fill="url(#ba-slot)"/>
+  <g stroke="#3A516B" stroke-width="2"><line x1="84" y1="322" x2="80" y2="354"/><line x1="93" y1="322" x2="89" y2="354"/><line x1="102" y1="322" x2="98" y2="354"/><line x1="111" y1="322" x2="107" y2="354"/><line x1="120" y1="322" x2="116" y2="354"/><line x1="129" y1="322" x2="125" y2="354"/><line x1="138" y1="322" x2="134" y2="354"/><line x1="147" y1="322" x2="143" y2="354"/><line x1="156" y1="322" x2="152" y2="354"/><line x1="165" y1="322" x2="161" y2="354"/><line x1="174" y1="322" x2="170" y2="354"/><line x1="183" y1="322" x2="179" y2="354"/><line x1="192" y1="322" x2="188" y2="354"/><line x1="201" y1="322" x2="197" y2="354"/><line x1="210" y1="322" x2="206" y2="354"/><line x1="219" y1="322" x2="215" y2="354"/><line x1="228" y1="322" x2="224" y2="354"/><line x1="237" y1="322" x2="233" y2="354"/><line x1="246" y1="322" x2="242" y2="354"/><line x1="255" y1="322" x2="251" y2="354"/><line x1="264" y1="322" x2="260" y2="354"/><line x1="273" y1="322" x2="269" y2="354"/><line x1="282" y1="322" x2="278" y2="354"/><line x1="291" y1="322" x2="287" y2="354"/><line x1="300" y1="322" x2="296" y2="354"/><line x1="309" y1="322" x2="305" y2="354"/><line x1="318" y1="322" x2="314" y2="354"/><line x1="327" y1="322" x2="323" y2="354"/><line x1="336" y1="322" x2="332" y2="354"/><line x1="345" y1="322" x2="341" y2="354"/><line x1="354" y1="322" x2="350" y2="354"/><line x1="363" y1="322" x2="359" y2="354"/><line x1="372" y1="322" x2="368" y2="354"/><line x1="381" y1="322" x2="377" y2="354"/><line x1="390" y1="322" x2="386" y2="354"/><line x1="399" y1="322" x2="395" y2="354"/><line x1="408" y1="322" x2="404" y2="354"/><line x1="417" y1="322" x2="413" y2="354"/><line x1="426" y1="322" x2="422" y2="354"/><line x1="435" y1="322" x2="431" y2="354"/><line x1="444" y1="322" x2="440" y2="354"/><line x1="453" y1="322" x2="449" y2="354"/><line x1="462" y1="322" x2="458" y2="354"/><line x1="471" y1="322" x2="467" y2="354"/><line x1="480" y1="322" x2="476" y2="354"/><line x1="489" y1="322" x2="485" y2="354"/><line x1="498" y1="322" x2="494" y2="354"/><line x1="507" y1="322" x2="503" y2="354"/><line x1="516" y1="322" x2="512" y2="354"/></g>
+  <rect x="80" y="352" width="440" height="13" rx="6.5" fill="#E3EAF2" stroke="#C3D0DE"/>
+  <circle cx="528" cy="124" r="3.5" fill="#22B8F0"/>
+  <rect class="ba-shine" x="74" y="140" width="160" height="160" fill="url(#ba-shine)" opacity=".7"/>
+  <path class="ba-spark" style="animation-delay:0s" d="M170 174.3 L172.86 183.14 L181.7 186 L172.86 188.86 L170 197.7 L167.14 188.86 L158.3 186 L167.14 183.14Z" fill="#FFFFFF"/><path class="ba-spark" style="animation-delay:0.6s" d="M452 159 L454.2 165.8 L461 168 L454.2 170.2 L452 177 L449.8 170.2 L443 168 L449.8 165.8Z" fill="#FFFFFF"/><path class="ba-spark" style="animation-delay:1.1s" d="M360 263.9 L361.98 270.02 L368.1 272 L361.98 273.98 L360 280.1 L358.02 273.98 L351.9 272 L358.02 270.02Z" fill="#FFFFFF"/><path class="ba-spark" style="animation-delay:1.6s" d="M250 283.7 L251.54 288.46 L256.3 290 L251.54 291.54 L250 296.3 L248.46 291.54 L243.7 290 L248.46 288.46Z" fill="#FFFFFF"/><path class="ba-spark" style="animation-delay:0.3s" d="M520 242.8 L521.76 248.24 L527.2 250 L521.76 251.76 L520 257.2 L518.24 251.76 L512.8 250 L518.24 248.24Z" fill="#FFFFFF"/>
+  <g class="ba-air" fill="none" stroke="url(#ba-air)" stroke-width="4" stroke-linecap="round">
+    <path d="M150 368 c-8 30 14 54 6 96"/><path d="M230 370 c-6 34 12 56 4 104"/><path d="M310 370 c0 34 10 60 0 110"/><path d="M390 370 c6 34 -12 56 -4 104"/><path d="M470 368 c8 30 -14 54 -6 96"/>
+  </g>
+</svg></div>
+        <div class="ba__layer ba__before"><svg viewBox="30 44 540 446" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <rect width="600" height="495" fill="url(#ba-wall)"/>
+  <ellipse cx="300" cy="402" rx="250" ry="14" fill="#0A2A5C" opacity=".08"/>
+  <!-- tampa frontal aberta -->
+  <rect x="58" y="58" width="484" height="22" rx="11" fill="url(#ba-body)" stroke="#CBD7E4" transform="rotate(-6 58 110)"/>
+  <!-- corpo da evaporadora -->
+  <rect x="40" y="110" width="520" height="272" rx="34" fill="url(#ba-body)" stroke="#CBD7E4" stroke-width="1.5"/>
+  <rect x="66" y="132" width="468" height="176" rx="10" fill="#C3D0DE"/>
+  <!-- serpentina (aletas) -->
+  <rect x="74" y="140" width="452" height="160" rx="6" fill="url(#ba-fins)"/>
+  <!-- dois filtros de tela -->
+  <g stroke="#7389A3" stroke-width="3">
+    <rect x="76" y="142" width="218" height="88" rx="4" fill="#E9EFF6"/>
+    <rect x="306" y="142" width="218" height="88" rx="4" fill="#E9EFF6"/>
+  </g>
+  <rect x="78" y="144" width="214" height="84" fill="url(#ba-mesh)"/>
+  <rect x="308" y="144" width="214" height="84" fill="url(#ba-mesh)"/>
+  <rect x="180" y="226" width="22" height="7" rx="3" fill="#7389A3"/><rect x="410" y="226" width="22" height="7" rx="3" fill="#7389A3"/>
+  <!-- saída de ar com turbina -->
+  <rect x="70" y="318" width="460" height="40" rx="14" fill="url(#ba-slot)"/>
+  <g stroke="#3A516B" stroke-width="2"><line x1="84" y1="322" x2="80" y2="354"/><line x1="93" y1="322" x2="89" y2="354"/><line x1="102" y1="322" x2="98" y2="354"/><line x1="111" y1="322" x2="107" y2="354"/><line x1="120" y1="322" x2="116" y2="354"/><line x1="129" y1="322" x2="125" y2="354"/><line x1="138" y1="322" x2="134" y2="354"/><line x1="147" y1="322" x2="143" y2="354"/><line x1="156" y1="322" x2="152" y2="354"/><line x1="165" y1="322" x2="161" y2="354"/><line x1="174" y1="322" x2="170" y2="354"/><line x1="183" y1="322" x2="179" y2="354"/><line x1="192" y1="322" x2="188" y2="354"/><line x1="201" y1="322" x2="197" y2="354"/><line x1="210" y1="322" x2="206" y2="354"/><line x1="219" y1="322" x2="215" y2="354"/><line x1="228" y1="322" x2="224" y2="354"/><line x1="237" y1="322" x2="233" y2="354"/><line x1="246" y1="322" x2="242" y2="354"/><line x1="255" y1="322" x2="251" y2="354"/><line x1="264" y1="322" x2="260" y2="354"/><line x1="273" y1="322" x2="269" y2="354"/><line x1="282" y1="322" x2="278" y2="354"/><line x1="291" y1="322" x2="287" y2="354"/><line x1="300" y1="322" x2="296" y2="354"/><line x1="309" y1="322" x2="305" y2="354"/><line x1="318" y1="322" x2="314" y2="354"/><line x1="327" y1="322" x2="323" y2="354"/><line x1="336" y1="322" x2="332" y2="354"/><line x1="345" y1="322" x2="341" y2="354"/><line x1="354" y1="322" x2="350" y2="354"/><line x1="363" y1="322" x2="359" y2="354"/><line x1="372" y1="322" x2="368" y2="354"/><line x1="381" y1="322" x2="377" y2="354"/><line x1="390" y1="322" x2="386" y2="354"/><line x1="399" y1="322" x2="395" y2="354"/><line x1="408" y1="322" x2="404" y2="354"/><line x1="417" y1="322" x2="413" y2="354"/><line x1="426" y1="322" x2="422" y2="354"/><line x1="435" y1="322" x2="431" y2="354"/><line x1="444" y1="322" x2="440" y2="354"/><line x1="453" y1="322" x2="449" y2="354"/><line x1="462" y1="322" x2="458" y2="354"/><line x1="471" y1="322" x2="467" y2="354"/><line x1="480" y1="322" x2="476" y2="354"/><line x1="489" y1="322" x2="485" y2="354"/><line x1="498" y1="322" x2="494" y2="354"/><line x1="507" y1="322" x2="503" y2="354"/><line x1="516" y1="322" x2="512" y2="354"/></g>
+  <rect x="80" y="352" width="440" height="13" rx="6.5" fill="#E3EAF2" stroke="#C3D0DE"/>
+  <circle cx="528" cy="124" r="3.5" fill="#22B8F0"/>
+  <!-- poeira acumulada nos filtros -->
+  <rect x="74" y="140" width="452" height="90" fill="#000" filter="url(#ba-dust)"/>
+  <rect x="76" y="142" width="448" height="88" fill="#9C8C70" opacity=".35"/>
+  <!-- encardido geral -->
+  <rect x="66" y="132" width="468" height="236" fill="#000" filter="url(#ba-grime)" opacity=".85"/>
+  <circle cx="78" cy="285.8" r="1.6" fill="#4A3F2C" opacity="0.8"/>
+  <circle cx="314.5" cy="194.7" r="2.9" fill="#2F3826" opacity="0.7"/>
+  <circle cx="381.9" cy="241.9" r="3.1" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="392.3" cy="251.5" r="1" fill="#2F3826" opacity="0.7"/>
+  <circle cx="487.5" cy="268.3" r="1.1" fill="#2F3826" opacity="0.9"/>
+  <circle cx="383.7" cy="243.1" r="2.4" fill="#2F3826" opacity="0.9"/>
+  <circle cx="243.3" cy="195.6" r="3.1" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="210.2" cy="210" r="1.6" fill="#2F3826" opacity="0.7"/>
+  <circle cx="401.8" cy="279.2" r="1" fill="#4A3F2C" opacity="0.7"/>
+  <circle cx="303.9" cy="208.9" r="1.3" fill="#2F3826" opacity="0.5"/>
+  <circle cx="240.3" cy="197" r="2.7" fill="#2F3826" opacity="0.7"/>
+  <circle cx="151.5" cy="206.5" r="1.6" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="225.7" cy="225.9" r="2.5" fill="#4A3F2C" opacity="0.9"/>
+  <circle cx="281.3" cy="276.9" r="2.6" fill="#2F3826" opacity="0.7"/>
+  <circle cx="302.2" cy="250.1" r="3.4" fill="#4A3F2C" opacity="0.8"/>
+  <circle cx="189.5" cy="234.4" r="1.8" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="430.9" cy="279.1" r="1.1" fill="#2F3826" opacity="0.5"/>
+  <circle cx="258.6" cy="167.7" r="1" fill="#2F3826" opacity="0.5"/>
+  <circle cx="358.8" cy="166.2" r="2.1" fill="#2F3826" opacity="0.5"/>
+  <circle cx="487.3" cy="280.2" r="3.3" fill="#2F3826" opacity="0.9"/>
+  <circle cx="415.9" cy="186.4" r="0.8" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="78.7" cy="239" r="1.4" fill="#2F3826" opacity="0.7"/>
+  <circle cx="383.3" cy="180.7" r="3.3" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="475.1" cy="162.2" r="2.2" fill="#4A3F2C" opacity="0.9"/>
+  <circle cx="360.8" cy="286" r="0.9" fill="#2F3826" opacity="0.5"/>
+  <circle cx="508.1" cy="231.1" r="2.7" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="170.8" cy="230.9" r="0.9" fill="#2F3826" opacity="0.8"/>
+  <circle cx="395.1" cy="220.7" r="0.9" fill="#4A3F2C" opacity="0.9"/>
+  <circle cx="136.1" cy="249.9" r="3.3" fill="#4A3F2C" opacity="0.8"/>
+  <circle cx="460.4" cy="296.9" r="3.5" fill="#2F3826" opacity="0.6"/>
+  <circle cx="188.2" cy="256.1" r="3.3" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="257.8" cy="280.6" r="2.4" fill="#4A3F2C" opacity="0.7"/>
+  <circle cx="404.3" cy="195.6" r="2.8" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="216.4" cy="295.8" r="3.6" fill="#2F3826" opacity="0.8"/>
+  <circle cx="485.7" cy="174.7" r="2.6" fill="#4A3F2C" opacity="0.7"/>
+  <circle cx="325.5" cy="262.8" r="3.4" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="276.3" cy="169.6" r="2.7" fill="#2F3826" opacity="0.7"/>
+  <circle cx="303" cy="260.6" r="1.8" fill="#2F3826" opacity="0.5"/>
+  <circle cx="210.7" cy="227.4" r="1.4" fill="#2F3826" opacity="0.6"/>
+  <circle cx="182.7" cy="245.6" r="2" fill="#4A3F2C" opacity="0.8"/>
+  <circle cx="443.4" cy="285" r="3.3" fill="#2F3826" opacity="0.9"/>
+  <circle cx="89.2" cy="261.3" r="2.5" fill="#2F3826" opacity="0.9"/>
+  <circle cx="94.4" cy="164.9" r="1" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="82.2" cy="237.2" r="3.4" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="167.8" cy="247.9" r="1.5" fill="#4A3F2C" opacity="0.9"/>
+  <circle cx="265.6" cy="247.8" r="3" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="105.2" cy="179.4" r="3.1" fill="#2F3826" opacity="0.5"/>
+  <circle cx="488.9" cy="222.3" r="1.1" fill="#4A3F2C" opacity="0.7"/>
+  <circle cx="153.7" cy="156" r="1.6" fill="#2F3826" opacity="0.7"/>
+  <circle cx="291.4" cy="297" r="1" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="79.8" cy="144.9" r="2" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="488.3" cy="263.7" r="2.9" fill="#4A3F2C" opacity="0.8"/>
+  <circle cx="505.3" cy="267.3" r="2.7" fill="#2F3826" opacity="0.6"/>
+  <circle cx="258.7" cy="220.5" r="2.2" fill="#2F3826" opacity="0.8"/>
+  <circle cx="373.3" cy="241.5" r="2.8" fill="#2F3826" opacity="0.8"/>
+  <circle cx="516.8" cy="211.5" r="2.2" fill="#2F3826" opacity="0.9"/>
+  <circle cx="236.9" cy="156.2" r="1.8" fill="#2F3826" opacity="0.8"/>
+  <circle cx="405.7" cy="291.1" r="3" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="432.5" cy="160" r="3.4" fill="#2F3826" opacity="0.7"/>
+  <circle cx="393.9" cy="226.5" r="2" fill="#2F3826" opacity="0.7"/>
+  <circle cx="465.9" cy="185.7" r="2.7" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="161.3" cy="234.7" r="1.4" fill="#2F3826" opacity="0.8"/>
+  <circle cx="228.1" cy="249.2" r="3.3" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="486.9" cy="144.2" r="1.2" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="385.6" cy="282.3" r="1.3" fill="#4A3F2C" opacity="0.9"/>
+  <circle cx="388.7" cy="171" r="1.1" fill="#2F3826" opacity="0.5"/>
+  <circle cx="438.5" cy="235.1" r="2.9" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="395.4" cy="291.1" r="2.3" fill="#2F3826" opacity="0.8"/>
+  <circle cx="389.9" cy="257" r="2.5" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="350.3" cy="178.6" r="2.4" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="353.3" cy="240.9" r="3.1" fill="#4A3F2C" opacity="0.9"/>
+  <circle cx="101.4" cy="250.4" r="1.9" fill="#2F3826" opacity="0.7"/>
+  <circle cx="435.3" cy="160.1" r="3.4" fill="#2F3826" opacity="0.8"/>
+  <circle cx="266.7" cy="277.4" r="3" fill="#2F3826" opacity="0.9"/>
+  <circle cx="459" cy="173.3" r="2.8" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="499.2" cy="291" r="1" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="495.7" cy="277.9" r="3.5" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="91.2" cy="216.4" r="2.4" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="291.5" cy="178.9" r="1" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="357.4" cy="216.1" r="3.1" fill="#2F3826" opacity="0.7"/>
+  <circle cx="389" cy="203.8" r="2.5" fill="#2F3826" opacity="0.8"/>
+  <circle cx="505.1" cy="253.6" r="2.5" fill="#2F3826" opacity="0.5"/>
+  <circle cx="107.1" cy="255.9" r="2.6" fill="#4A3F2C" opacity="0.7"/>
+  <circle cx="249.8" cy="220.1" r="1.1" fill="#4A3F2C" opacity="0.5"/>
+  <circle cx="235.3" cy="197.1" r="1.4" fill="#2F3826" opacity="0.5"/>
+  <circle cx="101.2" cy="144.2" r="3.1" fill="#2F3826" opacity="0.5"/>
+  <circle cx="419.1" cy="193" r="1.9" fill="#2F3826" opacity="0.8"/>
+  <circle cx="83.2" cy="297" r="1.4" fill="#2F3826" opacity="0.6"/>
+  <circle cx="92.7" cy="170.6" r="2.9" fill="#2F3826" opacity="0.6"/>
+  <circle cx="458.8" cy="269.3" r="1.7" fill="#4A3F2C" opacity="0.6"/>
+  <circle cx="189.5" cy="351.7" r="4.9" fill="#050A05" opacity="0.8"/>
+  <circle cx="299.3" cy="351.2" r="4.6" fill="#050A05" opacity="0.9"/>
+  <circle cx="416.8" cy="354.9" r="4.1" fill="#050A05" opacity="0.7"/>
+  <circle cx="395" cy="331.7" r="4.8" fill="#050A05" opacity="0.6"/>
+  <circle cx="454.7" cy="343.7" r="4.6" fill="#050A05" opacity="0.7"/>
+  <circle cx="432.5" cy="349.8" r="1.4" fill="#050A05" opacity="0.6"/>
+  <circle cx="163.6" cy="320.8" r="3.6" fill="#050A05" opacity="0.9"/>
+  <circle cx="357" cy="350.7" r="4.8" fill="#050A05" opacity="0.9"/>
+  <circle cx="168.9" cy="340.2" r="3.1" fill="#050A05" opacity="0.7"/>
+  <circle cx="317.1" cy="347" r="3.4" fill="#050A05" opacity="0.7"/>
+  <circle cx="299.9" cy="328.8" r="4.2" fill="#050A05" opacity="0.9"/>
+  <circle cx="209.2" cy="329.2" r="3.8" fill="#050A05" opacity="0.8"/>
+  <circle cx="496.3" cy="340.5" r="2.5" fill="#050A05" opacity="0.8"/>
+  <circle cx="333" cy="342.9" r="3.6" fill="#050A05" opacity="0.6"/>
+  <circle cx="169.5" cy="324.3" r="2.6" fill="#050A05" opacity="0.8"/>
+  <circle cx="467.8" cy="343.2" r="2.8" fill="#050A05" opacity="0.7"/>
+  <circle cx="254.4" cy="324.5" r="1.9" fill="#050A05" opacity="0.6"/>
+  <circle cx="289.3" cy="333.5" r="1.6" fill="#050A05" opacity="0.8"/>
+  <circle cx="256.8" cy="336.5" r="1.6" fill="#050A05" opacity="0.9"/>
+  <circle cx="198.8" cy="330.9" r="1.7" fill="#050A05" opacity="0.6"/>
+  <circle cx="272" cy="327.2" r="3.8" fill="#050A05" opacity="0.8"/>
+  <circle cx="413.8" cy="348.2" r="3.3" fill="#050A05" opacity="0.9"/>
+  <circle cx="382.6" cy="324.3" r="3.8" fill="#050A05" opacity="0.8"/>
+  <circle cx="475.2" cy="340.9" r="5.3" fill="#050A05" opacity="0.7"/>
+  <circle cx="521.7" cy="321.3" r="1.6" fill="#050A05" opacity="0.7"/>
+  <circle cx="459.6" cy="352.3" r="4.2" fill="#050A05" opacity="0.8"/>
+  <circle cx="183.2" cy="339.2" r="4.5" fill="#050A05" opacity="0.6"/>
+  <circle cx="439.7" cy="344.6" r="3.6" fill="#050A05" opacity="0.9"/>
+  <circle cx="213.4" cy="321" r="4.3" fill="#050A05" opacity="0.8"/>
+  <circle cx="351.1" cy="344.9" r="4.1" fill="#050A05" opacity="0.6"/>
+  <circle cx="392.4" cy="355.3" r="4.8" fill="#050A05" opacity="0.8"/>
+  <circle cx="330" cy="327.9" r="3.8" fill="#050A05" opacity="0.8"/>
+  <circle cx="272.9" cy="320.8" r="4.8" fill="#050A05" opacity="0.8"/>
+  <circle cx="513.4" cy="331.1" r="4.3" fill="#050A05" opacity="0.9"/>
+  <circle cx="331.8" cy="342.4" r="2" fill="#050A05" opacity="0.6"/>
+  <circle cx="276.1" cy="335.6" r="1.4" fill="#050A05" opacity="0.8"/>
+  <circle cx="425.8" cy="350.3" r="1.6" fill="#050A05" opacity="0.7"/>
+  <circle cx="351.3" cy="335.2" r="2.5" fill="#050A05" opacity="0.7"/>
+  <circle cx="108.8" cy="333.3" r="3" fill="#050A05" opacity="0.8"/>
+  <circle cx="301.8" cy="339.6" r="3" fill="#050A05" opacity="0.8"/>
+  <circle cx="478.2" cy="354" r="3.1" fill="#050A05" opacity="0.9"/>
+  <circle cx="515.5" cy="343.3" r="2.9" fill="#050A05" opacity="0.8"/>
+  <circle cx="99.6" cy="330.3" r="1.3" fill="#050A05" opacity="0.9"/>
+  <circle cx="126" cy="328.6" r="4" fill="#050A05" opacity="0.6"/>
+  <circle cx="198" cy="325.1" r="4.4" fill="#050A05" opacity="0.7"/>
+  <circle cx="355.8" cy="347.2" r="1.3" fill="#050A05" opacity="0.9"/>
+  <!-- escorrido e amarelado no corpo -->
+  <path d="M120 366 q4 10 0 16 M220 366 q3 8 0 14 M400 366 q4 10 1 16" stroke="#7A6A4E" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/>
+  <rect x="40" y="110" width="520" height="272" rx="34" fill="#B9A57E" opacity=".16"/>
+</svg></div>
+        <span class="ba__tag ba__tag--l">Antes</span>
+        <span class="ba__tag ba__tag--r">Depois</span>
+        <input type="range" id="baRange" min="0" max="100" value="50" aria-label="Comparar ar-condicionado antes e depois da higienização">
+        <div class="ba__line"><div class="ba__knob"><svg class="ico"><use href="#i-swap"/></svg></div></div>
+        <span class="ba__hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V10m0-1.5a1.5 1.5 0 0 1 3 0V11m0-1a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1-6 6h-1.2a6 6 0 0 1-4.9-2.6L4.3 14a1.6 1.6 0 0 1 2.5-2L9 14.3"/></svg>Arraste para comparar</span>
+      </div>
+      <p class="ba__cap">O mesmo aparelho antes e depois da higienização</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · AZUL — TRABALHOS (fotos reais) -->
+<section class="band blue" id="trabalhos" aria-labelledby="t-trab">
+  <div class="wrap">
+    <div class="row-head">
+      <div class="head rv">
+        <span class="eyebrow">Trabalhos realizados</span>
+        <h2 id="t-trab">Veja o cuidado <span class="grad">em cada detalhe</span></h2>
+        <p>Fotos reais de serviços feitos pela nossa equipe.</p>
+      </div>
+      <div class="filters rv" role="group" aria-label="Filtrar fotos">
+        <button class="fbtn" type="button" aria-pressed="true" data-f="todos">Todos</button>
+        <button class="fbtn" type="button" aria-pressed="false" data-f="interna">Unidades internas</button>
+        <button class="fbtn" type="button" aria-pressed="false" data-f="externa">Condensadoras</button>      </div>
+    </div>
+    <div class="carousel rv" id="carousel" aria-roledescription="carrossel" aria-label="Fotos de serviços realizados">
+      <div class="car__track" id="gallery">
+        <figure class="work" data-cat="interna">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Split LG Dual Inverter">
+            <img src="assets/fotos/split-lg-sobre-porta-q540.webp" srcset="assets/fotos/split-lg-sobre-porta-q540.webp 540w, assets/fotos/split-lg-sobre-porta-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Split LG Dual Inverter – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Split LG Dual Inverter</b><em>Unidade interna</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="externa">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Condensadora Airstage R32">
+            <img src="assets/fotos/condensadora-airstage-q540.webp" srcset="assets/fotos/condensadora-airstage-q540.webp 540w, assets/fotos/condensadora-airstage-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Condensadora Airstage R32 – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Condensadora Airstage R32</b><em>Condensadora</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="equipe">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Instalação em andamento">
+            <img src="assets/fotos/tecnico-instalacao-q540.webp" srcset="assets/fotos/tecnico-instalacao-q540.webp 540w, assets/fotos/tecnico-instalacao-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Instalação em andamento – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Instalação em andamento</b><em>Equipe Camuzi</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="interna">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Split Gree Inverter">
+            <img src="assets/fotos/split-gree-quarto-q540.webp" srcset="assets/fotos/split-gree-quarto-q540.webp 540w, assets/fotos/split-gree-quarto-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Split Gree Inverter – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Split Gree Inverter</b><em>Unidade interna</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="externa">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Condensadora LG em prédio">
+            <img src="assets/fotos/condensadora-lg-predio-q540.webp" srcset="assets/fotos/condensadora-lg-predio-q540.webp 540w, assets/fotos/condensadora-lg-predio-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Condensadora LG em prédio – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Condensadora LG em prédio</b><em>Condensadora</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="interna">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Split Hisense Inverter">
+            <img src="assets/fotos/split-hisense-quarto-q540.webp" srcset="assets/fotos/split-hisense-quarto-q540.webp 540w, assets/fotos/split-hisense-quarto-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Split Hisense Inverter – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Split Hisense Inverter</b><em>Unidade interna</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="externa">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Condensadora com suporte">
+            <img src="assets/fotos/condensadora-airstage-fachada-q540.webp" srcset="assets/fotos/condensadora-airstage-fachada-q540.webp 540w, assets/fotos/condensadora-airstage-fachada-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Condensadora com suporte – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Condensadora com suporte</b><em>Condensadora</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="interna">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Split Philco Eco Inverter">
+            <img src="assets/fotos/split-philco-eco-inverter-q540.webp" srcset="assets/fotos/split-philco-eco-inverter-q540.webp 540w, assets/fotos/split-philco-eco-inverter-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Split Philco Eco Inverter – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Split Philco Eco Inverter</b><em>Unidade interna</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="equipe">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Higienização completa">
+            <img src="assets/fotos/tecnico-higienizacao-q540.webp" srcset="assets/fotos/tecnico-higienizacao-q540.webp 540w, assets/fotos/tecnico-higienizacao-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Higienização completa – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Higienização completa</b><em>Equipe Camuzi</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="interna">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Split LG Dual Inverter">
+            <img src="assets/fotos/split-lg-dual-inverter-q540.webp" srcset="assets/fotos/split-lg-dual-inverter-q540.webp 540w, assets/fotos/split-lg-dual-inverter-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Split LG Dual Inverter – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Split LG Dual Inverter</b><em>Unidade interna</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="externa">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Condensadora Hisense">
+            <img src="assets/fotos/condensadora-hisense-q540.webp" srcset="assets/fotos/condensadora-hisense-q540.webp 540w, assets/fotos/condensadora-hisense-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Condensadora Hisense – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Condensadora Hisense</b><em>Condensadora</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="interna">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Split Midea na sala">
+            <img src="assets/fotos/split-midea-sala-q540.webp" srcset="assets/fotos/split-midea-sala-q540.webp 540w, assets/fotos/split-midea-sala-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Split Midea na sala – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Split Midea na sala</b><em>Unidade interna</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="externa">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Ligações bem isoladas">
+            <img src="assets/fotos/condensadora-airstage-ligacoes-q540.webp" srcset="assets/fotos/condensadora-airstage-ligacoes-q540.webp 540w, assets/fotos/condensadora-airstage-ligacoes-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Ligações bem isoladas – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Ligações bem isoladas</b><em>Condensadora</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="interna">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Split Midea Inverter">
+            <img src="assets/fotos/split-midea-inverter-q540.webp" srcset="assets/fotos/split-midea-inverter-q540.webp 540w, assets/fotos/split-midea-inverter-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Split Midea Inverter – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Split Midea Inverter</b><em>Unidade interna</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="externa">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Condensadora LG com dreno">
+            <img src="assets/fotos/condensadora-lg-suporte-q540.webp" srcset="assets/fotos/condensadora-lg-suporte-q540.webp 540w, assets/fotos/condensadora-lg-suporte-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Condensadora LG com dreno – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Condensadora LG com dreno</b><em>Condensadora</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="interna">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Split LG acima da janela">
+            <img src="assets/fotos/split-lg-sobre-janela-q540.webp" srcset="assets/fotos/split-lg-sobre-janela-q540.webp 540w, assets/fotos/split-lg-sobre-janela-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Split LG acima da janela – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Split LG acima da janela</b><em>Unidade interna</em></figcaption>
+        </figure>
+        <figure class="work" data-cat="interna">
+          <button class="work__btn" type="button" aria-label="Ampliar foto: Split em escritório">
+            <img src="assets/fotos/split-escritorio-q540.webp" srcset="assets/fotos/split-escritorio-q540.webp 540w, assets/fotos/split-escritorio-q1080.webp 1080w" sizes="(min-width:900px) 290px, (min-width:560px) 46vw, 78vw" width="540" height="540" alt="Split em escritório – serviço da Camuzi Refrigeração" loading="lazy">
+            <span class="work__zoom" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span>
+          </button>
+          <figcaption><b>Split em escritório</b><em>Unidade interna</em></figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="center-cta rv"><a class="btn btn--wa" data-wa="trabalhos" data-msg="Olá! Vi os trabalhos no site e quero um serviço assim. Preciso de: " href="#"><svg><use href="#i-wa"/></svg>Falar com a Camuzi agora</a></div>
+  </div>
+</section>
+
+<!-- Foto ampliada -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button class="lb__x" type="button" id="lbClose" aria-label="Fechar"><svg class="ico"><use href="#i-x"/></svg></button>
+  <button class="lb__nav lb__nav--p" type="button" id="lbPrev" aria-label="Foto anterior"><svg class="ico" style="transform:scaleX(-1)"><use href="#i-chev"/></svg></button>
+  <figure class="lb__fig"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb__nav lb__nav--n" type="button" id="lbNext" aria-label="Próxima foto"><svg class="ico"><use href="#i-chev"/></svg></button>
+</div>
+
+<!-- 8 · BRANCO — AVALIAÇÕES (reais, do Google) -->
+<section class="band" id="avaliacoes" aria-labelledby="t-rev">
+  <div class="wrap">
+    <div class="head head--center rv">
+      <span class="eyebrow">Avaliações</span>
+      <h2 id="t-rev">O que nossos clientes <span class="grad">dizem</span></h2>
+      <p>Avaliações reais deixadas no Google por quem já contratou a Camuzi.</p>
+    </div>
+    <div class="carousel rv" id="revCar" aria-roledescription="carrossel" aria-label="Avaliações de clientes">
+      <div class="rev__track" id="revTrack">
+        <article class="rev rev--long">
+          <header class="rev__head">
+            <span class="rev__av" style="background:#5E8C6A" aria-hidden="true">BM</span>
+            <div class="rev__who">
+              <b>Bruno Maia Gomes <svg class="rev__ok" viewBox="0 0 24 24" aria-label="Avaliação verificada"><path fill="#1A73E8" d="M12 1.5l2.6 1.9 3.2-.1 1 3 2.6 1.9-1 3.1 1 3.1-2.6 1.9-1 3-3.2-.1L12 22.5l-2.6-1.9-3.2.1-1-3-2.6-1.9 1-3.1-1-3.1 2.6-1.9 1-3 3.2.1z"/><path d="m8 12.2 2.8 2.8L16.2 9.6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></b>
+              <small>Local Guide · Postado no <strong>Google</strong></small>
+            </div>
+            <span class="rev__g"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.6Z"/><path fill="#34A853" d="M12 22.5c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7a10.5 10.5 0 0 0 9.3 5.7Z"/><path fill="#FBBC05" d="M6.2 14.1a6.3 6.3 0 0 1 0-4V7.4H2.7a10.5 10.5 0 0 0 0 9.4l3.5-2.7Z"/><path fill="#EA4335" d="M12 5.7c1.5 0 2.9.5 4 1.6l3-3A10.5 10.5 0 0 0 2.7 7.4l3.5 2.7C7 7.6 9.3 5.7 12 5.7Z"/></svg></span>
+          </header>
+          <div class="rev__stars" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg></div>
+          <p class="rev__txt">Excelente atendimento do início ao fim! A equipe foi extremamente pontual, educada e muito profissional. A instalação do ar-condicionado ficou impecável, com ótimo acabamento e tudo funcionando perfeitamente. Também explicaram o funcionamento do equipamento e deixaram o local limpo após o serviço. Dá para perceber o cuidado e a experiência da equipe. Recomendo de olhos fechados para quem procura um serviço de qualidade e confiança!</p>
+          <button class="rev__more" type="button" aria-expanded="false">Ler mais</button>
+        </article>
+        <article class="rev">
+          <header class="rev__head">
+            <span class="rev__av" style="background:#C2185B" aria-hidden="true">MM</span>
+            <div class="rev__who">
+              <b>Márcia Moura <svg class="rev__ok" viewBox="0 0 24 24" aria-label="Avaliação verificada"><path fill="#1A73E8" d="M12 1.5l2.6 1.9 3.2-.1 1 3 2.6 1.9-1 3.1 1 3.1-2.6 1.9-1 3-3.2-.1L12 22.5l-2.6-1.9-3.2.1-1-3-2.6-1.9 1-3.1-1-3.1 2.6-1.9 1-3 3.2.1z"/><path d="m8 12.2 2.8 2.8L16.2 9.6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></b>
+              <small>Postado no <strong>Google</strong></small>
+            </div>
+            <span class="rev__g"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.6Z"/><path fill="#34A853" d="M12 22.5c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7a10.5 10.5 0 0 0 9.3 5.7Z"/><path fill="#FBBC05" d="M6.2 14.1a6.3 6.3 0 0 1 0-4V7.4H2.7a10.5 10.5 0 0 0 0 9.4l3.5-2.7Z"/><path fill="#EA4335" d="M12 5.7c1.5 0 2.9.5 4 1.6l3-3A10.5 10.5 0 0 0 2.7 7.4l3.5 2.7C7 7.6 9.3 5.7 12 5.7Z"/></svg></span>
+          </header>
+          <div class="rev__stars" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg></div>
+          <p class="rev__txt">Muito atencioso e prestativo, serviço com excelência.</p>
+        </article>
+        <article class="rev">
+          <header class="rev__head">
+            <span class="rev__av" style="background:#8D6E63" aria-hidden="true">MS</span>
+            <div class="rev__who">
+              <b>Maick Sant <svg class="rev__ok" viewBox="0 0 24 24" aria-label="Avaliação verificada"><path fill="#1A73E8" d="M12 1.5l2.6 1.9 3.2-.1 1 3 2.6 1.9-1 3.1 1 3.1-2.6 1.9-1 3-3.2-.1L12 22.5l-2.6-1.9-3.2.1-1-3-2.6-1.9 1-3.1-1-3.1 2.6-1.9 1-3 3.2.1z"/><path d="m8 12.2 2.8 2.8L16.2 9.6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></b>
+              <small>Postado no <strong>Google</strong></small>
+            </div>
+            <span class="rev__g"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.6Z"/><path fill="#34A853" d="M12 22.5c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7a10.5 10.5 0 0 0 9.3 5.7Z"/><path fill="#FBBC05" d="M6.2 14.1a6.3 6.3 0 0 1 0-4V7.4H2.7a10.5 10.5 0 0 0 0 9.4l3.5-2.7Z"/><path fill="#EA4335" d="M12 5.7c1.5 0 2.9.5 4 1.6l3-3A10.5 10.5 0 0 0 2.7 7.4l3.5 2.7C7 7.6 9.3 5.7 12 5.7Z"/></svg></span>
+          </header>
+          <div class="rev__stars" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg></div>
+          <p class="rev__txt">EXCELENTE ATENDIMENTO, RESPONDE O WHATSAPP RAPIDO . EXCELENTE PROFISSIONAL</p>
+        </article>
+        <article class="rev">
+          <header class="rev__head">
+            <span class="rev__av" style="background:#689F38" aria-hidden="true">MM</span>
+            <div class="rev__who">
+              <b>Marileia Moura <svg class="rev__ok" viewBox="0 0 24 24" aria-label="Avaliação verificada"><path fill="#1A73E8" d="M12 1.5l2.6 1.9 3.2-.1 1 3 2.6 1.9-1 3.1 1 3.1-2.6 1.9-1 3-3.2-.1L12 22.5l-2.6-1.9-3.2.1-1-3-2.6-1.9 1-3.1-1-3.1 2.6-1.9 1-3 3.2.1z"/><path d="m8 12.2 2.8 2.8L16.2 9.6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></b>
+              <small>Postado no <strong>Google</strong></small>
+            </div>
+            <span class="rev__g"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.6Z"/><path fill="#34A853" d="M12 22.5c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7a10.5 10.5 0 0 0 9.3 5.7Z"/><path fill="#FBBC05" d="M6.2 14.1a6.3 6.3 0 0 1 0-4V7.4H2.7a10.5 10.5 0 0 0 0 9.4l3.5-2.7Z"/><path fill="#EA4335" d="M12 5.7c1.5 0 2.9.5 4 1.6l3-3A10.5 10.5 0 0 0 2.7 7.4l3.5 2.7C7 7.6 9.3 5.7 12 5.7Z"/></svg></span>
+          </header>
+          <div class="rev__stars" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg></div>
+          <p class="rev__txt">Excelente profissional 👏👏 Super indico</p>
+        </article>
+        <article class="rev">
+          <header class="rev__head">
+            <span class="rev__av" style="background:#5C6BC0" aria-hidden="true">RL</span>
+            <div class="rev__who">
+              <b>Ronaldo Lopes Silva <svg class="rev__ok" viewBox="0 0 24 24" aria-label="Avaliação verificada"><path fill="#1A73E8" d="M12 1.5l2.6 1.9 3.2-.1 1 3 2.6 1.9-1 3.1 1 3.1-2.6 1.9-1 3-3.2-.1L12 22.5l-2.6-1.9-3.2.1-1-3-2.6-1.9 1-3.1-1-3.1 2.6-1.9 1-3 3.2.1z"/><path d="m8 12.2 2.8 2.8L16.2 9.6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></b>
+              <small>Postado no <strong>Google</strong></small>
+            </div>
+            <span class="rev__g"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.6Z"/><path fill="#34A853" d="M12 22.5c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7a10.5 10.5 0 0 0 9.3 5.7Z"/><path fill="#FBBC05" d="M6.2 14.1a6.3 6.3 0 0 1 0-4V7.4H2.7a10.5 10.5 0 0 0 0 9.4l3.5-2.7Z"/><path fill="#EA4335" d="M12 5.7c1.5 0 2.9.5 4 1.6l3-3A10.5 10.5 0 0 0 2.7 7.4l3.5 2.7C7 7.6 9.3 5.7 12 5.7Z"/></svg></span>
+          </header>
+          <div class="rev__stars" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg></div>
+          <p class="rev__txt">Ótimo orçamento e escelente atendimento.</p>
+        </article>
+        <article class="rev">
+          <header class="rev__head">
+            <span class="rev__av" style="background:#F4511E" aria-hidden="true">MA</span>
+            <div class="rev__who">
+              <b>Maria Aparecida Aguiar <svg class="rev__ok" viewBox="0 0 24 24" aria-label="Avaliação verificada"><path fill="#1A73E8" d="M12 1.5l2.6 1.9 3.2-.1 1 3 2.6 1.9-1 3.1 1 3.1-2.6 1.9-1 3-3.2-.1L12 22.5l-2.6-1.9-3.2.1-1-3-2.6-1.9 1-3.1-1-3.1 2.6-1.9 1-3 3.2.1z"/><path d="m8 12.2 2.8 2.8L16.2 9.6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></b>
+              <small>Postado no <strong>Google</strong></small>
+            </div>
+            <span class="rev__g"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.6Z"/><path fill="#34A853" d="M12 22.5c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7a10.5 10.5 0 0 0 9.3 5.7Z"/><path fill="#FBBC05" d="M6.2 14.1a6.3 6.3 0 0 1 0-4V7.4H2.7a10.5 10.5 0 0 0 0 9.4l3.5-2.7Z"/><path fill="#EA4335" d="M12 5.7c1.5 0 2.9.5 4 1.6l3-3A10.5 10.5 0 0 0 2.7 7.4l3.5 2.7C7 7.6 9.3 5.7 12 5.7Z"/></svg></span>
+          </header>
+          <div class="rev__stars" role="img" aria-label="4 de 5 estrelas"><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="on" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24" class="" aria-hidden="true"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg></div>
+          <p class="rev__txt">Muito bom!</p>
+        </article>
+      </div>
+    </div>
+    <div class="gscore rv" role="group" aria-label="Nota no Google: 4,9 de 5, média de 10 avaliações">
+      <div class="gscore__src"><span class="gscore__g"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.6Z"/><path fill="#34A853" d="M12 22.5c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7a10.5 10.5 0 0 0 9.3 5.7Z"/><path fill="#FBBC05" d="M6.2 14.1a6.3 6.3 0 0 1 0-4V7.4H2.7a10.5 10.5 0 0 0 0 9.4l3.5-2.7Z"/><path fill="#EA4335" d="M12 5.7c1.5 0 2.9.5 4 1.6l3-3A10.5 10.5 0 0 0 2.7 7.4l3.5 2.7C7 7.6 9.3 5.7 12 5.7Z"/></svg></span><span>Avaliações<br>no Google</span></div>
+      <div class="gscore__num">4,9</div>
+      <div class="gscore__meta">
+        <div class="gscore__stars" style="--fill:98%" aria-hidden="true"><span class="gscore__base"><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg></span><span class="gscore__on"><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg></span></div>
+        <p>Média de <b>10 avaliações</b> de clientes</p>
+      </div>
+      <div class="gscore__act">
+        <a class="btn btn--ghost btn--sm" href="#" id="gLink">Ver no Google</a>
+        <a class="btn btn--wa" data-wa="avaliacoes" data-msg="Olá! Vi as avaliações no site e quero ser atendido pela Camuzi." href="#"><svg><use href="#i-wa"/></svg>Quero ser atendido também</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · AZUL — FAQ -->
+<section class="band blue alt" id="duvidas" aria-labelledby="t-faq">
+  <div class="wrap faq">
+    <div class="faq__aside rv">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2 id="t-faq">Perguntas <span class="grad">rápidas</span></h2>
+      <p>Não achou a sua? Um técnico responde pelo WhatsApp.</p>
+      <div><a class="btn btn--wa" data-wa="faq" data-msg="Olá! Tenho uma dúvida sobre ar-condicionado: " href="#"><svg><use href="#i-wa"/></svg>Tirar minha dúvida agora</a></div>
+    </div>
+    <div id="faqList" class="rv" style="--d:.1s"></div>
+  </div>
+</section>
+
+<!-- 10 · BRANCO — CTA FINAL -->
+<section class="band" aria-labelledby="t-cta">
+  <div class="wrap">
+    <div class="final blue rv rv--zoom">
+      <canvas class="particles" data-particles="36" aria-hidden="true" style="z-index:-1"></canvas>
+      <div>
+        <h2 id="t-cta">Pare de passar calor. <span class="grad">Fale com a Camuzi.</span></h2>
+        <p>Mande uma foto do aparelho pelo WhatsApp e receba seu orçamento sem compromisso.</p>
+      </div>
+      <div class="final__act">
+        <a class="btn btn--wa" data-wa="cta_final" data-msg="Olá! Quero um orçamento agora. Vou mandar a foto do meu aparelho." href="#"><svg><use href="#i-wa"/></svg>Pedir orçamento agora</a>      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- AZUL — RODAPÉ -->
+<footer class="ftr blue">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="ftr__logo" href="#topo" aria-label="Camuzi Refrigeração – voltar ao topo"><img src="assets/logo-camuzi-384.webp" srcset="assets/logo-camuzi-256.webp 256w, assets/logo-camuzi-384.webp 384w, assets/logo-camuzi-escuro.webp 1080w" sizes="100px" width="384" height="384" alt="Camuzi Refrigeração" loading="lazy"></a>
+        <p>Instalação, higienização, manutenção e conserto de ar-condicionado na Grande Vitória e região – ES.</p>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Instalação</a></li>
+          <li><a href="#servicos">Higienização</a></li>
+          <li><a href="#servicos">Manutenção</a></li>
+          <li><a href="#servicos">Conserto e gás</a></li>
+          <li><a href="#servicos">Atendimento para empresas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#problemas">Problemas comuns</a></li>
+          <li><a href="#por-que">Por que a Camuzi</a></li>
+          <li><a href="#trabalhos">Trabalhos</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li class="ct ct--wa"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><a data-wa="rodape_contato" href="#"><span data-phone>(27) 98839-7281</span></a></li>
+          <li class="ct ct--ig"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igGrad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#962FBF"/></linearGradient></defs><g fill="none" stroke="url(#igGrad)" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h.01"/></g></svg><a href="https://www.instagram.com/camuzi_refrigeracao" target="_blank" rel="noopener">@camuzi_refrigeracao</a></li>
+          <li class="ct ct--pin"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Grande Vitória e região – ES</span></li>
+          <li class="ct ct--mail"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:camuzirefrigeracao@gmail.com">camuzirefrigeracao@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__bot">
+      <span>© <span id="yr">2026</span> Camuzi Refrigeração. Todos os direitos reservados.</span>
+          </div>
+  </div>
+</footer>
+
+<a class="fab" data-wa="flutuante" href="#" aria-label="Pedir orçamento pelo WhatsApp">
+  <span class="fab__label">Solicitar orçamento</span>
+  <span class="fab__btn"><svg><use href="#i-wa"/></svg></span>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HVACBusiness",
+  "name":"Camuzi Refrigeração",
+  "logo":"assets/logo-camuzi-escuro.webp",
+  "image":"assets/logo-camuzi-escuro.webp",
+  "description":"Instalação, higienização, manutenção e conserto de ar-condicionado na Grande Vitória – ES.",
+  "telephone":"+55-27-98839-7281",
+  "email":"camuzirefrigeracao@gmail.com",
+  "sameAs":["https://www.instagram.com/camuzi_refrigeracao"],
+  "priceRange":"$$",
+  "address":{"@type":"PostalAddress","addressRegion":"ES","addressCountry":"BR"},
+  "areaServed":{"@type":"AdministrativeArea","name":"Grande Vitória e região, Espírito Santo"}
+}
+</script>
+
+<script>
+/* ===== CONFIGURAÇÃO — trocar pelos dados reais ===== */
+const CONFIG = {
+  whatsapp: "5527988397281",
+  telefoneExibido: "(27) 98839-7281",
+  mensagemPadrao: "Olá! Vim pelo site da Camuzi e gostaria de um orçamento.",
+  googlePerfil: ""   // colar aqui o link do Perfil da Empresa no Google; vazio = botão "Ver no Google" fica escondido
+};
+const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const waLink = msg => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg || CONFIG.mensagemPadrao)}`;
+
+/* WhatsApp + rastreamento (GTM / GA4 / Meta Pixel) */
+document.querySelectorAll("[data-wa]").forEach(a => { a.href = waLink(a.dataset.msg); a.target = "_blank"; a.rel = "noopener"; });
+document.addEventListener("click", e => {
+  const a = e.target.closest("[data-wa]");
+  if (!a) return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event:"whatsapp_click", cta_location:a.dataset.wa, page_path:location.pathname });
+  if (typeof window.gtag === "function") gtag("event", "generate_lead", { method:"whatsapp", cta_location:a.dataset.wa });
+  if (typeof window.fbq === "function") fbq("track", "Contact", { cta_location:a.dataset.wa });
+});
+document.querySelectorAll("[data-phone]").forEach(el => el.textContent = CONFIG.telefoneExibido);
+const g = document.getElementById("gLink"); if (CONFIG.googlePerfil) { g.href = CONFIG.googlePerfil; g.target = "_blank"; g.rel = "noopener"; } else g.hidden = true;
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+/* Título do hero: palavras entrando uma a uma */
+(() => {
+  const h = document.getElementById("heroTitle"); let i = 0;
+  [...h.childNodes].forEach(n => {
+    if (n.nodeType === 3) {
+      const frag = document.createDocumentFragment();
+      n.textContent.split(/(\s+)/).forEach(t => {
+        if (!t) return;
+        if (/^\s+$/.test(t)) { frag.append(t); return; }
+        const s = document.createElement("span"); s.className = "w"; s.style.setProperty("--i", i++); s.textContent = t; frag.append(s);
+      });
+      n.replaceWith(frag);
+    } else { n.classList.add("w"); n.style.setProperty("--i", i++); }
+  });
+})();
+
+/* Termômetro: 30 °C → 23 °C */
+(() => {
+  const num = document.getElementById("tempNum"), led = document.getElementById("ledTemp"), bar = document.getElementById("tempBar");
+  if (REDUCED) return;
+  let t = 30; num.textContent = t; if (led) led.textContent = t + "°"; bar.style.setProperty("--tp", "100%");
+  setTimeout(function tick(){
+    t--; num.textContent = t; if (led) led.textContent = t + "°"; bar.style.setProperty("--tp", ((t - 23) / 7 * 70 + 30) + "%");
+    if (t > 23) setTimeout(tick, 320);
+  }, 1100);
+})();
+
+/* Cabeçalho: azul no topo, claro ao rolar + progresso + link ativo */
+const hdr = document.querySelector(".hdr"), prog = document.getElementById("progress");
+const navLinks = [...document.querySelectorAll(".nav a")];
+const sections = navLinks.map(a => document.querySelector(a.getAttribute("href")));
+const onScroll = () => {
+  hdr.classList.toggle("blue", scrollY < 40);
+  const max = document.documentElement.scrollHeight - innerHeight;
+  prog.style.setProperty("--p", max > 0 ? scrollY / max : 0);
+  let cur = -1;
+  sections.forEach((s, i) => { if (s && s.getBoundingClientRect().top < 140) cur = i; });
+  navLinks.forEach((a, i) => a.classList.toggle("is-active", i === cur));
+};
+addEventListener("scroll", onScroll, { passive:true }); onScroll();
+
+/* Menu mobile */
+const mnav = document.getElementById("mnav"), openB = document.getElementById("menuOpen"), closeB = document.getElementById("menuClose");
+const setMenu = open => {
+  mnav.classList.toggle("is-open", open);
+  openB.setAttribute("aria-expanded", open);
+  document.documentElement.style.overflow = open ? "hidden" : "";
+  if (open) closeB.focus(); else openB.focus({ preventScroll:true });
+};
+openB.addEventListener("click", () => setMenu(true));
+closeB.addEventListener("click", () => setMenu(false));
+mnav.addEventListener("click", e => { if (e.target.closest("a[href^='#']")) setMenu(false); });
+addEventListener("keydown", e => { if (e.key === "Escape" && mnav.classList.contains("is-open")) setMenu(false); });
+
+/* Revelar ao rolar */
+document.querySelectorAll("[data-stagger]").forEach(p => [...p.children].forEach((c, i) => c.style.setProperty("--d", (i * 0.09) + "s")));
+if ("IntersectionObserver" in window && !REDUCED) {
+  document.documentElement.classList.add("rv-on");
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }), { rootMargin:"0px 0px -8% 0px", threshold:0.12 });
+  document.querySelectorAll(".rv, #steps").forEach(el => io.observe(el));
+}
+
+/* Holofote nos cards */
+document.querySelectorAll(".spot").forEach(el => el.addEventListener("pointermove", e => {
+  const r = el.getBoundingClientRect();
+  el.style.setProperty("--mx", (e.clientX - r.left) + "px");
+  el.style.setProperty("--my", (e.clientY - r.top) + "px");
+}));
+
+/* Inclinação 3D na ilustração */
+(() => {
+  const sc = document.getElementById("scene");
+  if (REDUCED || !matchMedia("(hover:hover)").matches) return;
+  sc.style.transition = "transform .4s cubic-bezier(.2,.75,.2,1)";
+  sc.addEventListener("pointermove", e => {
+    const r = sc.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    sc.style.transform = `perspective(1000px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg)`;
+  });
+  sc.addEventListener("pointerleave", () => sc.style.transform = "");
+})();
+
+/* Partículas de ar frio */
+document.querySelectorAll("canvas[data-particles]").forEach(cv => {
+  if (REDUCED) return;
+  const ctx = cv.getContext("2d"), N = +cv.dataset.particles, dpr = Math.min(devicePixelRatio || 1, 2); let W, H, P, run = false;
+  const size = () => { W = cv.offsetWidth; H = cv.offsetHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr,0,0,dpr,0,0); };
+  size(); P = Array.from({ length:N }, () => ({ x:Math.random()*W, y:Math.random()*H, r:Math.random()*1.8+.6, vx:Math.random()*.35+.1, vy:(Math.random()-.5)*.2, a:Math.random()*.5+.2, ph:Math.random()*6.28 }));
+  addEventListener("resize", size);
+  const draw = () => {
+    if (!run) return;
+    ctx.clearRect(0,0,W,H);
+    P.forEach(p => {
+      p.ph += .02; p.x += p.vx; p.y += p.vy + Math.sin(p.ph) * .15;
+      if (p.x > W + 5) { p.x = -5; p.y = Math.random()*H; }
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.283);
+      ctx.fillStyle = `rgba(160,225,255,${p.a * (.6 + .4*Math.sin(p.ph))})`; ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  };
+  new IntersectionObserver(([e]) => { const was = run; run = e.isIntersecting; if (run && !was) draw(); }).observe(cv);
+});
+
+/* Problema → solução */
+const SYMPTOMS = [
+  { id:"nao-gela", icon:"i-snow", label:"Não está gelando", title:"Seu ar liga, mas não gela",
+    lead:"É o problema mais comum, e nem sempre é falta de gás.",
+    causes:["Filtro ou serpentina sujos","Vazamento de gás","Peça elétrica com defeito"],
+    fix:"Fazemos o diagnóstico completo: se for sujeira, limpamos; se for vazamento, corrigimos e recarregamos o gás.", service:"Diagnóstico e conserto" },
+  { id:"pingando", icon:"i-drop", label:"Pingando água", title:"Água pingando dentro de casa",
+    lead:"Quanto antes resolver, menos risco para paredes e móveis.",
+    causes:["Dreno entupido","Mangueira sem caimento","Bandeja de água cheia"],
+    fix:"Desentupimos o dreno e corrigimos o caimento da mangueira para o problema não voltar.", service:"Manutenção corretiva" },
+  { id:"cheiro", icon:"i-wind", label:"Mau cheiro", title:"Cheiro de mofo ao ligar",
+    lead:"É sinal de fungos e bactérias dentro do aparelho.",
+    causes:["Fungos na serpentina","Água parada na bandeja","Filtro saturado"],
+    fix:"Higienização completa, com produto específico que elimina a causa do cheiro.", service:"Higienização" },
+  { id:"barulho", icon:"i-sound", label:"Barulho estranho", title:"Barulho fora do normal",
+    lead:"Ignorar pode transformar um ajuste simples em um conserto caro.",
+    causes:["Peça solta ou desgastada","Turbina suja","Suporte frouxo"],
+    fix:"Identificamos a origem do ruído e fazemos a limpeza, o ajuste ou a troca da peça.", service:"Conserto" },
+  { id:"liga-desliga", icon:"i-power", label:"Liga e desliga sozinho", title:"Desliga sozinho",
+    lead:"Pode ser algo simples ou uma proteção contra superaquecimento.",
+    causes:["Timer ativado no controle","Condensadora sem ventilação","Placa ou sensor com defeito"],
+    fix:"Testamos o sistema elétrico e os sensores e corrigimos a falha.", service:"Diagnóstico e conserto" },
+  { id:"conta", icon:"i-bolt", label:"Conta de luz alta", title:"A conta de luz subiu",
+    lead:"Aparelho sujo ou com pouco gás trabalha mais e gasta mais.",
+    causes:["Falta de manutenção","Gás abaixo do ideal","Aparelho pequeno para o ambiente"],
+    fix:"Limpeza, verificação da pressão do gás e ajustes para o aparelho voltar a ser econômico.", service:"Manutenção preventiva" },
+  { id:"instalar", icon:"i-install", label:"Vou instalar um aparelho", title:"Vai instalar um ar novo?",
+    lead:"Uma instalação bem-feita garante economia e vida longa ao aparelho.",
+    causes:["Escolha do local errado","Tubulação mal feita","Parte elétrica inadequada"],
+    fix:"Indicamos o melhor ponto e instalamos com vácuo, teste e acabamento limpo.", service:"Instalação", msg:"Olá! Vou instalar um ar-condicionado e quero um orçamento." }
+];
+const symList = document.getElementById("symList"), symPanel = document.getElementById("symPanel");
+symList.innerHTML = SYMPTOMS.map((s,i) => `
+  <button class="sym" role="tab" type="button" id="tab-${s.id}" aria-controls="symPanel" aria-selected="${i===0}" tabindex="${i===0?0:-1}" data-i="${i}">
+    <span class="d"><svg class="ico"><use href="#${s.icon}"/></svg></span>${s.label}
+    <svg class="ico chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </button>`).join("");
+function renderSym(i){
+  const s = SYMPTOMS[i];
+  symPanel.setAttribute("aria-labelledby", "tab-" + s.id);
+  symPanel.innerHTML = `
+    <div class="diag__head"><h3>${s.title}</h3><p class="lead">${s.lead}</p></div>
+    <div class="diag__cols">
+      <div class="box"><h4>Pode ser</h4><ul>${s.causes.map((c,k)=>`<li style="--i:${k}">${c}</li>`).join("")}</ul></div>
+      <div class="box box--fix"><h4>Como resolvemos</h4><p>${s.fix}</p><span class="fix__tag"><svg class="ico"><use href="#i-check"/></svg>Serviço indicado: <b>${s.service}</b></span></div>
+    </div>
+    <div class="diag__foot">
+      <p>Fale com um técnico e resolva rápido.</p>
+      <a class="btn btn--wa" data-wa="problema_${s.id}" target="_blank" rel="noopener" href="${waLink(s.msg || `Olá! Meu ar-condicionado está com este problema: ${s.label.toLowerCase()}. Podem me ajudar?`)}"><svg><use href="#i-wa"/></svg>Resolver pelo WhatsApp</a>
+    </div>`;
+}
+function selectSym(i, focus){
+  symList.querySelectorAll(".sym").forEach((b,j) => { b.setAttribute("aria-selected", j===i); b.tabIndex = j===i ? 0 : -1; if (j===i && focus) b.focus(); });
+  renderSym(i);
+}
+symList.addEventListener("click", e => { const b = e.target.closest(".sym"); if (b) selectSym(+b.dataset.i); });
+symList.addEventListener("keydown", e => {
+  const cur = [...symList.children].findIndex(b => b.getAttribute("aria-selected")==="true"), n = SYMPTOMS.length;
+  if (["ArrowDown","ArrowRight"].includes(e.key)) { e.preventDefault(); selectSym((cur+1)%n, true); }
+  if (["ArrowUp","ArrowLeft"].includes(e.key)) { e.preventDefault(); selectSym((cur-1+n)%n, true); }
+});
+renderSym(0);
+
+/* Antes / depois: a divisória balança sozinha até a pessoa tocar, mostrando que dá para arrastar */
+(() => {
+  const ba = document.getElementById("ba"), baR = document.getElementById("baRange");
+  const setPos = v => { baR.value = v; ba.style.setProperty("--pos", v + "%"); ba.style.setProperty("--k", v / 100); };
+  let touched = false, t0 = performance.now(), rafSeen = 0;
+  const stop = () => { if (touched) return; touched = true; ba.classList.add("is-touched"); };
+  baR.addEventListener("input", () => { stop(); setPos(+baR.value); });
+  ["pointerdown", "focus", "keydown"].forEach(ev => baR.addEventListener(ev, stop));
+  const swing = now => {
+    if (touched) return;
+    const r = ba.getBoundingClientRect();
+    if (r.bottom > 0 && r.top < innerHeight) setPos(Math.round((50 + Math.sin((now - t0) / 1000 * 1.25) * 32) * 10) / 10);
+  };
+  const loop = now => { rafSeen = performance.now(); swing(now); if (!touched) requestAnimationFrame(loop); };
+  requestAnimationFrame(loop);
+  const iv = setInterval(() => { if (touched) return clearInterval(iv); if (performance.now() - rafSeen > 300 && !document.hidden) swing(performance.now()); }, 40);
+  setPos(50);
+})();
+
+/* Esteira contínua: passa sem parar, recomeça sem emenda e pode ser arrastada para os lados */
+function marquee(box, track, speed) {
+  let pos = 0, L = 1, last = performance.now(), hover = false, holdUntil = 0, drag = null, moved = false;
+  const gap = () => parseFloat(getComputedStyle(track).columnGap) || 0;
+  const measure = () => { L = (track.scrollWidth + gap()) / 2 || 1; pos = ((pos % L) + L) % L; };
+  const rebuild = () => {
+    track.querySelectorAll("[data-clone]").forEach(n => n.remove());
+    [...track.children].filter(n => !n.hidden).forEach(n => {
+      const c = n.cloneNode(true); c.dataset.clone = ""; c.setAttribute("aria-hidden", "true");
+      c.querySelectorAll("button, a").forEach(b => b.tabIndex = -1);
+      track.appendChild(c);
+    });
+    measure();
+  };
+  // avança a esteira de acordo com o tempo que passou
+  const advance = now => {
+    const dt = Math.min(now - last, 64); last = now;
+    const r = box.getBoundingClientRect();
+    const onScreen = r.bottom > 0 && r.top < innerHeight;
+    if (onScreen && !drag && !hover && now > holdUntil) pos += speed * dt / 1000;
+    pos = ((pos % L) + L) % L;
+    track.style.transform = "translate3d(" + (-pos) + "px,0,0)";
+  };
+  // quadro a quadro (suave); se o navegador parar de desenhar quadros, um temporizador assume
+  let rafSeen = 0;
+  const loop = now => { rafSeen = performance.now(); advance(now); requestAnimationFrame(loop); };
+  setInterval(() => { const now = performance.now(); if (now - rafSeen > 300 && !document.hidden) advance(now); }, 40);
+  box.addEventListener("pointerenter", e => { if (e.pointerType === "mouse") hover = true; });
+  box.addEventListener("pointerleave", e => { if (e.pointerType === "mouse") hover = false; });
+  box.addEventListener("pointerdown", e => { if (e.button !== 0) return; drag = { x:e.clientX, p:pos, id:e.pointerId }; moved = false; });
+  box.addEventListener("pointermove", e => {
+    if (!drag) return;
+    const dx = e.clientX - drag.x;
+    if (!moved && Math.abs(dx) > 6) { moved = true; box.setPointerCapture(drag.id); box.classList.add("is-drag"); }
+    if (moved) pos = drag.p - dx;
+  });
+  const end = () => { if (!drag) return; drag = null; box.classList.remove("is-drag"); holdUntil = performance.now() + (matchMedia("(hover: none)").matches ? 2500 : 400); };
+  box.addEventListener("pointerup", end);
+  box.addEventListener("pointercancel", end);
+  box.addEventListener("click", e => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+  addEventListener("resize", measure);
+  rebuild(); requestAnimationFrame(loop);
+  return { rebuild, reset:() => { pos = 0; }, hold:ms => { holdUntil = performance.now() + ms; } };
+}
+
+/* Fotos: esteira + filtros + foto ampliada */
+(() => {
+  const box = document.getElementById("carousel"), track = document.getElementById("gallery");
+  const works = [...track.querySelectorAll(".work")];
+  works.forEach((w, i) => w.dataset.idx = i);
+  track.querySelectorAll("img").forEach(i => i.loading = "eager");
+  const belt = marquee(box, track, 38);
+
+  document.querySelectorAll(".fbtn").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".fbtn").forEach(x => x.setAttribute("aria-pressed", x === b));
+    const f = b.dataset.f;
+    works.forEach(w => w.hidden = !(f === "todos" || w.dataset.cat === f));
+    belt.reset(); belt.rebuild();
+  }));
+
+  const lb = document.getElementById("lb"), lbImg = document.getElementById("lbImg"), lbCap = document.getElementById("lbCap");
+  let cur = 0, last = null;
+  const visible = () => works.filter(w => !w.hidden);
+  const show = w => { const img = w.querySelector("img"); lbImg.src = img.getAttribute("src").replace("-q540.webp", "-q1080.webp"); lbImg.alt = img.alt; lbCap.textContent = w.querySelector("b").textContent; lbImg.style.animation = "none"; void lbImg.offsetWidth; lbImg.style.animation = ""; };
+  const open = w => { last = document.activeElement; cur = visible().indexOf(w); show(w); lb.hidden = false; belt.hold(1e9); document.documentElement.style.overflow = "hidden"; document.getElementById("lbClose").focus(); };
+  const close = () => { lb.hidden = true; belt.hold(0); document.documentElement.style.overflow = ""; if (last) last.focus({ preventScroll:true }); };
+  const step = d => { const v = visible(); cur = (cur + d + v.length) % v.length; show(v[cur]); };
+  track.addEventListener("click", e => { const btn = e.target.closest(".work__btn"); if (btn) open(works[+btn.closest(".work").dataset.idx]); });
+  document.getElementById("lbClose").addEventListener("click", close);
+  document.getElementById("lbPrev").addEventListener("click", () => step(-1));
+  document.getElementById("lbNext").addEventListener("click", () => step(1));
+  lb.addEventListener("click", e => { if (e.target === lb) close(); });
+  addEventListener("keydown", e => { if (lb.hidden) return; if (e.key === "Escape") close(); if (e.key === "ArrowRight") step(1); if (e.key === "ArrowLeft") step(-1); });
+  let x0 = null;
+  lb.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, { passive:true });
+  lb.addEventListener("touchend", e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1); x0 = null; });
+})();
+
+/* Avaliações: esteira contínua mais lenta, para dar tempo de ler */
+(() => {
+  const box = document.getElementById("revCar"), track = document.getElementById("revTrack");
+  const belt = marquee(box, track, 26);
+  track.addEventListener("click", e => {
+    const b = e.target.closest(".rev__more"); if (!b) return;
+    const card = b.closest(".rev"), open = card.classList.toggle("is-open");
+    b.textContent = open ? "Ler menos" : "Ler mais"; b.setAttribute("aria-expanded", open);
+    belt.hold(open ? 20000 : 0);
+  });
+})();
+
+/* FAQ + dados estruturados */
+const FAQ = [
+  ["Quanto custa o serviço?","Depende do aparelho e do local. Mande uma foto pelo WhatsApp e enviamos o orçamento sem compromisso."],
+  ["Meu ar não gela. É falta de gás?","Nem sempre. Na maioria das vezes é sujeira ou peça com defeito. Fazemos o diagnóstico antes de qualquer recarga."],
+  ["De quanto em quanto tempo devo higienizar?","Em casa, a cada 6 a 12 meses. Em empresas ou uso intenso, a cada 3 a 6 meses."],
+  ["O serviço tem garantia?","Sim. Todo serviço sai com garantia por escrito e nota fiscal."],
+  ["Instalam aparelho comprado em outra loja?","Sim. Instalamos todas as marcas, compradas em qualquer loja ou pela internet."],
+  ["Quanto tempo leva uma instalação?","Em média de 2 a 4 horas para um split padrão."],
+  ["Atendem empresas?","Sim. Atendemos lojas, escritórios e clínicas, com manutenção programada para os aparelhos não pararem."]
+];
+document.getElementById("faqList").innerHTML = FAQ.map(([q,a],i) => `
+  <details class="qa" name="faq" ${i===0?"open":""}>
+    <summary>${q}<span class="pm" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+    <div class="ans"><p>${a}</p></div>
+  </details>`).join("");
+const ld = document.createElement("script"); ld.type = "application/ld+json";
+ld.textContent = JSON.stringify({ "@context":"https://schema.org", "@type":"FAQPage",
+  mainEntity: FAQ.map(([q,a]) => ({ "@type":"Question", name:q, acceptedAnswer:{ "@type":"Answer", text:a } })) });
+document.body.appendChild(ld);
+</script>

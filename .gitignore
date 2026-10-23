@@ -1,0 +1,42 @@
+# ---- Dependências ----
+node_modules/
+vendor/
+bower_components/
+
+# ---- Variáveis de ambiente, senhas e chaves ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+secrets/
+credentials*.json
+*.secret
+
+# ---- Arquivos temporários e de sistema ----
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+.cache/
+dist/
+build/
+coverage/
+
+# ---- Editores ----
+.vscode/
+.idea/
+
+# ---- Ferramentas locais (Claude Code) ----
+# mantém só o necessário para rodar a pré-visualização local
+.claude/*
+!.claude/launch.json
+!.claude/serve.js

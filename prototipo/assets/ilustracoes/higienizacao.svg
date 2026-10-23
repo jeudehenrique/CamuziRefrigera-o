@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Técnico da Camuzi higienizando a serpentina de um ar-condicionado com bolsa coletora">
+  <style>
+    .mist circle{animation:mist 1.6s ease-out infinite; opacity:0}
+    .mist circle:nth-child(2){animation-delay:.25s}.mist circle:nth-child(3){animation-delay:.5s}.mist circle:nth-child(4){animation-delay:.75s}.mist circle:nth-child(5){animation-delay:1s}.mist circle:nth-child(6){animation-delay:1.2s}
+    .spark{transform-box:fill-box; transform-origin:center; animation:spark 2s ease-in-out infinite}
+    .spark.b{animation-delay:.7s}.spark.c{animation-delay:1.3s}
+    .drip{animation:drip 1.8s ease-in infinite}
+    @keyframes mist{0%{opacity:0; transform:translate(0,0)}20%{opacity:.9}100%{opacity:0; transform:translate(26px,-14px)}}
+    @keyframes spark{0%,100%{transform:scale(.4); opacity:.3}50%{transform:scale(1); opacity:1}}
+    @keyframes drip{0%{transform:translateY(0); opacity:0}20%{opacity:1}100%{transform:translateY(26px); opacity:0}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important} .mist circle{opacity:.7}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF5FF"/><stop offset="1" stop-color="#DCEBFF"/></linearGradient>
+    <filter id="sh" x="-20%" y="-30%" width="140%" height="180%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0A2A5C" flood-opacity=".2"/></filter>
+    <pattern id="fins" width="5" height="10" patternUnits="userSpaceOnUse"><rect width="5" height="10" fill="#E6EDF5"/><rect width="1.6" height="10" fill="#A9BBCF"/></pattern>
+  </defs>
+  <rect width="320" height="200" fill="url(#bg)"/>
+  <rect y="176" width="320" height="24" fill="#CFE0F5"/>
+  <circle cx="270" cy="150" r="50" fill="#FFFFFF" opacity=".45"/>
+
+  <!-- ar-condicionado com tampa aberta -->
+  <rect x="150" y="18" width="146" height="9" rx="4" fill="#FFFFFF" stroke="#D3DEEA" transform="rotate(-10 150 34)"/>
+  <rect x="150" y="34" width="146" height="46" rx="12" fill="#FFFFFF" filter="url(#sh)"/>
+  <rect x="160" y="40" width="126" height="28" rx="4" fill="url(#fins)"/>
+  <rect x="160" y="72" width="126" height="4" rx="2" fill="#C9D6E3"/>
+  <!-- brilho de limpo -->
+  <path class="spark" d="M262 46 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#22B8F0"/>
+  <path class="spark b" d="M230 58 l1.5 4 4 1.5 -4 1.5 -1.5 4 -1.5 -4 -4 -1.5 4 -1.5z" fill="#1466F0"/>
+  <path class="spark c" d="M278 62 l1.2 3 3 1.2 -3 1.2 -1.2 3 -1.2 -3 -3 -1.2 3 -1.2z" fill="#22B8F0"/>
+
+  <!-- bolsa coletora + mangueira + balde -->
+  <path d="M152 80 H296 L240 118 H208 Z" fill="#22B8F0" fill-opacity=".35" stroke="#1466F0" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M224 118 C 224 135, 232 140, 232 150" fill="none" stroke="#1466F0" stroke-width="3" stroke-linecap="round"/>
+  <circle class="drip" cx="232" cy="150" r="2.4" fill="#5A7FA8"/>
+  <path d="M214 152 H250 L246 176 H218 Z" fill="#0A2A5C"/>
+  <rect x="212" y="150" width="40" height="5" rx="2" fill="#1466F0"/>
+
+  <!-- banquinho -->
+  <rect x="86" y="146" width="52" height="7" rx="3" fill="#8FA3BC"/>
+  <path d="M92 153 L88 176 M132 153 L136 176" stroke="#8FA3BC" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- técnico -->
+  <path d="M104 146 L108 118" stroke="#1F2D45" stroke-width="9" stroke-linecap="round"/>
+  <path d="M120 146 L117 118" stroke="#1F2D45" stroke-width="9" stroke-linecap="round"/>
+  <ellipse cx="103" cy="148" rx="6" ry="3" fill="#152033"/><ellipse cx="121" cy="148" rx="6" ry="3" fill="#152033"/>
+  <rect x="100" y="84" width="26" height="38" rx="8" fill="#0A2A5C"/>
+  <circle cx="119" cy="94" r="3.2" fill="#22B8F0"/>
+  <rect x="109" y="78" width="8" height="8" rx="3" fill="#D9A07A"/>
+  <circle cx="113" cy="71" r="10" fill="#D9A07A"/>
+  <path d="M103 70 a10 10 0 0 1 20 -2 q-6 -5 -14 -2 q-4 1 -6 4z" fill="#2B1D16"/>
+  <!-- braço com borrifador -->
+  <path d="M122 90 L136 76" stroke="#0A2A5C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M136 76 L146 64" stroke="#D9A07A" stroke-width="6" stroke-linecap="round"/>
+  <g transform="rotate(-25 148 62)">
+    <rect x="141" y="58" width="12" height="20" rx="3" fill="#FFFFFF" stroke="#1466F0" stroke-width="1.5"/>
+    <rect x="143" y="62" width="8" height="8" rx="1.5" fill="#22B8F0"/>
+    <path d="M144 58 V52 H156 V55 H150 V58" fill="#1466F0"/>
+  </g>
+  <g class="mist" fill="#22B8F0">
+    <circle cx="160" cy="50" r="2.2"/><circle cx="163" cy="56" r="1.8"/><circle cx="158" cy="44" r="1.6"/>
+    <circle cx="166" cy="48" r="2"/><circle cx="162" cy="53" r="1.4"/><circle cx="168" cy="54" r="1.7"/>
+  </g>
+  <!-- outro braço apoiado -->
+  <path d="M104 92 L96 110" stroke="#0A2A5C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M96 110 L100 122" stroke="#D9A07A" stroke-width="6" stroke-linecap="round"/>
+</svg>

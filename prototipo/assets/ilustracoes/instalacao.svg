@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Técnico da Camuzi instalando um ar-condicionado split na parede">
+  <style>
+    .lift{animation:lift 2.4s ease-in-out infinite}
+    .badge{transform-origin:298px 30px; animation:pop 2.4s ease-in-out infinite}
+    .dash{stroke-dasharray:5 5; animation:dash 1.2s linear infinite}
+    @keyframes lift{50%{transform:translateY(-3px)}}
+    @keyframes pop{0%,60%{transform:scale(.85)}75%{transform:scale(1.12)}100%{transform:scale(1)}}
+    @keyframes dash{to{stroke-dashoffset:-20}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF5FF"/><stop offset="1" stop-color="#DCEBFF"/></linearGradient>
+    <filter id="sh" x="-20%" y="-30%" width="140%" height="180%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0A2A5C" flood-opacity=".2"/></filter>
+  </defs>
+  <rect width="320" height="200" fill="url(#bg)"/>
+  <rect y="176" width="320" height="24" fill="#CFE0F5"/>
+  <circle cx="60" cy="40" r="46" fill="#FFFFFF" opacity=".5"/>
+
+  <!-- placa de fixação na parede -->
+  <rect x="172" y="46" width="112" height="30" rx="4" fill="#B6C7DB"/>
+  <g fill="#8EA3BD"><circle cx="182" cy="52" r="2"/><circle cx="274" cy="52" r="2"/><circle cx="182" cy="70" r="2"/><circle cx="274" cy="70" r="2"/></g>
+  <!-- furo e tubulação saindo da parede -->
+  <circle cx="176" cy="96" r="6" fill="#9DB0C7"/>
+  <path d="M176 96 C 172 122, 196 128, 198 176" fill="none" stroke="#C3D1E2" stroke-width="9" stroke-linecap="round"/>
+  <path d="M176 96 C 172 122, 196 128, 198 176" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <!-- furadeira no chão -->
+  <g transform="translate(232 160)"><rect x="0" y="0" width="30" height="12" rx="4" fill="#1466F0"/><rect x="30" y="4" width="14" height="4" rx="2" fill="#8FA3BC"/><rect x="6" y="10" width="9" height="12" rx="3" fill="#0A2A5C"/></g>
+
+  <!-- linha de nível + selo de ok -->
+  <line class="dash" x1="160" y1="34" x2="288" y2="34" stroke="#22B8F0" stroke-width="2"/>
+  <g class="badge"><circle cx="298" cy="30" r="10" fill="#1466F0"/><path d="m293.5 30.5 3 3 5.5-6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+
+  <!-- escada -->
+  <g stroke="#8FA3BC" stroke-width="4" stroke-linecap="round">
+    <line x1="92" y1="176" x2="110" y2="84"/><line x1="138" y1="176" x2="122" y2="84"/>
+    <line x1="97" y1="150" x2="133" y2="150"/><line x1="102" y1="125" x2="128" y2="125"/><line x1="107" y1="100" x2="125" y2="100"/>
+  </g>
+
+  <!-- ar-condicionado sendo encaixado -->
+  <g class="lift">
+    <rect x="160" y="50" width="134" height="42" rx="12" fill="#FFFFFF" filter="url(#sh)"/>
+    <rect x="172" y="80" width="110" height="5" rx="2.5" fill="#C9D6E3"/>
+    <circle cx="280" cy="62" r="2.2" fill="#22B8F0"/>
+    <!-- técnico: braços segurando a unidade -->
+    <path d="M128 76 L146 66" stroke="#0A2A5C" stroke-width="8" stroke-linecap="round"/>
+    <path d="M146 66 L162 60" stroke="#D9A07A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M128 84 L148 86" stroke="#0A2A5C" stroke-width="8" stroke-linecap="round"/>
+    <path d="M148 86 L163 90" stroke="#D9A07A" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- técnico -->
+  <path d="M110 125 L114 100" stroke="#1F2D45" stroke-width="9" stroke-linecap="round"/>
+  <path d="M123 125 L121 100" stroke="#1F2D45" stroke-width="9" stroke-linecap="round"/>
+  <ellipse cx="109" cy="127" rx="6" ry="3" fill="#152033"/><ellipse cx="124" cy="127" rx="6" ry="3" fill="#152033"/>
+  <rect x="106" y="68" width="26" height="36" rx="8" fill="#0A2A5C"/>
+  <circle cx="125" cy="78" r="3.2" fill="#22B8F0"/>
+  <rect x="115" y="62" width="8" height="8" rx="3" fill="#D9A07A"/>
+  <circle cx="119" cy="55" r="10" fill="#D9A07A"/>
+  <path d="M109 54 a10 10 0 0 1 20 -2 q-6 -5 -14 -2 q-4 1 -6 4z" fill="#2B1D16"/>
+</svg>
