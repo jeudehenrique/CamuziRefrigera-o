@@ -932,6 +932,19 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
   .ftr__bot{margin-top:28px; padding-top:18px; font-size:.78rem}
 }
 
+/* topo no celular: foto do técnico como fundo, com degradê da marca; texto e botão por cima */
+@media (max-width:719px){
+  .hero{padding-block:56px 64px}
+  .hero .wrap.hero__grid{position:static}
+  .hero .scene, .hero .scene--photo{position:absolute; inset:0; z-index:-1; aspect-ratio:auto; max-width:none; border-radius:0; box-shadow:none; animation:none; background:var(--b-bg)}
+  .hero .scene__img{object-position:55% 18%}
+  .hero .scene--photo::after{background:linear-gradient(180deg, rgba(7,26,61,.78) 0%, rgba(7,26,61,.7) 30%, rgba(7,26,61,.88) 62%, #0A2654 100%)}
+  .hero .chip{display:none}
+  .hero h1, .hero__lead, .ticks li{text-shadow:0 2px 18px rgba(4,14,35,.55)}
+  .hero__lead{color:#D5E3F5}
+  .ticks li{color:#E3EEFA}
+}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
   html{scroll-behavior:auto}
