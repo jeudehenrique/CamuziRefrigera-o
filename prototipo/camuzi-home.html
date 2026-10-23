@@ -1736,13 +1736,7 @@ addEventListener("keydown", e => { if (e.key === "Escape" && mnav.classList.cont
 
 /* Revelar ao rolar */
 document.querySelectorAll("[data-stagger]").forEach(p => [...p.children].forEach((c, i) => c.style.setProperty("--d", (i * 0.09) + "s")));
-if ("IntersectionObserver" in window && !REDUCED) {
-  document.documentElement.classList.add("rv-on");
-  const io = new IntersectionObserver(es => es.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-  }), { rootMargin:"0px 0px -8% 0px", threshold:0.12 });
-  document.querySelectorAll(".rv, #steps").forEach(el => io.observe(el));
-}
+// animação de "surgir ao rolar" desativada a pedido: o conteúdo já aparece pronto
 
 /* Holofote nos cards */
 document.querySelectorAll(".spot").forEach(el => el.addEventListener("pointermove", e => {
