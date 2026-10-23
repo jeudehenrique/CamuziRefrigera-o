@@ -967,11 +967,11 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
 .btn--line:hover{background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.45)}
 
 /* dúvidas: frase e botão de contato no final da lista */
-.faq__end{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px 20px; padding:18px 22px; border-radius:16px; background:rgba(255,255,255,.04); border:1px solid var(--line)}
+.faq__end{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px 20px; padding:6px 4px 0}
 .faq__end p{margin:0; color:var(--muted); font-size:1rem; flex:1 1 240px; max-width:none}
 .faq__end .btn{flex:none}
 @media (min-width:980px){ .faq__end{grid-column:2} }
-@media (max-width:719px){ .faq__end{flex-direction:column; text-align:center; justify-content:center} }
+@media (max-width:719px){ .faq__end{flex-direction:column; text-align:center; justify-content:center} .faq__end p{flex:none} }
 
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
