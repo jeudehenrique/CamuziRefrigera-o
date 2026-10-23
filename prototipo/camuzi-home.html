@@ -879,6 +879,47 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
   .chip{background:rgba(255,255,255,.96)}
 }
 
+/* =====================================================================
+   CELULAR ORGANIZADO — mesmo eixo central em todas as seções,
+   serviços e compromissos em esteira infinita, blocos do mesmo tamanho
+   ===================================================================== */
+@media (max-width:719px){
+  /* topo */
+  .hero__grid > div:first-child{text-align:center}
+  .hero__lead{margin-inline:auto}
+  .hero .ctas, .ticks{justify-content:center}
+  /* títulos e textos de todas as seções no centro */
+  .head{margin-inline:auto; text-align:center; justify-items:center}
+  .head .eyebrow{justify-self:center}
+  .row-head{justify-content:center}
+  .health > div:first-child{text-align:center}
+  .benefits li{text-align:left}
+  .faq__aside{text-align:center; justify-items:center}
+  .faq__aside .eyebrow{justify-self:center}
+  .final{text-align:center}
+  .final p{margin-inline:auto}
+  .final__act{justify-items:center}
+  .biz{flex-direction:column; text-align:center}
+  .biz div{flex:none}
+  /* botões do WhatsApp no centro */
+  .ctas, .gscore__act{justify-content:center}
+  .diag__foot{flex-direction:column; text-align:center}
+  .diag__foot p{flex:none}
+  .gscore{justify-content:center; text-align:center}
+  .gscore__src, .gscore__meta{justify-items:center}
+  .gscore__act{width:100%}
+  .gscore__act .btn{flex:none}
+  /* diagnóstico: o último botão (sozinho na linha) ocupa a linha inteira */
+  #tab-instalar{grid-column:1 / -1; justify-content:center}
+  /* esteiras de serviços e compromissos (criadas pelo script no celular) */
+  .m-belt{margin-inline:-16px; padding-inline:0}
+  .m-belt .cards, .m-belt .pillars{display:flex; width:max-content; gap:14px; overflow:visible; margin:0; padding:4px 16px 14px; scroll-snap-type:none}
+  .m-belt .card{flex:0 0 76cqw}
+  .m-belt .pillar{flex:0 0 80cqw}
+  .rv-on .m-belt .rv{opacity:1; transform:none}
+  .swipe-hint{display:none!important}
+}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
   html{scroll-behavior:auto}
@@ -1878,6 +1919,18 @@ function marquee(box, track, speed) {
   let x0 = null;
   lb.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, { passive:true });
   lb.addEventListener("touchend", e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1); x0 = null; });
+})();
+
+
+/* Celular: serviços e compromissos em esteira contínua (passa sozinha e pode ser arrastada) */
+(() => {
+  if (!matchMedia("(max-width: 719px)").matches) return;
+  [[".cards", 30], [".pillars", 26]].forEach(([sel, speed]) => {
+    const track = document.querySelector(sel); if (!track) return;
+    const box = document.createElement("div"); box.className = "carousel m-belt";
+    track.parentNode.insertBefore(box, track); box.appendChild(track);
+    marquee(box, track, speed);
+  });
 })();
 
 /* Avaliações: esteira contínua mais lenta, para dar tempo de ler */
