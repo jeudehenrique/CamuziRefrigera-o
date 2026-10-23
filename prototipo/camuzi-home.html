@@ -1035,7 +1035,6 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
     <a class="btn btn--wa btn--sm hdr__cta" data-wa="header" href="#"><svg><use href="#i-wa"/></svg>Pedir orçamento</a>
     <button class="menu-btn" type="button" id="menuOpen" aria-controls="mnav" aria-expanded="false" aria-label="Abrir menu"><svg class="ico"><use href="#i-menu"/></svg></button>
   </div>
-  <div class="progress" id="progress"></div>
 </header>
 
 <div class="mnav blue" id="mnav" role="dialog" aria-modal="true" aria-label="Menu">
@@ -1708,13 +1707,11 @@ document.getElementById("yr").textContent = new Date().getFullYear();
 })();
 
 /* Cabeçalho: azul no topo, claro ao rolar + progresso + link ativo */
-const hdr = document.querySelector(".hdr"), prog = document.getElementById("progress");
+const hdr = document.querySelector(".hdr");
 const navLinks = [...document.querySelectorAll(".nav a")];
 const sections = navLinks.map(a => document.querySelector(a.getAttribute("href")));
 const onScroll = () => {
   hdr.classList.toggle("blue", scrollY < 40);
-  const max = document.documentElement.scrollHeight - innerHeight;
-  prog.style.setProperty("--p", max > 0 ? scrollY / max : 0);
   let cur = -1;
   sections.forEach((s, i) => { if (s && s.getBoundingClientRect().top < 140) cur = i; });
   navLinks.forEach((a, i) => a.classList.toggle("is-active", i === cur));
@@ -1736,7 +1733,13 @@ addEventListener("keydown", e => { if (e.key === "Escape" && mnav.classList.cont
 
 /* Revelar ao rolar */
 document.querySelectorAll("[data-stagger]").forEach(p => [...p.children].forEach((c, i) => c.style.setProperty("--d", (i * 0.09) + "s")));
-// animação de "surgir ao rolar" desativada a pedido: o conteúdo já aparece pronto
+if ("IntersectionObserver" in window && !REDUCED) {
+  document.documentElement.classList.add("rv-on");
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }), { rootMargin:"0px 0px -8% 0px", threshold:0.12 });
+  document.querySelectorAll(".rv, #steps").forEach(el => io.observe(el));
+}
 
 /* Holofote nos cards */
 document.querySelectorAll(".spot").forEach(el => el.addEventListener("pointermove", e => {
