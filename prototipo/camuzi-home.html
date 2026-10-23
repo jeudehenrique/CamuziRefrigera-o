@@ -810,6 +810,10 @@ h1,h2,h3,h4{font-weight:600; letter-spacing:-.035em}
 .faq__aside p, .final p{font-size:1.12rem}
 .scene, .final, .ba, .gscore, .diag__panel{border-radius:22px}
 
+/* diagnóstico no celular: resposta em sanfona, logo abaixo do botão */
+.symptoms .diag__panel.is-inline{grid-column:1/-1; margin:2px 0 10px; padding:22px 18px; animation:fadeUp .4s var(--ease) both; box-shadow:0 18px 40px -20px rgba(11,26,46,.35), 0 0 0 2px rgba(15,107,255,.18)}
+.symptoms .diag__panel.is-inline h3{font-size:1.3rem}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important; transition:none!important}
   html{scroll-behavior:auto}
@@ -1843,17 +1847,37 @@ function renderSym(i){
       <a class="btn btn--wa" data-wa="problema_${s.id}" target="_blank" rel="noopener" href="${waLink(s.msg || `Olá! Meu ar-condicionado está com este problema: ${s.label.toLowerCase()}. Podem me ajudar?`)}"><svg><use href="#i-wa"/></svg>Resolver pelo WhatsApp</a>
     </div>`;
 }
-function selectSym(i, focus){
+/* no celular a resposta abre logo abaixo da linha do botão tocado (sanfona); no computador fica no painel ao lado */
+const diagBox = symPanel.parentElement, mobileDiag = matchMedia("(max-width: 899px)");
+let curSym = 0;
+function placePanel(i){
+  const btns = [...symList.querySelectorAll(".sym")];
+  if (mobileDiag.matches) {
+    const rowEnd = Math.min(i | 1, btns.length - 1);           // fim da linha (grade de 2 colunas)
+    if (btns[rowEnd].nextElementSibling !== symPanel) btns[rowEnd].after(symPanel);
+    symPanel.classList.add("is-inline");
+  } else if (symPanel.parentElement !== diagBox) {
+    diagBox.appendChild(symPanel); symPanel.classList.remove("is-inline");
+  }
+}
+function selectSym(i, focus, fromTap){
+  curSym = i;
   symList.querySelectorAll(".sym").forEach((b,j) => { b.setAttribute("aria-selected", j===i); b.tabIndex = j===i ? 0 : -1; if (j===i && focus) b.focus(); });
   renderSym(i);
+  placePanel(i);
+  if (fromTap && mobileDiag.matches) {
+    const btn = symList.querySelectorAll(".sym")[i];
+    scrollTo({ top: btn.getBoundingClientRect().top + scrollY - 92, behavior: REDUCED ? "auto" : "smooth" });
+  }
 }
-symList.addEventListener("click", e => { const b = e.target.closest(".sym"); if (b) selectSym(+b.dataset.i); });
+mobileDiag.addEventListener("change", () => placePanel(curSym));
+symList.addEventListener("click", e => { const b = e.target.closest(".sym"); if (b) selectSym(+b.dataset.i, false, true); });
 symList.addEventListener("keydown", e => {
-  const cur = [...symList.children].findIndex(b => b.getAttribute("aria-selected")==="true"), n = SYMPTOMS.length;
+  const cur = curSym, n = SYMPTOMS.length;
   if (["ArrowDown","ArrowRight"].includes(e.key)) { e.preventDefault(); selectSym((cur+1)%n, true); }
   if (["ArrowUp","ArrowLeft"].includes(e.key)) { e.preventDefault(); selectSym((cur-1+n)%n, true); }
 });
-renderSym(0);
+renderSym(0); placePanel(0);
 
 /* Antes / depois: a divisória balança sozinha até a pessoa tocar, mostrando que dá para arrastar */
 (() => {
