@@ -30,9 +30,13 @@ jobs:
           mkdir _site
           cp -r prototipo/assets _site/assets
           {
-            printf '<!doctype html>\n<html lang="pt-BR">\n<meta charset="utf-8">\n'
-            grep -v 'name="claude:' prototipo/camuzi-home.html
+            printf '<!doctype html>\n<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n'
+            # o <head> termina antes do primeiro elemento visível (o sprite de ícones)
+            grep -v 'name="claude:' prototipo/camuzi-home.html \
+              | awk '!done && /^<svg width="0"/ { print "</head>\n<body>"; done=1 } { print }'
+            printf '</body>\n</html>\n'
           } > _site/index.html
+          grep -q '^</head>$' _site/index.html || { echo "fim do <head> não encontrado"; exit 1; }
           echo "xn--camuzirefrigerao-snb5e.com.br" > _site/CNAME
           # SEO: mapa do site (com a data da publicação) e regras para os buscadores
           URL="https://xn--camuzirefrigerao-snb5e.com.br"
