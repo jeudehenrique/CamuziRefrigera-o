@@ -28,7 +28,11 @@ jobs:
       - name: Montar o site
         run: |
           mkdir _site
+          # páginas de serviço: geradas a partir da home, para ficarem sempre iguais a ela
+          node scripts/gerar-paginas.js
           cp -r prototipo/assets _site/assets
+          PAGINAS=$(for d in prototipo/*/; do [ -f "$d/index.html" ] && basename "$d"; done)
+          for p in $PAGINAS; do cp -r "prototipo/$p" "_site/$p"; done
           cp prototipo/google*.html _site/   # arquivo de verificação do Google Search Console
           {
             printf '<!doctype html>\n<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n'
@@ -41,7 +45,13 @@ jobs:
           echo "xn--camuzirefrigerao-snb5e.com.br" > _site/CNAME
           # SEO: mapa do site (com a data da publicação) e regras para os buscadores
           URL="https://xn--camuzirefrigerao-snb5e.com.br"
-          printf '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>%s/</loc><lastmod>%s</lastmod></url>\n</urlset>\n' "$URL" "$(date -u +%F)" > _site/sitemap.xml
+          HOJE=$(date -u +%F)
+          {
+            printf '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            printf '  <url><loc>%s/</loc><lastmod>%s</lastmod></url>\n' "$URL" "$HOJE"
+            for p in $PAGINAS; do printf '  <url><loc>%s/%s/</loc><lastmod>%s</lastmod></url>\n' "$URL" "$p" "$HOJE"; done
+            printf '</urlset>\n'
+          } > _site/sitemap.xml
           printf 'User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' "$URL" > _site/robots.txt
           # endereço errado ou link antigo (ex.: /prototipo/camuzi-home.html) leva para a página inicial
           printf '<!doctype html>\n<html lang="pt-BR">\n<meta charset="utf-8">\n<title>Camuzi Refrigeração</title>\n<meta name="robots" content="noindex">\n<meta http-equiv="refresh" content="0; url=/">\n<script>location.replace("/")</script>\n<a href="/">Ir para o site da Camuzi Refrigeração</a>\n' > _site/404.html

@@ -5,7 +5,9 @@ Site da Camuzi Refrigeração: instalação, higienização, manutenção e cons
 ## Estrutura
 
 - `prototipo/camuzi-home.html` — página inicial (HTML, CSS e JavaScript em um único arquivo)
-- `prototipo/assets/` — logos, fotos otimizadas (WebP) e ilustrações
+- `prototipo/<serviço>/index.html` — páginas de cada serviço, geradas por `scripts/gerar-paginas.js` a partir da home (textos ficam no próprio script; rode `node scripts/gerar-paginas.js` depois de mudar a home ou os textos)
+- `prototipo/assets/` — logos, fotos otimizadas (WebP) e ilustrações; `site.css` é gerado a partir da home
+- `.github/workflows/publicar-site.yml` — publica no GitHub Pages (camuzirefrigeração.com.br) a cada envio para a `main`
 - `fotos-originais/` — fotos originais dos serviços, em resolução cheia
 - `.claude/serve.js` e `.claude/launch.json` — servidor simples para pré-visualizar localmente
 
