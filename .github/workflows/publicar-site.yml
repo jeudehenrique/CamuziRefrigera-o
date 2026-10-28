@@ -1,0 +1,43 @@
+# Publica o site no GitHub Pages (camuzirefrigeração.com.br) a cada envio para a main.
+# A página continua sendo editada em prototipo/camuzi-home.html; aqui ela vira o index.html do site.
+name: Publicar site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Montar o site
+        run: |
+          mkdir _site
+          cp -r prototipo/assets _site/assets
+          {
+            printf '<!doctype html>\n<html lang="pt-BR">\n<meta charset="utf-8">\n'
+            grep -v 'name="claude:' prototipo/camuzi-home.html
+          } > _site/index.html
+          echo "xn--camuzirefrigerao-snb5e.com.br" > _site/CNAME
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
