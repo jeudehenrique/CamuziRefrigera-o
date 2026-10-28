@@ -34,6 +34,10 @@ jobs:
             grep -v 'name="claude:' prototipo/camuzi-home.html
           } > _site/index.html
           echo "xn--camuzirefrigerao-snb5e.com.br" > _site/CNAME
+          # SEO: mapa do site (com a data da publicação) e regras para os buscadores
+          URL="https://xn--camuzirefrigerao-snb5e.com.br"
+          printf '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>%s/</loc><lastmod>%s</lastmod></url>\n</urlset>\n' "$URL" "$(date -u +%F)" > _site/sitemap.xml
+          printf 'User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' "$URL" > _site/robots.txt
           # endereço errado ou link antigo (ex.: /prototipo/camuzi-home.html) leva para a página inicial
           printf '<!doctype html>\n<html lang="pt-BR">\n<meta charset="utf-8">\n<title>Camuzi Refrigeração</title>\n<meta name="robots" content="noindex">\n<meta http-equiv="refresh" content="0; url=/">\n<script>location.replace("/")</script>\n<a href="/">Ir para o site da Camuzi Refrigeração</a>\n' > _site/404.html
 
