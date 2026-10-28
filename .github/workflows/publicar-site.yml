@@ -34,6 +34,8 @@ jobs:
             grep -v 'name="claude:' prototipo/camuzi-home.html
           } > _site/index.html
           echo "xn--camuzirefrigerao-snb5e.com.br" > _site/CNAME
+          # endereço errado ou link antigo (ex.: /prototipo/camuzi-home.html) leva para a página inicial
+          printf '<!doctype html>\n<html lang="pt-BR">\n<meta charset="utf-8">\n<title>Camuzi Refrigeração</title>\n<meta name="robots" content="noindex">\n<meta http-equiv="refresh" content="0; url=/">\n<script>location.replace("/")</script>\n<a href="/">Ir para o site da Camuzi Refrigeração</a>\n' > _site/404.html
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
